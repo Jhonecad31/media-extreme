@@ -1,0 +1,55 @@
+{
+  "header": {
+    "title": "EXTREME ADVENTURE",
+    "english": "English",
+    "spanish": "Español",
+    "portuguese": "Portugués"
+  },
+  "hero": {
+    "title": "Extreme Adventure\nMedia Center",
+    "description": "Download our best images and videos from all our experiences. High-quality media assets for your promotional needs.",
+    "button": "Explore Resources"
+  },
+  "features": {
+    "title": "Why Choose Our Experiences?",
+    "transportation": {
+      "title": "Transportation",
+      "desc": "All our activities include roundtrip transportation.",
+      "badge": "Verify for special locations"
+    },
+    "availability": {
+      "title": "Availability",
+      "desc": "Our park activities are available the 365 days of the year."
+    },
+    "schedule": {
+      "title": "Schedule",
+      "desc": "All our park tours have 2 schedules. In the morning and afternoon.",
+      "badge": "Except Super Combo"
+    },
+    "family": {
+      "title": "Family Friendly",
+      "desc": "All activities can be done by +4 age children.",
+      "badge": "Except Booze Cruise"
+    }
+  },
+  "experiences": {
+    "title": "Our Experiences",
+    "atv": {
+      "title": "Extreme ATV Adventure"
+    },
+    "puerto_morelos": {
+      "title": "Puerto Morelos Experience"
+    },
+    "resources": {
+      "factsheet": "Download Fact Sheet",
+      "factsheet_desc": "PDF Format - English",
+      "photos": "High-Res Photos",
+      "photos_desc": "Dropbox Folder",
+      "videos": "Promo Videos",
+      "videos_desc": "Dropbox Folder"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Extreme Adventure Cancun. All Rights Reserved."
+  }
+}

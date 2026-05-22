@@ -1,55 +1,34 @@
 {
-  "header": {
-    "title": "EXTREME ADVENTURE",
-    "english": "English",
-    "spanish": "Español",
-    "portuguese": "Portugués"
+  "nav": {
+    "highlights": "Highlights",
+    "products": "Products",
+    "faq": "FAQ"
   },
-  "hero": {
-    "title": "Extreme Adventure\nMedia Center",
-    "description": "Download our best images and videos from all our experiences. High-quality media assets for your promotional needs.",
-    "button": "Explore Resources"
-  },
-  "features": {
-    "title": "Why Choose Our Experiences?",
-    "transportation": {
-      "title": "Transportation",
-      "desc": "All our activities include roundtrip transportation.",
-      "badge": "Verify for special locations"
-    },
-    "availability": {
-      "title": "Availability",
-      "desc": "Our park activities are available the 365 days of the year."
-    },
-    "schedule": {
-      "title": "Schedule",
-      "desc": "All our park tours have 2 schedules. In the morning and afternoon.",
-      "badge": "Except Super Combo"
-    },
-    "family": {
-      "title": "Family Friendly",
-      "desc": "All activities can be done by +4 age children.",
-      "badge": "Except Booze Cruise"
+  "highlights": {
+    "title": "Welcome to the Media Center",
+    "description": "Download our best images, videos, and fact sheets in high quality for your promotional needs.",
+    "cards": {
+      "photos": { "title": "High-Res Photos", "desc": "Access our complete image library" },
+      "videos": { "title": "Promo Videos", "desc": "4K and HD footage available" },
+      "factsheets": { "title": "Fact Sheets", "desc": "Detailed PDF guides for every tour" }
     }
   },
-  "experiences": {
-    "title": "Our Experiences",
-    "atv": {
-      "title": "Extreme ATV Adventure"
-    },
-    "puerto_morelos": {
-      "title": "Puerto Morelos Experience"
-    },
-    "resources": {
-      "factsheet": "Download Fact Sheet",
-      "factsheet_desc": "PDF Format - English",
-      "photos": "High-Res Photos",
-      "photos_desc": "Dropbox Folder",
-      "videos": "Promo Videos",
-      "videos_desc": "Dropbox Folder"
-    }
+  "products": {
+    "title": "Products & Experiences",
+    "atv": "Extreme ATV Adventure",
+    "puerto_morelos": "Puerto Morelos Experience",
+    "btn_pdf": "Download Fact Sheet",
+    "btn_photos": "Photos (Dropbox)",
+    "btn_videos": "Videos (Dropbox)"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": { "q": "How can I use these resources?", "a": "You are free to use these assets for promoting our experiences on your digital and printed channels." },
+    "q2": { "q": "Are the videos and photos copyrighted?", "a": "Yes, but as an authorized partner/affiliate you have full permission to use them without watermarks." },
+    "q3": { "q": "How often is the media updated?", "a": "We update our Dropbox folders every season with fresh, high-quality content." }
   },
   "footer": {
-    "copyright": "© 2026 Extreme Adventure Cancun. All Rights Reserved."
+    "copyright": "© 2026 Grupo Extreme. All Rights Reserved.",
+    "support": "Affiliate Support"
   }
 }

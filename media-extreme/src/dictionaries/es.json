@@ -1,55 +1,34 @@
 {
-  "header": {
-    "title": "EXTREME ADVENTURE",
-    "english": "English",
-    "spanish": "Español",
-    "portuguese": "Portugués"
+  "nav": {
+    "highlights": "Destacados",
+    "products": "Productos",
+    "faq": "Preguntas"
   },
-  "hero": {
-    "title": "Extreme Adventure\nMedia Center",
-    "description": "Descarga nuestras mejores imágenes y videos de todas nuestras experiencias. Recursos multimedia de alta calidad para tus necesidades promocionales.",
-    "button": "Explorar Recursos"
-  },
-  "features": {
-    "title": "¿Por qué elegir nuestras experiencias?",
-    "transportation": {
-      "title": "Transportación",
-      "desc": "Todas nuestras actividades incluyen transportación redonda.",
-      "badge": "Verificar locaciones especiales"
-    },
-    "availability": {
-      "title": "Disponibilidad",
-      "desc": "Las actividades de nuestro parque están disponibles los 365 días del año."
-    },
-    "schedule": {
-      "title": "Horarios",
-      "desc": "Todos los tours de nuestro parque tienen 2 horarios. Por la mañana y por la tarde.",
-      "badge": "Excepto Super Combo"
-    },
-    "family": {
-      "title": "Familiar",
-      "desc": "Todas las actividades pueden ser realizadas por niños mayores de 4 años.",
-      "badge": "Excepto Booze Cruise"
+  "highlights": {
+    "title": "Bienvenido al Media Center",
+    "description": "Descarga nuestras mejores imágenes, videos y fichas técnicas en alta calidad para tus necesidades promocionales.",
+    "cards": {
+      "photos": { "title": "Fotos en Alta Resolución", "desc": "Accede a nuestra biblioteca de imágenes" },
+      "videos": { "title": "Videos Promocionales", "desc": "Material en 4K y HD disponible" },
+      "factsheets": { "title": "Fichas Técnicas", "desc": "Guías detalladas en PDF por tour" }
     }
   },
-  "experiences": {
-    "title": "Nuestras Experiencias",
-    "atv": {
-      "title": "Extreme ATV Adventure"
-    },
-    "puerto_morelos": {
-      "title": "Puerto Morelos Experience"
-    },
-    "resources": {
-      "factsheet": "Descargar Hoja de Datos",
-      "factsheet_desc": "Formato PDF",
-      "photos": "Fotos en Alta Resolución",
-      "photos_desc": "Carpeta de Dropbox",
-      "videos": "Videos Promocionales",
-      "videos_desc": "Carpeta de Dropbox"
-    }
+  "products": {
+    "title": "Productos y Experiencias",
+    "atv": "Extreme ATV Adventure",
+    "puerto_morelos": "Puerto Morelos Experience",
+    "btn_pdf": "Descargar Ficha Técnica",
+    "btn_photos": "Fotos (Dropbox)",
+    "btn_videos": "Videos (Dropbox)"
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "q1": { "q": "¿Cómo puedo usar estos recursos?", "a": "Eres libre de usar estos activos para promocionar nuestras experiencias en tus canales digitales e impresos." },
+    "q2": { "q": "¿Los videos y fotos tienen derechos de autor?", "a": "Sí, pero como afiliado autorizado tienes permiso completo para usarlos sin marcas de agua." },
+    "q3": { "q": "¿Con qué frecuencia se actualiza el material?", "a": "Actualizamos nuestras carpetas de Dropbox cada temporada con contenido fresco de alta calidad." }
   },
   "footer": {
-    "copyright": "© 2026 Extreme Adventure Cancun. Todos los derechos reservados."
+    "copyright": "© 2026 Grupo Extreme. Todos los derechos reservados.",
+    "support": "Soporte para Afiliados"
   }
 }

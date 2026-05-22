@@ -1,34 +1,164 @@
 {
-  "nav": {
-    "highlights": "Highlights",
-    "products": "Products",
-    "faq": "FAQ"
+  "header": {
+    "title": "Extreme Adventure Media Center",
+    "subtitle": "Download all our resources"
   },
-  "highlights": {
-    "title": "Welcome to the Media Center",
-    "description": "Download our best images, videos, and fact sheets in high quality for your promotional needs.",
-    "cards": {
-      "photos": { "title": "High-Res Photos", "desc": "Access our complete image library" },
-      "videos": { "title": "Promo Videos", "desc": "4K and HD footage available" },
-      "factsheets": { "title": "Fact Sheets", "desc": "Detailed PDF guides for every tour" }
-    }
+  "experiences": {
+    "title": "Our Experiences",
+    "items": [
+      {
+        "icon": "bxs-bus",
+        "title": "Transportation",
+        "desc": "All our activities include roundtrip transportation.",
+        "badge": "Verify for special locations."
+      },
+      {
+        "icon": "bx-calendar-check",
+        "title": "Availability",
+        "desc": "Our park activities are available the 365 days of the year."
+      },
+      {
+        "icon": "bx-time-five",
+        "title": "Schedule",
+        "desc": "All our park tours have 2 schedules. In the morning and in the afternoon.",
+        "badge": "Except Super Combo & Puerto Morelos Experience"
+      },
+      {
+        "icon": "bx-group",
+        "title": "Family Friendly",
+        "desc": "All activities can be done by +4 age children.",
+        "badge": "Except Booze Cruise"
+      }
+    ]
   },
   "products": {
-    "title": "Products & Experiences",
-    "atv": "Extreme ATV Adventure",
-    "puerto_morelos": "Puerto Morelos Experience",
+    "title": "Products",
     "btn_pdf": "Download Fact Sheet",
-    "btn_photos": "Photos (Dropbox)",
-    "btn_videos": "Videos (Dropbox)"
+    "btn_photos": "Photo Gallery",
+    "btn_videos": "Official Video",
+    "items": [
+      {
+        "title": "Extreme ATV Adventure",
+        "img": "img/atv-adventure.jpg",
+        "pdf": "../factsheet/ExtremeATVAdventureFactSheet-ing.pdf",
+        "photos": "https://www.dropbox.com/sh/27725dl4ajhvred/AAAVNELjySKy1pItUvo6JLsfa?dl=0",
+        "video": "../videos/extreme-atv-adventure.mp4"
+      },
+      {
+        "title": "Extreme Horses Adventure",
+        "img": "img/extreme-horses.jpg",
+        "pdf": "../factsheet/ExtremeHorseAdventureFactSheet-ing.pdf",
+        "photos": "https://www.dropbox.com/sh/lw3xhat2uti56mv/AABqWVSBr192X2kkTx3ldU3ka?dl=0",
+        "video": "../videos/extreme-horse-adventuring.mp4"
+      },
+      {
+        "title": "Cenote Adventuring",
+        "img": "img/cenotes-adventuring.jpg",
+        "pdf": "../factsheet/CenoteAdventuringFactsheet-ing.pdf",
+        "photos": "https://www.dropbox.com/scl/fo/d41ep6xm0n8qa5oxaucob/h?dl=0&rlkey=vha7rbftwga9rllhynj3lyj8k",
+        "video": "../videos/cenote-adventuring.mp4"
+      },
+      {
+        "title": "City & Taco Tour",
+        "img": "img/city-and-taco-tour.jpg",
+        "pdf": "../factsheet/city-and-taco-tour-ing.pdf",
+        "photos": "https://www.dropbox.com/scl/fo/8t40kj7o1lvxcvyduddxh/h?dl=0&rlkey=blyvqpq8hhma6wkabl9y2yqzw",
+        "video": "../videos/tactotour-puerto-morelos-horizontal.mp4"
+      },
+      {
+        "title": "Snorkeling Adventure",
+        "img": "img/estreme-snorkel.jpg",
+        "pdf": "../factsheet/ExtremeSnorkelFactSheet-ing.pdf",
+        "photos": "https://www.dropbox.com/sh/6xi7gj0m0c830ex/AAC5glGukiWf7oj7Tuw3Jc3Xa?dl=0",
+        "video": "../videos/extreme-snorkel-adventure.mp4"
+      },
+      {
+        "title": "Private Snorkeling Experience",
+        "img": "img/private-snorkeling-experience.jpg",
+        "pdf": "../factsheet/private-snorkeling-ing.pdf",
+        "photos": "https://www.dropbox.com/scl/fo/vz3bwy6duu8240w5sen4s/AOu_AesIehX-jD1MGQ1fNe4?rlkey=x2elyiafgec65rmckb6r5pnyx&st=3fv5ow0b&dl=0",
+        "video": "../videos/private-snorkeling-experience-video.mp4"
+      },
+      {
+        "title": "Super Combo (Combo 1)",
+        "img": "img/super-combo.jpg",
+        "pdf": "../factsheet/SuperComboFactSheet-ing.pdf",
+        "photos": "https://www.dropbox.com/sh/xueflqyywn3uagf/AADZLTLh5nMedkMUXd0Mfihya?dl=0",
+        "video": "../videos/super-combo.mp4"
+      }
+    ]
   },
   "faq": {
     "title": "Frequently Asked Questions",
-    "q1": { "q": "How can I use these resources?", "a": "You are free to use these assets for promoting our experiences on your digital and printed channels." },
-    "q2": { "q": "Are the videos and photos copyrighted?", "a": "Yes, but as an authorized partner/affiliate you have full permission to use them without watermarks." },
-    "q3": { "q": "How often is the media updated?", "a": "We update our Dropbox folders every season with fresh, high-quality content." }
+    "items": [
+      {
+        "q": "What type of footwear do I need for ATVs?",
+        "a": "The activities in the park are very intense, so it is best to bring comfortable clothes and shoes, as well as a swimsuit."
+      },
+      {
+        "q": "Should I bring a towel?",
+        "a": "Yes, each passenger must bring their towel and swimsuit, as well as their personal hygiene items."
+      },
+      {
+        "q": "What is the minimum age to carry out the activities in the park?",
+        "a": "All the activities in the park can be carried out by children from 4 years old."
+      },
+      {
+        "q": "What is the minimum age to drive the ATV?",
+        "a": "The minimum age is 16 years accompanied by an adult. To drive alone, it is necessary to be 18 years of age."
+      },
+      {
+        "q": "What is the maximum weight for horseback riding?",
+        "a": "It is necessary that the weight of the passenger does not reach 110 kilos or 242.5 pounds."
+      },
+      {
+        "q": "What is the maximum weight to use the zip lines?",
+        "a": "It is necessary that the passenger does not weigh 130 kilos or 286 pounds."
+      },
+      {
+        "q": "Who can not carry out the activities of the park?",
+        "a": "Pregnant women, people with recent surgeries, muscle injuries, or physical disabilities that prevent carrying out the activities."
+      },
+      {
+        "q": "Preventive safety measures?",
+        "a": "The use of cameras and cell phones are not permitted during our adventure activities."
+      },
+      {
+        "q": "Wich days does the park close?",
+        "a": "The park only stops its operations and remains closed on January 1 and December 25."
+      },
+      {
+        "q": "Does the park close when it rains?",
+        "a": "Our park remains open in regular weather conditions like torrential rain. It may stop in thunderstorms and hurricanes."
+      },
+      {
+        "q": "Is transportation included?",
+        "a": "Yes, all our activities and tours include roundtrip transportation."
+      },
+      {
+        "q": "Where will the transportation pick me up?",
+        "a": "Our units regularly pick up and return passengers to the hotel they are staying at. There may be exceptions."
+      },
+      {
+        "q": "What type of transportation will pick me up?",
+        "a": "Our units are unmistakable thanks to their labeling and jaguar skin colors."
+      },
+      {
+        "q": "How can I identify the transportation driver?",
+        "a": "You can contact customer service and request the name of the operator."
+      },
+      {
+        "q": "What happens if I miss transportation?",
+        "a": "You will have to get to the park by your own means."
+      },
+      {
+        "q": "What drinks are included inside the park?",
+        "a": "We have natural water dispensers, however, it does not include flavored or bottled drinks."
+      }
+    ]
   },
   "footer": {
-    "copyright": "© 2026 Grupo Extreme. All Rights Reserved.",
-    "support": "Affiliate Support"
+    "title": "Visit our official channels",
+    "copyright": "© Extreme Adventure Cancun"
   }
 }

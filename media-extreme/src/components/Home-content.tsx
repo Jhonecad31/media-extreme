@@ -52,11 +52,11 @@ export default function HomeContent({ lang, dict }: HomeContentProps) {
           <span className="inline-block py-1 px-3 rounded-full bg-[#ff9000] text-white text-sm font-bold tracking-widest uppercase mb-6 shadow-lg shadow-[#ff9000]/30 animate-pulse">
             Media Dashboard
           </span>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-6 tracking-tighter drop-shadow-2xl leading-tight">
+          <h3 className="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-6 tracking-tighter drop-shadow-2xl leading-tight">
             {dict.header.title.split(' ').map((word: string, i: number) => (
               <span key={i} className={i === 0 ? "text-[#8ebf25]" : ""}>{word} </span>
             ))}
-          </h1>
+          </h3>
           <p className="text-xl md:text-3xl font-light text-slate-200 max-w-3xl mx-auto opacity-90 drop-shadow-md">
             {dict.header.subtitle}
           </p>
@@ -74,7 +74,7 @@ export default function HomeContent({ lang, dict }: HomeContentProps) {
                   <div className="w-14 h-14 rounded-full bg-[#8ebf25]/10 flex items-center justify-center text-[#2c6748] text-2xl mb-4 group-hover:bg-[#8ebf25] transition-colors">
                     <i className={`bx ${item.icon}`}></i>
                   </div>
-                  <h3 className="text-lg font-bold text-[#1c2a4b] mb-2">{item.title}</h3>
+                  <h2 className="text-lg font-bold text-[#1c2a4b] mb-2">{item.title}</h2>
                   <p className="text-sm text-slate-500 leading-relaxed mb-3">{item.desc}</p>
                   {item.badge && (
                     <span className="mt-auto text-[10px] font-bold uppercase tracking-wider text-[#ff9000] bg-[#ff9000]/10 px-2 py-1 rounded-md">

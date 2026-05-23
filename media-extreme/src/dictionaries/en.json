@@ -1,7 +1,24 @@
 {
   "header": {
     "title": "Extreme Adventure Media Center",
-    "subtitle": "Download all our resources"
+    "subtitle": "Download all our resources",
+    "links": {
+      "home": "Home",
+      "agencies": "Agencies",
+      "gallery": "Gallery",
+      "videos": "Videos",
+      "pressKit": "Press Kit"
+    }
+  },
+  "home": {
+    "title": "Corporate Media Center",
+    "subtitle": "Authorized material for agencies and sales advisors.",
+    "searchPlaceholder": "Search experience or product...",
+    "saleKit": "Sales Kit",
+    "btnFactSheet": "Fact Sheet",
+    "btnPhotos": "Photos",
+    "btnVideo": "Video",
+    "noResults": "No experiences found with that name."
   },
   "experiences": {
     "title": "Our Experiences",
@@ -39,49 +56,49 @@
     "items": [
       {
         "title": "Extreme ATV Adventure",
-        "img": "img/atv-adventure.jpg",
+        "img": "img/atv_adventure.png",
         "pdf": "../factsheet/ExtremeATVAdventureFactSheet-ing.pdf",
         "photos": "https://www.dropbox.com/sh/27725dl4ajhvred/AAAVNELjySKy1pItUvo6JLsfa?dl=0",
         "video": "../videos/extreme-atv-adventure.mp4"
       },
       {
         "title": "Extreme Horses Adventure",
-        "img": "img/extreme-horses.jpg",
+        "img": "img/extreme-horses.png",
         "pdf": "../factsheet/ExtremeHorseAdventureFactSheet-ing.pdf",
         "photos": "https://www.dropbox.com/sh/lw3xhat2uti56mv/AABqWVSBr192X2kkTx3ldU3ka?dl=0",
         "video": "../videos/extreme-horse-adventuring.mp4"
       },
       {
         "title": "Cenote Adventuring",
-        "img": "img/cenotes-adventuring.jpg",
+        "img": "img/cenotes-adventuring.png",
         "pdf": "../factsheet/CenoteAdventuringFactsheet-ing.pdf",
         "photos": "https://www.dropbox.com/scl/fo/d41ep6xm0n8qa5oxaucob/h?dl=0&rlkey=vha7rbftwga9rllhynj3lyj8k",
         "video": "../videos/cenote-adventuring.mp4"
       },
       {
         "title": "City & Taco Tour",
-        "img": "img/city-and-taco-tour.jpg",
+        "img": "img/city-and-taco-tour.png",
         "pdf": "../factsheet/city-and-taco-tour-ing.pdf",
         "photos": "https://www.dropbox.com/scl/fo/8t40kj7o1lvxcvyduddxh/h?dl=0&rlkey=blyvqpq8hhma6wkabl9y2yqzw",
         "video": "../videos/tactotour-puerto-morelos-horizontal.mp4"
       },
       {
         "title": "Snorkeling Adventure",
-        "img": "img/estreme-snorkel.jpg",
+        "img": "img/estreme-snorkel.png",
         "pdf": "../factsheet/ExtremeSnorkelFactSheet-ing.pdf",
         "photos": "https://www.dropbox.com/sh/6xi7gj0m0c830ex/AAC5glGukiWf7oj7Tuw3Jc3Xa?dl=0",
         "video": "../videos/extreme-snorkel-adventure.mp4"
       },
       {
         "title": "Private Snorkeling Experience",
-        "img": "img/private-snorkeling-experience.jpg",
+        "img": "img/private-snorkeling-experience.png",
         "pdf": "../factsheet/private-snorkeling-ing.pdf",
         "photos": "https://www.dropbox.com/scl/fo/vz3bwy6duu8240w5sen4s/AOu_AesIehX-jD1MGQ1fNe4?rlkey=x2elyiafgec65rmckb6r5pnyx&st=3fv5ow0b&dl=0",
         "video": "../videos/private-snorkeling-experience-video.mp4"
       },
       {
         "title": "Super Combo (Combo 1)",
-        "img": "img/super-combo.jpg",
+        "img": "img/super-combo.png",
         "pdf": "../factsheet/SuperComboFactSheet-ing.pdf",
         "photos": "https://www.dropbox.com/sh/xueflqyywn3uagf/AADZLTLh5nMedkMUXd0Mfihya?dl=0",
         "video": "../videos/super-combo.mp4"
@@ -157,8 +174,140 @@
       }
     ]
   },
+  "agencyDetails": {
+    "back": "Back to Agencies",
+    "download": "Download",
+    "details": "Details",
+    "copy": "Copy Code",
+    "copiedText": "Copied!",
+    "bestDay": {
+      "title": "Affiliate Portal: Best Day",
+      "badge": "Preferred Partner",
+      "greeting": "Hello Best Day team! Here are your customized sales resources for the 2026 season.",
+      "commissionLabel": "Preferred Commission",
+      "commissionValue": "15% Net Rate",
+      "codeLabel": "Promo Code",
+      "managerLabel": "Account Manager",
+      "managerValue": "Mariana Rojas",
+      "resourcesTitle": "Best Day Exclusive Resources",
+      "resourcesSubtitle": "Promotional and technical material customized for Best Day brand standards.",
+      "contactTitle": "Direct Support for Best Day",
+      "contactSubtitle": "Need custom materials, group rates, or immediate assistance?",
+      "formName": "Full Name",
+      "formEmail": "Email Address",
+      "formMessage": "How can we help you?",
+      "formSubmit": "Send Request",
+      "formSuccess": "Request sent successfully! We will get in touch with you soon.",
+      "policyTitle": "Booking Policies & Conditions",
+      "policyInfo": "Best Day reservations must be made at least 12 hours in advance. Free cancellations up to 24 hours prior to the tour. Confidential net rates apply according to the current agreement.",
+      "resource1": "Best Day Co-Branded Flyer",
+      "resource2": "Digital Banners for BestDay.com",
+      "resource3": "ATV Promo Video (Social Media Edit)"
+    },
+    "hotelBeds": {
+      "title": "Affiliate Portal: Hotel Beds",
+      "badge": "API Integration Partner",
+      "greeting": "Hello Hotel Beds team! Access XML integration guides, dynamic rate mapping, and technical support material.",
+      "commissionLabel": "Rate Scheme",
+      "commissionValue": "Dynamic Net Rates",
+      "codeLabel": "Integration ID",
+      "managerLabel": "Account Manager",
+      "managerValue": "David Sterling",
+      "resourcesTitle": "Technical & Integration Resources",
+      "resourcesSubtitle": "API documentation, product ID mappings, and graphic materials for global distribution.",
+      "contactTitle": "API & Booking Technical Support",
+      "contactSubtitle": "Need support with product mapping, API errors, or dynamic agreements?",
+      "formName": "Full Name",
+      "formEmail": "Company Email",
+      "formMessage": "Query description",
+      "formSubmit": "Send Query",
+      "formSuccess": "Query sent successfully! The technical support team will contact you.",
+      "policyTitle": "Integration & Booking Policies",
+      "policyInfo": "All API integrations must comply with real-time confirmation protocols. Cancellations are governed by the dynamic agreements set within the API. In case of discrepancy, contact your account manager.",
+      "resource1": "XML Integration Manual v4.2",
+      "resource2": "Product Code Mapping Sheet",
+      "resource3": "Co-Branded Promotional Banners"
+    },
+    "jopaNauticos": {
+      "title": "Affiliate Portal: Jopa Nauticos",
+      "badge": "Water Activities Partner",
+      "greeting": "Hello Jopa Nauticos team! Access private charter fact sheets, special snorkeling rates, and ocean promotional materials.",
+      "commissionLabel": "Agreed Commission",
+      "commissionValue": "18% Commission",
+      "codeLabel": "Agency Code",
+      "managerLabel": "Direct Contact",
+      "managerValue": "Alejandro Jopa",
+      "resourcesTitle": "Water & Adventure Resources",
+      "resourcesSubtitle": "Snorkeling tour sheets, private yacht brochures, and high-resolution photo galleries.",
+      "contactTitle": "Operations & Booking Support",
+      "contactSubtitle": "Need a quote for a private group, weather verification, or coordination of a special tour?",
+      "formName": "Full Name",
+      "formEmail": "Email Address",
+      "formMessage": "Request details",
+      "formSubmit": "Send Message",
+      "formSuccess": "Message sent successfully! We will get in touch immediately.",
+      "policyTitle": "Weather & Cancellation Policies",
+      "policyInfo": "All water activities are subject to the weather conditions of Puerto Morelos port. If the port is closed by the Port Captaincy, tours will be rescheduled at no cost or refunded at 100%.",
+      "resource1": "Premium Yachts & Snorkel Flyer",
+      "resource2": "Fact Sheet: Private Snorkeling Experience",
+      "resource3": "Snorkeling Video in Puerto Morelos"
+    },
+    "tropicalIncentives": {
+      "title": "DMC Portal: Tropical Incentives",
+      "badge": "Groups & Conventions Partner",
+      "greeting": "Hello Tropical Incentives team! Access technical sheets for groups, team building catalogs, and incentive resources.",
+      "commissionLabel": "Corporate Rates",
+      "commissionValue": "Net MICE Rates",
+      "codeLabel": "Group ID",
+      "managerLabel": "Account Executive",
+      "managerValue": "Sandra Fuentes",
+      "resourcesTitle": "MICE & Corporate Resources",
+      "resourcesSubtitle": "Group fact sheets, private transportation logistics, and co-branded presentations.",
+      "contactTitle": "Group & Incentive Support",
+      "contactSubtitle": "Planning a corporate event or a group of over 20 passengers? Request a custom quote.",
+      "formName": "Full Name",
+      "formEmail": "Corporate Email",
+      "formMessage": "Event details (Passengers, Dates, Activities)",
+      "formSubmit": "Request Quote",
+      "formSuccess": "Request received! Our groups department will reply in less than 24 hours.",
+      "policyTitle": "Group Booking & Block Policies",
+      "policyInfo": "Groups require a 30% deposit to guarantee transport and guide blocks. Group cancellations allowed up to 15 days prior without penalty. Rates are dynamic based on the number of participants.",
+      "resource1": "Groups & Conventions Manual (MICE)",
+      "resource2": "Team Building Activities Catalog",
+      "resource3": "Cenotes Video (Corporate / Relax)"
+    },
+    "wildPass": {
+      "title": "Affiliate Portal: Wild Pass",
+      "badge": "Adventure & Promo Partner",
+      "greeting": "Hello Wild Pass team! Access co-branded adventure flyers, promoter rates, and interactive marketing materials.",
+      "commissionLabel": "Promoter Scheme",
+      "commissionValue": "20% Commission",
+      "codeLabel": "Promoter Code",
+      "managerLabel": "Partnerships Coordinator",
+      "managerValue": "Carlos Ortiz",
+      "resourcesTitle": "Resources for Promoters & Agencies",
+      "resourcesSubtitle": "Youth adventure flyers, downloadable posters for sales points, and short video clips.",
+      "contactTitle": "Promoter Support & Activations",
+      "contactSubtitle": "Need materials for your hostel, to organize a brand activation, or physical promo items?",
+      "formName": "Full Name",
+      "formEmail": "Email Address",
+      "formMessage": "Details of the support request",
+      "formSubmit": "Request Support",
+      "formSuccess": "Request sent! We will get in touch with you shortly to coordinate.",
+      "policyTitle": "Commission & Reporting Policies",
+      "policyInfo": "Wild Pass commissions are calculated monthly and settled within the first 5 business days. It is mandatory to register the code WP-WILD-2026 on each reservation to guarantee commission attribution.",
+      "resource1": "Extreme Adventure Flyer (Co-Branded)",
+      "resource2": "Promotional Poster for Hostels",
+      "resource3": "ATV Adventure Video (Vertical/TikTok Edition)"
+    }
+  },
   "footer": {
     "title": "Visit our official channels",
-    "copyright": "© Extreme Adventure Cancun"
+    "copyright": "© Extreme Adventure Cancun",
+    "description": "Official distribution platform for visual resources and authorized fact sheets for affiliated agencies.",
+    "support": "Commercial Support",
+    "officialChannels": "Official Channels",
+    "terms": "Terms of Use",
+    "brandPolicies": "Brand Policies"
   }
 }

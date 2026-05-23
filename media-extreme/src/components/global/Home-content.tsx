@@ -2,8 +2,6 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import LanguageSelector from "@/src/components/global/LanguageSelector";
-import Footer from "@/src/components/global/Footer";
 
 interface HomeContentProps {
   lang: string;
@@ -20,39 +18,22 @@ export default function HomeContent({ lang, dict }: HomeContentProps) {
 
   return (
     <div className="bg-[#f8fafc] min-h-screen text-[#1c2a4b] font-sans selection:bg-[#8ebf25]/40 pb-12">
-      
-      {/* BARRA SUPERIOR FIJA Y COMPACTA */}
-      <header className="sticky top-0 w-full z-50 bg-[#002b11] py-3 px-4 shadow-md backdrop-blur-md">
-        <div className="mx-auto flex justify-between items-center max-w-5xl">
-          <Image 
-            src="/icon/logo-ext-adventuring.svg" 
-            alt="Extreme Adventuring" 
-            width={160} 
-            height={40} 
-            className="w-auto h-8" // 👈 Quitamos brightness-0 e invert
-            priority 
-          />
-          <div className="flex items-center bg-white/10 rounded-full px-3 py-1 border border-white/10 text-xs">
-            <LanguageSelector currentLang={lang} />
-          </div>
-        </div>
-      </header>
 
       {/* PANEL CENTRAL DE CONTROL (Buscador y Contexto) */}
       <main className="max-w-5xl mx-auto px-4 mt-6">
         <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 mb-6">
           <h1 className="text-2xl font-black text-[#1c2a4b] tracking-tight mb-1">
-            Media Center Corporativo
+            {dict?.home?.title || "Media Center Corporativo"}
           </h1>
           <p className="text-sm text-slate-500 mb-4">
-            Material autorizado para agencias y asesores de venta.
+            {dict?.home?.subtitle || "Material autorizado para agencias y asesores de venta."}
           </p>
           
           {/* Input de búsqueda rápida */}
           <div className="relative">
             <input
               type="text"
-              placeholder="🔍 Buscar experiencia o producto..."
+              placeholder={dict?.home?.searchPlaceholder || "Buscar experiencia o producto..."}
               className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#8ebf25] focus:bg-white transition-all"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
@@ -63,12 +44,24 @@ export default function HomeContent({ lang, dict }: HomeContentProps) {
         {/* REJILLA DE TARJETAS DE DESCARGA DIRECTA */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {filteredProducts.map((prod: any, idx: number) => (
-            <div key={idx} className="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden flex flex-col justify-between">
+            <div key={idx} className="group bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden flex flex-col justify-between hover:shadow-md transition-all duration-300">
               
+              {/* Imagen del Producto */}
+              <div className="relative h-44 w-full bg-slate-50 overflow-hidden">
+                <Image
+                  src={prod.img ? (prod.img.startsWith('/') ? prod.img : `/${prod.img}`) : '/img/atv_adventure.png'}
+                  alt={prod.title}
+                  fill
+                  sizes="(max-w-768px) 100vw, 33vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  priority={idx < 3}
+                />
+              </div>
+
               {/* Info del Producto */}
-              <div className="p-5">
+              <div className="p-5 flex-1">
                 <span className="text-[10px] font-bold uppercase tracking-wider text-[#2c6748] bg-[#2c6748]/10 px-2 py-0.5 rounded-md mb-2 inline-block">
-                  Kit de Venta
+                  {dict?.home?.saleKit || "Kit de Venta"}
                 </span>
                 <h3 className="font-bold text-lg text-[#1c2a4b] leading-snug">
                   {prod.title}
@@ -83,7 +76,7 @@ export default function HomeContent({ lang, dict }: HomeContentProps) {
                   <div className="w-8 h-8 rounded-lg bg-[#ea3323]/10 flex items-center justify-center text-lg">
                     <i className='bx bxs-file-pdf'></i>
                   </div>
-                  <span>Ficha</span>
+                  <span>{dict?.home?.btnFactSheet || "Ficha"}</span>
                 </a>
 
                 {/* Fotos */}
@@ -91,7 +84,7 @@ export default function HomeContent({ lang, dict }: HomeContentProps) {
                   <div className="w-8 h-8 rounded-lg bg-[#006daf]/10 flex items-center justify-center text-lg">
                     <i className='bx bxl-dropbox'></i>
                   </div>
-                  <span>Fotos</span>
+                  <span>{dict?.home?.btnPhotos || "Fotos"}</span>
                 </a>
 
                 {/* Video */}
@@ -99,7 +92,7 @@ export default function HomeContent({ lang, dict }: HomeContentProps) {
                   <div className="w-8 h-8 rounded-lg bg-[#2c6748]/10 flex items-center justify-center text-lg">
                     <i className='bx bx-video'></i>
                   </div>
-                  <span>Video</span>
+                  <span>{dict?.home?.btnVideo || "Video"}</span>
                 </a>
 
               </div>
@@ -110,11 +103,10 @@ export default function HomeContent({ lang, dict }: HomeContentProps) {
         {/* Estado vacío por si no encuentran el tour */}
         {filteredProducts.length === 0 && (
           <div className="text-center py-12 text-slate-400 text-sm bg-white rounded-2xl border border-dashed border-slate-200">
-            No se encontraron experiencias con ese nombre.
+            {dict?.home?.noResults || "No se encontraron experiencias con ese nombre."}
           </div>
         )}
       </main>
-      <div> <Footer dict ={dict} />  </div>
     </div>
   );
 }

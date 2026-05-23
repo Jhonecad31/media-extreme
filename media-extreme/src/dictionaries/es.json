@@ -1,164 +1,313 @@
 {
   "header": {
     "title": "Extreme Adventure Media Center",
-    "subtitle": "Download all our resources"
+    "subtitle": "Descarga todos nuestros recursos",
+    "links": {
+      "home": "Inicio",
+      "agencies": "Agencias",
+      "gallery": "Galería",
+      "videos": "Videos",
+      "pressKit": "Kit de Prensa"
+    }
+  },
+  "home": {
+    "title": "Media Center Corporativo",
+    "subtitle": "Material autorizado para agencias y asesores de venta.",
+    "searchPlaceholder": "Buscar experiencia o producto...",
+    "saleKit": "Kit de Venta",
+    "btnFactSheet": "Ficha",
+    "btnPhotos": "Fotos",
+    "btnVideo": "Video",
+    "noResults": "No se encontraron experiencias con ese nombre."
   },
   "experiences": {
-    "title": "Our Experiences",
+    "title": "Nuestras Experiencias",
     "items": [
       {
         "icon": "bxs-bus",
-        "title": "Transportation",
-        "desc": "All our activities include roundtrip transportation.",
-        "badge": "Verify for special locations."
+        "title": "Transportación",
+        "desc": "Todas nuestras actividades include transporte de ida y vuelta.",
+        "badge": "Verificar ubicaciones especiales."
       },
       {
         "icon": "bx-calendar-check",
-        "title": "Availability",
-        "desc": "Our park activities are available the 365 days of the year."
+        "title": "Disponibilidad",
+        "desc": "Las actividades en nuestro parque están disponibles los 365 días del año."
       },
       {
         "icon": "bx-time-five",
-        "title": "Schedule",
-        "desc": "All our park tours have 2 schedules. In the morning and in the afternoon.",
-        "badge": "Except Super Combo & Puerto Morelos Experience"
+        "title": "Horarios",
+        "desc": "Todos nuestros tours en el parque tienen 2 horarios. En la mañana y en la tarde.",
+        "badge": "Excepto Super Combo y Experiencia en Puerto Morelos"
       },
       {
         "icon": "bx-group",
-        "title": "Family Friendly",
-        "desc": "All activities can be done by +4 age children.",
-        "badge": "Except Booze Cruise"
+        "title": "Apto para Familias",
+        "desc": "Todas las actividades pueden ser realizadas por niños mayores de 4 años.",
+        "badge": "Excepto Booze Cruise"
       }
     ]
   },
   "products": {
-    "title": "Products",
-    "btn_pdf": "Download Fact Sheet",
-    "btn_photos": "Photo Gallery",
-    "btn_videos": "Official Video",
+    "title": "Productos",
+    "btn_pdf": "Descargar Ficha Técnica",
+    "btn_photos": "Galería de Fotos",
+    "btn_videos": "Video Oficial",
     "items": [
       {
         "title": "Extreme ATV Adventure",
-        "img": "img/atv-adventure.jpg",
-        "pdf": "../factsheet/ExtremeATVAdventureFactSheet-ing.pdf",
+        "img": "img/atv_adventure.png",
+        "pdf": "../factsheet/ExtremeATVAdventureFactSheet-esp.pdf",
         "photos": "https://www.dropbox.com/sh/27725dl4ajhvred/AAAVNELjySKy1pItUvo6JLsfa?dl=0",
         "video": "../videos/extreme-atv-adventure.mp4"
       },
       {
         "title": "Extreme Horses Adventure",
-        "img": "img/extreme-horses.jpg",
-        "pdf": "../factsheet/ExtremeHorseAdventureFactSheet-ing.pdf",
+        "img": "img/extreme-horses.png",
+        "pdf": "../factsheet/ExtremeHorseAdventureFactSheet-esp.pdf",
         "photos": "https://www.dropbox.com/sh/lw3xhat2uti56mv/AABqWVSBr192X2kkTx3ldU3ka?dl=0",
         "video": "../videos/extreme-horse-adventuring.mp4"
       },
       {
         "title": "Cenote Adventuring",
-        "img": "img/cenotes-adventuring.jpg",
-        "pdf": "../factsheet/CenoteAdventuringFactsheet-ing.pdf",
+        "img": "img/cenotes-adventuring.png",
+        "pdf": "../factsheet/CenoteAdventuringFactsheet-esp.pdf",
         "photos": "https://www.dropbox.com/scl/fo/d41ep6xm0n8qa5oxaucob/h?dl=0&rlkey=vha7rbftwga9rllhynj3lyj8k",
         "video": "../videos/cenote-adventuring.mp4"
       },
       {
         "title": "City & Taco Tour",
-        "img": "img/city-and-taco-tour.jpg",
-        "pdf": "../factsheet/city-and-taco-tour-ing.pdf",
+        "img": "img/city-and-taco-tour.png",
+        "pdf": "../factsheet/city-and-taco-tour-esp.pdf",
         "photos": "https://www.dropbox.com/scl/fo/8t40kj7o1lvxcvyduddxh/h?dl=0&rlkey=blyvqpq8hhma6wkabl9y2yqzw",
         "video": "../videos/tactotour-puerto-morelos-horizontal.mp4"
       },
       {
         "title": "Snorkeling Adventure",
-        "img": "img/estreme-snorkel.jpg",
-        "pdf": "../factsheet/ExtremeSnorkelFactSheet-ing.pdf",
+        "img": "img/estreme-snorkel.png",
+        "pdf": "../factsheet/ExtremeSnorkelFactSheet-esp.pdf",
         "photos": "https://www.dropbox.com/sh/6xi7gj0m0c830ex/AAC5glGukiWf7oj7Tuw3Jc3Xa?dl=0",
         "video": "../videos/extreme-snorkel-adventure.mp4"
       },
       {
-        "title": "Private Snorkeling Experience",
-        "img": "img/private-snorkeling-experience.jpg",
-        "pdf": "../factsheet/private-snorkeling-ing.pdf",
+        "title": "Experiencia Privada de Snorkel",
+        "img": "img/private-snorkeling-experience.png",
+        "pdf": "../factsheet/private-snorkeling-esp.pdf",
         "photos": "https://www.dropbox.com/scl/fo/vz3bwy6duu8240w5sen4s/AOu_AesIehX-jD1MGQ1fNe4?rlkey=x2elyiafgec65rmckb6r5pnyx&st=3fv5ow0b&dl=0",
         "video": "../videos/private-snorkeling-experience-video.mp4"
       },
       {
         "title": "Super Combo (Combo 1)",
-        "img": "img/super-combo.jpg",
-        "pdf": "../factsheet/SuperComboFactSheet-ing.pdf",
+        "img": "img/super-combo.png",
+        "pdf": "../factsheet/SuperComboFactSheet-esp.pdf",
         "photos": "https://www.dropbox.com/sh/xueflqyywn3uagf/AADZLTLh5nMedkMUXd0Mfihya?dl=0",
         "video": "../videos/super-combo.mp4"
       }
     ]
   },
   "faq": {
-    "title": "Frequently Asked Questions",
+    "title": "Preguntas Frecuentes",
     "items": [
       {
-        "q": "What type of footwear do I need for ATVs?",
-        "a": "The activities in the park are very intense, so it is best to bring comfortable clothes and shoes, as well as a swimsuit."
+        "q": "¿Qué tipo de calzado necesito para los ATVs?",
+        "a": "Las actividades en el parque son muy intensas, por lo que es mejor traer ropa y zapatos cómodos, así como traje de baño."
       },
       {
-        "q": "Should I bring a towel?",
-        "a": "Yes, each passenger must bring their towel and swimsuit, as well as their personal hygiene items."
+        "q": "¿Debo traer una toalla?",
+        "a": "Sí, cada pasajero debe traer su toalla y traje de baño, así como sus artículos de higiene personal."
       },
       {
-        "q": "What is the minimum age to carry out the activities in the park?",
-        "a": "All the activities in the park can be carried out by children from 4 years old."
+        "q": "¿Cuál es la edad mínima para realizar las actividades en el parque?",
+        "a": "Todas las actividades en el parque pueden ser realizadas por niños a partir de los 4 años."
       },
       {
-        "q": "What is the minimum age to drive the ATV?",
-        "a": "The minimum age is 16 years accompanied by an adult. To drive alone, it is necessary to be 18 years of age."
+        "q": "¿Cuál es la edad mínima para conducir el ATV?",
+        "a": "La edad mínima es de 16 años acompañado por un adulto. Para conducir solo, es necesario tener 18 años."
       },
       {
-        "q": "What is the maximum weight for horseback riding?",
-        "a": "It is necessary that the weight of the passenger does not reach 110 kilos or 242.5 pounds."
+        "q": "¿Cuál es el peso máximo para montar a caballo?",
+        "a": "Es necesario que el peso del pasajero no alcance los 110 kilos o 242.5 libras."
       },
       {
-        "q": "What is the maximum weight to use the zip lines?",
-        "a": "It is necessary that the passenger does not weigh 130 kilos or 286 pounds."
+        "q": "¿Cuál es el peso máximo para usar las tirolesas?",
+        "a": "Es necesario que el pasajero no pese 130 kilos o 286 libras."
       },
       {
-        "q": "Who can not carry out the activities of the park?",
-        "a": "Pregnant women, people with recent surgeries, muscle injuries, or physical disabilities that prevent carrying out the activities."
+        "q": "¿Quién no puede realizar las actividades del parque?",
+        "a": "Mujeres embarazadas, personas con cirugías recientes, lesiones musculares o discapacidades físicas que impidan realizar las actividades."
       },
       {
-        "q": "Preventive safety measures?",
-        "a": "The use of cameras and cell phones are not permitted during our adventure activities."
+        "q": "¿Medidas de seguridad preventivas?",
+        "a": "No se permite el uso de cámaras ni teléfonos celulares durante nuestras actividades de aventura."
       },
       {
-        "q": "Wich days does the park close?",
-        "a": "The park only stops its operations and remains closed on January 1 and December 25."
+        "q": "¿Qué días cierra el parque?",
+        "a": "El parque solo detiene sus operaciones y permanece cerrado el 1 de enero y el 25 de diciembre."
       },
       {
-        "q": "Does the park close when it rains?",
-        "a": "Our park remains open in regular weather conditions like torrential rain. It may stop in thunderstorms and hurricanes."
+        "q": "¿El parque cierra cuando llueve?",
+        "a": "Nuestro parque permanece abierto en condiciones climáticas regulares como lluvias torrenciales. Puede detenerse en caso de tormentas eléctricas y huracanes."
       },
       {
-        "q": "Is transportation included?",
-        "a": "Yes, all our activities and tours include roundtrip transportation."
+        "q": "¿Está incluida la transportación?",
+        "a": "Sí, todas nuestras actividades y tours incluyen transporte de ida y vuelta."
       },
       {
-        "q": "Where will the transportation pick me up?",
-        "a": "Our units regularly pick up and return passengers to the hotel they are staying at. There may be exceptions."
+        "q": "¿Dónde me recogerá la transportación?",
+        "a": "Nuestras unidades regularmente recogen y regresan a los pasajeros al hotel en el que se hospedan. Puede haber excepciones."
       },
       {
-        "q": "What type of transportation will pick me up?",
-        "a": "Our units are unmistakable thanks to their labeling and jaguar skin colors."
+        "q": "¿Qué tipo de transporte me recogerá?",
+        "a": "Nuestras unidades son inconfundibles gracias a su rotulación y colores de piel de jaguar."
       },
       {
-        "q": "How can I identify the transportation driver?",
-        "a": "You can contact customer service and request the name of the operator."
+        "q": "¿Cómo puedo identificar al conductor del transporte?",
+        "a": "Puedes contactar a servicio al cliente y solicitar el nombre del operador."
       },
       {
-        "q": "What happens if I miss transportation?",
-        "a": "You will have to get to the park by your own means."
+        "q": "¿Qué pasa si pierdo el transporte?",
+        "a": "Tendrás que llegar al parque por tus propios medios."
       },
       {
-        "q": "What drinks are included inside the park?",
-        "a": "We have natural water dispensers, however, it does not include flavored or bottled drinks."
+        "q": "¿Qué bebidas están incluidas dentro del parque?",
+        "a": "Contamos con dispensadores de agua natural, sin embargo, no incluye bebidas saborizadas ni embotelladas."
       }
     ]
   },
+  "agencyDetails": {
+    "back": "Volver a Agencias",
+    "download": "Descargar",
+    "details": "Detalles",
+    "copy": "Copiar Código",
+    "copiedText": "¡Copiado!",
+    "bestDay": {
+      "title": "Portal de Afiliado: Best Day",
+      "badge": "Socio Preferencial",
+      "greeting": "¡Hola equipo de Best Day! Aquí tienen sus recursos comerciales personalizados para la temporada 2026.",
+      "commissionLabel": "Comisión Preferencial",
+      "commissionValue": "15% Net Rate",
+      "codeLabel": "Código de Venta",
+      "managerLabel": "Gerente de Cuenta",
+      "managerValue": "Mariana Rojas",
+      "resourcesTitle": "Recursos Exclusivos Best Day",
+      "resourcesSubtitle": "Material promocional y técnico personalizado con lineamientos de Best Day.",
+      "contactTitle": "Soporte Directo para Best Day",
+      "contactSubtitle": "¿Necesitas material personalizado, tarifas grupales o asistencia inmediata?",
+      "formName": "Nombre Completo",
+      "formEmail": "Correo Electrónico",
+      "formMessage": "¿En qué te podemos ayudar?",
+      "formSubmit": "Enviar Solicitud",
+      "formSuccess": "¡Solicitud enviada con éxito! Nos pondremos en contacto contigo pronto.",
+      "policyTitle": "Políticas y Condiciones de Reserva",
+      "policyInfo": "Las reservas de Best Day deben realizarse con un mínimo de 12 horas de anticipación. Cancelaciones sin cargo hasta 24 horas antes del tour. Aplican tarifas netas confidenciales según convenio vigente.",
+      "resource1": "Folleto Co-Brandeado Best Day",
+      "resource2": "Banners Digitales para BestDay.com",
+      "resource3": "Video Promocional de ATV (Edición Redes)"
+    },
+    "hotelBeds": {
+      "title": "Portal de Afiliado: Hotel Beds",
+      "badge": "Socio de Integración API",
+      "greeting": "¡Hola equipo de Hotel Beds! Accede a las guías de integración XML, mapeo de tarifas dinámicas y material de soporte.",
+      "commissionLabel": "Esquema de Tarifas",
+      "commissionValue": "Dynamic Net Rates",
+      "codeLabel": "ID de Integración",
+      "managerLabel": "Gerente de Cuenta",
+      "managerValue": "David Sterling",
+      "resourcesTitle": "Recursos Técnicos y de Integración",
+      "resourcesSubtitle": "Documentación de API, mapeo de IDs de productos y material gráfico para distribución global.",
+      "contactTitle": "Soporte Técnico API & Reservas",
+      "contactSubtitle": "¿Necesitas soporte con el mapeo de productos, incidencias de API o contratos dinámicos?",
+      "formName": "Nombre Completo",
+      "formEmail": "Correo de la Empresa",
+      "formMessage": "Descripción de la consulta",
+      "formSubmit": "Enviar Consulta",
+      "formSuccess": "¡Consulta enviada con éxito! El equipo de soporte técnico se pondrá en contacto.",
+      "policyTitle": "Políticas de Integración y Bloqueo",
+      "policyInfo": "Todas las integraciones API deben cumplir con el protocolo de confirmación en tiempo real. Las cancelaciones se rigen bajo los convenios dinámicos estipulados en la API. En caso de discrepancia, consultar con el manager asignado.",
+      "resource1": "Manual de Integración XML v4.2",
+      "resource2": "Excel de Mapeo de Códigos de Producto",
+      "resource3": "Banners Promocionales Co-Brandeados"
+    },
+    "jopaNauticos": {
+      "title": "Portal de Afiliado: Jopa Nauticos",
+      "badge": "Socio de Actividades Acuáticas",
+      "greeting": "¡Hola equipo de Jopa Nauticos! Accede a las fichas técnicas de charters privados, tarifas especiales de snorkel y material promocional de mar.",
+      "commissionLabel": "Comisión Acordada",
+      "commissionValue": "18% Comisión",
+      "codeLabel": "Código de Agencia",
+      "managerLabel": "Contacto Directo",
+      "managerValue": "Alejandro Jopa",
+      "resourcesTitle": "Recursos Acuáticos y de Aventura",
+      "resourcesSubtitle": "Fichas de tours de snorkel, folletos de yates privados y galerías de fotos de alta resolución.",
+      "contactTitle": "Soporte de Operaciones y Reservas",
+      "contactSubtitle": "¿Necesitas cotizar un grupo privado, verificar clima o coordinar una salida especial?",
+      "formName": "Nombre Completo",
+      "formEmail": "Correo Electrónico",
+      "formMessage": "Detalles de la solicitud",
+      "formSubmit": "Enviar Mensaje",
+      "formSuccess": "¡Mensaje enviado con éxito! Nos comunicaremos de inmediato.",
+      "policyTitle": "Políticas de Salidas e Inclemencias",
+      "policyInfo": "Todas las actividades acuáticas están sujetas a las condiciones del puerto de Puerto Morelos. En caso de cierre de puerto por la Capitanía de Puerto, se reprogramará el tour sin costo o se procederá al reembolso al 100%.",
+      "resource1": "Folleto de Yates & Snorkel Premium",
+      "resource2": "Ficha Técnica: Experiencia Privada de Snorkel",
+      "resource3": "Video Snorkeling en Puerto Morelos"
+    },
+    "tropicalIncentives": {
+      "title": "Portal DMC: Tropical Incentives",
+      "badge": "Socio de Grupos y Convenciones",
+      "greeting": "¡Hola equipo de Tropical Incentives! Accede a las fichas técnicas para grupos, catálogos de team building y recursos de incentivos.",
+      "commissionLabel": "Tarifa Corporativa",
+      "commissionValue": "Net MICE Rates",
+      "codeLabel": "ID de Grupo",
+      "managerLabel": "Ejecutiva de Cuentas",
+      "managerValue": "Sandra Fuentes",
+      "resourcesTitle": "Recursos MICE y Corporativos",
+      "resourcesSubtitle": "Fichas técnicas para grupos, logística de transporte privado y presentaciones co-brandeadas.",
+      "contactTitle": "Soporte para Grupos e Incentivos",
+      "contactSubtitle": "¿Planeando un evento corporativo o un grupo de más de 20 personas? Solicita cotización especial.",
+      "formName": "Nombre Completo",
+      "formEmail": "Correo Corporativo",
+      "formMessage": "Detalles del evento (Pasajeros, Fechas, Actividades)",
+      "formSubmit": "Solicitar Cotización",
+      "formSuccess": "¡Solicitud recibida! Nuestro departamento de grupos responderá en menos de 24 horas.",
+      "policyTitle": "Políticas para Grupos y Bloqueos",
+      "policyInfo": "Los grupos requieren un depósito del 30% para garantizar bloqueos de transportación y guías. Cancelaciones de grupos permitidas hasta 15 días antes sin penalización. Tarifas dinámicas según el número de participantes.",
+      "resource1": "Manual de Grupos y Convenciones (MICE)",
+      "resource2": "Catálogo de Actividades Team Building",
+      "resource3": "Video Cenotes (Corporativo / Relax)"
+    },
+    "wildPass": {
+      "title": "Portal de Afiliado: Wild Pass",
+      "badge": "Socio de Aventura y Promoción",
+      "greeting": "¡Hola equipo de Wild Pass! Accede a los folletos co-brandeados de aventura, tarifas de promotores y recursos de marketing interactivo.",
+      "commissionLabel": "Esquema Promotor",
+      "commissionValue": "20% Comisión",
+      "codeLabel": "Código de Promotor",
+      "managerLabel": "Coordinador de Alianzas",
+      "managerValue": "Carlos Ortiz",
+      "resourcesTitle": "Recursos para Promotores y Agencias",
+      "resourcesSubtitle": "Folletos juveniles de aventura, posters descargables para puntos de venta y clips de video cortos.",
+      "contactTitle": "Soporte para Promotores y Activaciones",
+      "contactSubtitle": "¿Necesitas material para tu hostal, organizar una activación de marca o material promocional físico?",
+      "formName": "Nombre Completo",
+      "formEmail": "Correo Electrónico",
+      "formMessage": "Detalles de la solicitud de soporte",
+      "formSubmit": "Solicitar Soporte",
+      "formSuccess": "¡Solicitud enviada! Nos pondremos en contacto contigo en breve para coordinar.",
+      "policyTitle": "Políticas de Comisión y Reportes",
+      "policyInfo": "Las comisiones de Wild Pass se calculan mensualmente y se liquidan en los primeros 5 días hábiles. Es obligatorio registrar el código WP-WILD-2026 en cada reservación para asegurar la atribución de comisiones.",
+      "resource1": "Flyer Aventura Extrema (Co-Branded)",
+      "resource2": "Poster Promocional para Hostales",
+      "resource3": "Video ATV Adventure (Edición Vertical/TikTok)"
+    }
+  },
   "footer": {
-    "title": "Visit our official channels",
-    "copyright": "© Extreme Adventure Cancun"
+    "title": "Visita nuestros canales oficiales",
+    "copyright": "© Extreme Adventure Cancún",
+    "description": "Plataforma oficial de distribución de recursos visuales y fichas técnicas autorizadas para agencias afiliadas.",
+    "support": "Soporte Comercial",
+    "officialChannels": "Canales Oficiales",
+    "terms": "Términos de Uso",
+    "brandPolicies": "Políticas de Marca"
   }
 }

@@ -17,22 +17,21 @@ export default function Footer({ dict }: FooterProps) {
           {/* COLUMNA 1: IDENTIDAD */}
           <div className="flex flex-col gap-3">
             <Image
-              src="/icon/logo-ext-adventuring.svg"
+              src="/icon/logos/logo-ext-adventuring.svg"
               alt="Extreme Adventuring"
               width={150}
               height={38}
               className="w-auto h-7 opacity-90"
             />
             <p className="text-xs text-slate-400 font-light max-w-xs leading-relaxed">
-              Plataforma oficial de distribución de recursos visuales y fichas
-              técnicas autorizadas para agencias afiliadas.
+              {dict?.footer?.description || "Plataforma oficial de distribución de recursos visuales y fichas técnicas autorizadas para agencias afiliadas."}
             </p>
           </div>
 
           {/* COLUMNA 2: ACCESOS DE SOPORTE */}
           <div className="flex flex-col gap-2">
             <h4 className="text-xs font-bold tracking-widest uppercase text-[#8ebf25]">
-              Soporte Comercial
+              {dict?.footer?.support || "Soporte Comercial"}
             </h4>
             <ul className="text-xs text-slate-400 font-light flex flex-col gap-2">
               <li>
@@ -56,29 +55,50 @@ export default function Footer({ dict }: FooterProps) {
           {/* COLUMNA 3: CANALES INSTITUCIONALES */}
           <div className="flex flex-col gap-3 md:items-end">
             <h4 className="text-xs font-bold tracking-widest uppercase text-[#8ebf25] md:text-right w-full">
-              Canales Oficiales
+              {dict?.footer?.officialChannels || "Canales Oficiales"}
             </h4>
-            <div className="flex gap-2">
+            <div className="flex flex-wrap gap-2">
               <a
-                href="https://www.facebook.com/extremeadventurecancun"
+                href="https://www.facebook.com/extremeadventuringcancun/"
                 target="_blank"
                 rel="noopener noreferrer"
+                title={dict?.footer?.accessibility?.facebook || "Go to Facebook"}
                 className="w-8 h-8 rounded-lg bg-white/5 hover:bg-[#8ebf25] hover:text-[#001a0a] text-white flex items-center justify-center text-base transition-all duration-300"
               >
                 <i className="bx bxl-facebook"></i>
               </a>
               <a
-                href="https://www.instagram.com/extremeadventurecancun"
+                href="https://www.instagram.com/extremeadventuringcancun/"
                 target="_blank"
                 rel="noopener noreferrer"
+                title={dict?.footer?.accessibility?.instagram || "Go to Instagram"}
                 className="w-8 h-8 rounded-lg bg-white/5 hover:bg-[#8ebf25] hover:text-[#001a0a] text-white flex items-center justify-center text-base transition-all duration-300"
               >
                 <i className="bx bxl-instagram"></i>
               </a>
               <a
-                href="https://www.youtube.com/channel/UCsGN9p32DuH9BoDiciT5RTQ/videos"
+                href="https://www.tiktok.com/@extremeadventuringcun"
                 target="_blank"
                 rel="noopener noreferrer"
+                title={dict?.footer?.accessibility?.tiktok || "Go to TikTok"}
+                className="w-8 h-8 rounded-lg bg-white/5 hover:bg-[#8ebf25] hover:text-[#001a0a] text-white flex items-center justify-center text-base transition-all duration-300"
+              >
+                <i className="bx bxl-tiktok"></i>
+              </a>
+              <a
+                href="https://www.tripadvisor.com.mx/Attraction_Review-g240327-d3506512-Reviews-Extreme_Adventuring_Cancun-Puerto_Morelos_Yucatan_Peninsula.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                title={dict?.footer?.accessibility?.tripadvisor || "Go to TripAdvisor"}
+                className="w-8 h-8 rounded-lg bg-white/5 hover:bg-[#8ebf25] hover:text-[#001a0a] text-white flex items-center justify-center text-base transition-all duration-300"
+              >
+                <i className="bx bxl-trip-advisor"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/@extremeadventuringcancun/videos"
+                target="_blank"
+                rel="noopener noreferrer"
+                title={dict?.footer?.accessibility?.youtube || "Go to YouTube"}
                 className="w-8 h-8 rounded-lg bg-white/5 hover:bg-[#8ebf25] hover:text-[#001a0a] text-white flex items-center justify-center text-base transition-all duration-300"
               >
                 <i className="bx bxl-youtube"></i>
@@ -89,14 +109,13 @@ export default function Footer({ dict }: FooterProps) {
 
         {/* BARRA DE CRÉDITOS INFRA */}
         <div className="pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] text-slate-500 font-medium tracking-wider uppercase">
-          <div>{dict.footer.copyright}</div>
           <div className="flex gap-4 text-slate-400 normal-case font-light">
             <a href="#" className="hover:underline">
-              Términos de Uso
+              {dict?.footer?.terms || "Términos de Uso"}
             </a>
             <span className="text-slate-700">•</span>
             <a href="#" className="hover:underline">
-              Políticas de Marca
+              {dict?.footer?.brandPolicies || "Políticas de Marca"}
             </a>
           </div>
         </div>

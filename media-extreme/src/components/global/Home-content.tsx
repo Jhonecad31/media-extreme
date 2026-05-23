@@ -2,8 +2,8 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import LanguageSelector from './LanguageSelector';
-import Footer from '@/src/components/Footer';
+import LanguageSelector from "@/src/components/global/LanguageSelector";
+import Footer from "@/src/components/global/Footer";
 
 interface HomeContentProps {
   lang: string;

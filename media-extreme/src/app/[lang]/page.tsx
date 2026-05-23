@@ -1,4 +1,4 @@
-import HomeContent from "@/src/components/Home-content";
+import HomeContent from "@/src/components/global/Home-content";
 import { getDictionary } from "../getDictionary";
 
 interface PageProps {

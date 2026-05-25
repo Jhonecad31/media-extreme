@@ -13,9 +13,6 @@ interface HeaderProps {
 export default function Header({ lang, dict }: HeaderProps) {
   const [isOpen, setIsOpen] = useState(false);
   const homeText = dict?.header?.links?.home || 'Home';
-  const galleryText = dict?.header?.links?.gallery || 'Gallery';
-  const videosText = dict?.header?.links?.videos || 'Videos';
-  const pressKitText = dict?.header?.links?.pressKit || 'Press Kit';
   const agenciesText = dict?.header?.links?.agencies || 'Agencies';
 
   return (
@@ -40,36 +37,6 @@ export default function Header({ lang, dict }: HeaderProps) {
 
         {/* NAVEGACIÓN ESCRITORIO (Centrada) */}
         <nav className="hidden md:flex items-center space-x-8">
-          <Link 
-            href={`/${lang}`} 
-            className="text-sm font-semibold text-neutral-300 hover:text-white transition-colors relative py-2 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#8ebf25] after:transition-all hover:after:w-full"
-          >
-            {homeText}
-          </Link>
-          <Link 
-            href={`/${lang}/agencies`} 
-            className="text-sm font-semibold text-neutral-300 hover:text-white transition-colors relative py-2 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#8ebf25] after:transition-all hover:after:w-full"
-          >
-            {agenciesText}
-          </Link>
-          <Link 
-            href={`/${lang}/gallery`} 
-            className="text-sm font-semibold text-neutral-300 hover:text-white transition-colors relative py-2 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#8ebf25] after:transition-all hover:after:w-full"
-          >
-            {galleryText}
-          </Link>
-          <Link 
-            href={`/${lang}/videos`} 
-            className="text-sm font-semibold text-neutral-300 hover:text-white transition-colors relative py-2 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#8ebf25] after:transition-all hover:after:w-full"
-          >
-            {videosText}
-          </Link>
-          <Link 
-            href={`/${lang}/press-kit`} 
-            className="text-sm font-semibold text-neutral-300 hover:text-white transition-colors relative py-2 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#8ebf25] after:transition-all hover:after:w-full"
-          >
-            {pressKitText}
-          </Link>
         </nav>
 
         {/* ACCIONES (Derecha) */}
@@ -94,44 +61,12 @@ export default function Header({ lang, dict }: HeaderProps) {
         }`}
       >
         <nav className="flex flex-col space-y-4 px-6 py-6">
-          <Link 
-            href={`/${lang}`} 
-            className="text-base font-semibold text-neutral-300 hover:text-white transition-colors flex items-center justify-between" 
-            onClick={() => setIsOpen(false)}
-          >
-            <span>{homeText}</span>
-            <i className="bx bx-chevron-right text-lg text-neutral-500"></i>
-          </Link>
-          <Link 
-            href={`/${lang}/agencies`} 
-            className="text-base font-semibold text-neutral-300 hover:text-white transition-colors flex items-center justify-between" 
-            onClick={() => setIsOpen(false)}
-          >
-            <span>{agenciesText}</span>
-            <i className="bx bx-chevron-right text-lg text-neutral-500"></i>
-          </Link>
-          <Link 
-            href={`/${lang}/gallery`} 
-            className="text-base font-semibold text-neutral-300 hover:text-white transition-colors flex items-center justify-between" 
-            onClick={() => setIsOpen(false)}
-          >
-            <span>{galleryText}</span>
-            <i className="bx bx-chevron-right text-lg text-neutral-500"></i>
-          </Link>
-          <Link 
-            href={`/${lang}/videos`} 
-            className="text-base font-semibold text-neutral-300 hover:text-white transition-colors flex items-center justify-between" 
-            onClick={() => setIsOpen(false)}
-          >
-            <span>{videosText}</span>
-            <i className="bx bx-chevron-right text-lg text-neutral-500"></i>
-          </Link>
+        
           <Link 
             href={`/${lang}/press-kit`} 
             className="text-base font-semibold text-neutral-300 hover:text-white transition-colors flex items-center justify-between" 
             onClick={() => setIsOpen(false)}
           >
-            <span>{pressKitText}</span>
             <i className="bx bx-chevron-right text-lg text-neutral-500"></i>
           </Link>
         </nav>

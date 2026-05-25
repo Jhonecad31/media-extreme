@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import { imageKitLoader } from '@/src/lib/imagekit';
 
 interface HomeContentProps {
   lang: string;
@@ -41,6 +42,45 @@ export default function HomeContent({ lang, dict }: HomeContentProps) {
           </div>
         </div>
 
+        {/* SECCIÓN NUESTRAS EXPERIENCIAS (Al principio de la vista) */}
+        {dict?.experiences && (
+          <div className="mb-12 border-b border-slate-200/60 pb-12">
+            <div className="text-center mb-10">
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {dict.experiences.items.map((exp: any, idx: number) => (
+                <div key={idx} className="group bg-white rounded-2xl border border-slate-100 shadow-sm p-6 flex flex-col items-center text-center hover:shadow-md hover:-translate-y-1 transition-all duration-300 relative overflow-hidden">
+                  {/* Decorative background glow on hover */}
+                  <div className="absolute -top-12 -right-12 w-24 h-24 bg-[#8ebf25]/5 rounded-full blur-xl group-hover:bg-[#8ebf25]/15 transition-all duration-500"></div>
+
+                  {/* Icon Container */}
+                  <div className="w-14 h-14 rounded-2xl bg-[#8ebf25]/10 flex items-center justify-center mb-5 text-[#8ebf25] group-hover:scale-110 group-hover:bg-[#8ebf25] group-hover:text-white transition-all duration-300 shadow-sm">
+                    <i className={`bx ${exp.icon} text-2xl`}></i>
+                  </div>
+
+                  {/* Title */}
+                  <h3 className="font-bold text-base text-[#1c2a4b] mb-2 leading-snug group-hover:text-[#2c6748] transition-colors">
+                    {exp.title}
+                  </h3>
+
+                  {/* Description */}
+                  <p className="text-xs text-slate-500 leading-relaxed mb-4 flex-1">
+                    {exp.desc}
+                  </p>
+
+                  {/* Badge */}
+                  {exp.badge && (
+                    <span className="text-[10px] font-bold text-[#ea3323] bg-[#ea3323]/8 border border-[#ea3323]/10 px-2.5 py-1 rounded-full mt-auto inline-block shadow-sm">
+                      {exp.badge}
+                    </span>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
         {/* REJILLA DE TARJETAS DE DESCARGA DIRECTA */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {filteredProducts.map((prod: any, idx: number) => (
@@ -49,7 +89,8 @@ export default function HomeContent({ lang, dict }: HomeContentProps) {
               {/* Imagen del Producto */}
               <div className="relative h-44 w-full bg-slate-50 overflow-hidden">
                 <Image
-                  src={prod.img ? (prod.img.startsWith('/') ? prod.img : `/${prod.img}`) : '/img/atv_adventure.png'}
+                  loader={imageKitLoader}
+                  src={prod.img || '/img/atv_adventure.png'}
                   alt={prod.title}
                   fill
                   sizes="(max-w-768px) 100vw, 33vw"

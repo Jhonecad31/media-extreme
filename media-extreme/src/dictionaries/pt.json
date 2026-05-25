@@ -1,14 +1,7 @@
 {
   "header": {
     "title": "Extreme Adventure Media Center",
-    "subtitle": "Baixe todos os nossos recursos",
-    "links": {
-      "home": "Início",
-      "agencies": "Agências",
-      "gallery": "Galeria",
-      "videos": "Vídeos",
-      "pressKit": "Kit de Imprensa"
-    }
+    "subtitle": "Baixe todos os nossos recursos"
   },
   "home": {
     "title": "Media Center Corporativo",
@@ -55,50 +48,57 @@
     "btn_videos": "Vídeo Oficial",
     "items": [
       {
+        "id": "extreme_atv_adventure",
         "title": "Extreme ATV Adventure",
-        "img": "img/atv_adventure.png",
+        "img": "/media-extreme/extreme-atv.webp",
         "pdf": "../factsheet/ExtremeATVAdventureFactSheet-ing.pdf",
-        "photos": "https://www.dropbox.com/sh/27725dl4ajhvred/AAAVNELjySKy1pItUvo6JLsfa?dl=0",
+        "photos": "/media-extreme/extreme-atv.webp",
         "video": "../videos/extreme-atv-adventure.mp4"
       },
       {
+        "id": "extreme_horses_adventure",
         "title": "Extreme Horses Adventure",
-        "img": "img/extreme-horses.png",
+        "img": "/media-extreme/extreme-horse.webp",
         "pdf": "../factsheet/ExtremeHorseAdventureFactSheet-ing.pdf",
-        "photos": "https://www.dropbox.com/sh/lw3xhat2uti56mv/AABqWVSBr192X2kkTx3ldU3ka?dl=0",
+        "photos": "/media-extreme/extreme-horse.webp",
         "video": "../videos/extreme-horse-adventuring.mp4"
       },
       {
+        "id": "cenote_adventuring",
         "title": "Cenote Adventuring",
-        "img": "img/cenotes-adventuring.png",
+        "img": "/media-extreme/extreme-cenote.webp",
         "pdf": "../factsheet/CenoteAdventuringFactsheet-ing.pdf",
-        "photos": "https://www.dropbox.com/scl/fo/d41ep6xm0n8qa5oxaucob/h?dl=0&rlkey=vha7rbftwga9rllhynj3lyj8k",
+        "photos": "/media-extreme/extreme-cenote.webp",
         "video": "../videos/cenote-adventuring.mp4"
       },
       {
+        "id": "city_taco_tour",
         "title": "City & Taco Tour",
-        "img": "img/city-and-taco-tour.png",
+        "img": "/media-extreme/city-and-taco-tour.webp",
         "pdf": "../factsheet/city-and-taco-tour-ing.pdf",
-        "photos": "https://www.dropbox.com/scl/fo/8t40kj7o1lvxcvyduddxh/h?dl=0&rlkey=blyvqpq8hhma6wkabl9y2yqzw",
+        "photos": "/media-extreme/city-and-taco-tour.webp",
         "video": "../videos/tactotour-puerto-morelos-horizontal.mp4"
       },
       {
+        "id": "snorkeling_adventure",
         "title": "Snorkeling Adventure",
-        "img": "img/estreme-snorkel.png",
+        "img": "/media-extreme/extreme-snorkeling.webp",
         "pdf": "../factsheet/ExtremeSnorkelFactSheet-ing.pdf",
-        "photos": "https://www.dropbox.com/sh/6xi7gj0m0c830ex/AAC5glGukiWf7oj7Tuw3Jc3Xa?dl=0",
+        "photos": "/media-extreme/extreme-snorkeling.webp",
         "video": "../videos/extreme-snorkel-adventure.mp4"
       },
       {
+        "id": "private_snorkeling",
         "title": "Experiência Privada de Snorkel",
-        "img": "img/private-snorkeling-experience.png",
+        "img": "/media-extreme/extreme-snorkeling-private.webp",
         "pdf": "../factsheet/private-snorkeling-ing.pdf",
         "photos": "https://www.dropbox.com/scl/fo/vz3bwy6duu8240w5sen4s/AOu_AesIehX-jD1MGQ1fNe4?rlkey=x2elyiafgec65rmckb6r5pnyx&st=3fv5ow0b&dl=0",
         "video": "../videos/private-snorkeling-experience-video.mp4"
       },
       {
+        "id": "super_combo",
         "title": "Super Combo (Combo 1)",
-        "img": "img/super-combo.png",
+        "img": "/media-extreme/extreme-super-combo.webp",
         "pdf": "../factsheet/SuperComboFactSheet-ing.pdf",
         "photos": "https://www.dropbox.com/sh/xueflqyywn3uagf/AADZLTLh5nMedkMUXd0Mfihya?dl=0",
         "video": "../videos/super-combo.mp4"

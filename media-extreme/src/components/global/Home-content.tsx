@@ -1,8 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
-import { imageKitLoader } from '@/src/lib/imagekit';
+import ProductGrid from './Product-grid';
 
 interface HomeContentProps {
   lang: string;
@@ -11,6 +10,7 @@ interface HomeContentProps {
 
 export default function HomeContent({ lang, dict }: HomeContentProps) {
   const [searchTerm, setSearchTerm] = useState('');
+  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
 
   // Filtrado rápido para que el vendedor encuentre el producto al instante en la calle
   const filteredProducts = dict.products.items.filter((prod: any) =>
@@ -82,69 +82,82 @@ export default function HomeContent({ lang, dict }: HomeContentProps) {
         )}
 
         {/* REJILLA DE TARJETAS DE DESCARGA DIRECTA */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {filteredProducts.map((prod: any, idx: number) => (
-            <div key={idx} className="group bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden flex flex-col justify-between hover:shadow-md transition-all duration-300">
-              
-              {/* Imagen del Producto */}
-              <div className="relative h-44 w-full bg-slate-50 overflow-hidden">
-                <Image
-                  loader={imageKitLoader}
-                  src={prod.img || '/img/atv_adventure.png'}
-                  alt={prod.title}
-                  fill
-                  sizes="(max-w-768px) 100vw, 33vw"
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  priority={idx < 3}
-                />
-              </div>
-
-              {/* Info del Producto */}
-              <div className="p-5 flex-1">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-[#2c6748] bg-[#2c6748]/10 px-2 py-0.5 rounded-md mb-2 inline-block">
-                  {dict?.home?.saleKit || "Kit de Venta"}
-                </span>
-                <h3 className="font-bold text-lg text-[#1c2a4b] leading-snug">
-                  {prod.title}
-                </h3>
-              </div>
-
-              {/* Botonera de descarga limpia (Elimina los hovers complejos por clics directos) */}
-              <div className="bg-slate-50 p-4 border-t border-slate-100 grid grid-cols-3 gap-2 text-center text-xs font-bold">
-                
-                {/* PDF */}
-                <a href={prod.pdf} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1.5 p-2 rounded-xl hover:bg-white hover:shadow-sm border border-transparent hover:border-slate-100 transition-all text-[#ea3323]">
-                  <div className="w-8 h-8 rounded-lg bg-[#ea3323]/10 flex items-center justify-center text-lg">
-                    <i className='bx bxs-file-pdf'></i>
-                  </div>
-                  <span>{dict?.home?.btnFactSheet || "Ficha"}</span>
-                </a>
-
-                {/* Fotos */}
-                <a href={prod.photos} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1.5 p-2 rounded-xl hover:bg-white hover:shadow-sm border border-transparent hover:border-slate-100 transition-all text-[#006daf]">
-                  <div className="w-8 h-8 rounded-lg bg-[#006daf]/10 flex items-center justify-center text-lg">
-                    <i className='bx bxl-dropbox'></i>
-                  </div>
-                  <span>{dict?.home?.btnPhotos || "Fotos"}</span>
-                </a>
-
-                {/* Video */}
-                <a href={prod.video} download className="flex flex-col items-center gap-1.5 p-2 rounded-xl hover:bg-white hover:shadow-sm border border-transparent hover:border-slate-100 transition-all text-[#2c6748]">
-                  <div className="w-8 h-8 rounded-lg bg-[#2c6748]/10 flex items-center justify-center text-lg">
-                    <i className='bx bx-video'></i>
-                  </div>
-                  <span>{dict?.home?.btnVideo || "Video"}</span>
-                </a>
-
-              </div>
-            </div>
-          ))}
-        </div>
+        <ProductGrid products={filteredProducts} dict={dict} />
 
         {/* Estado vacío por si no encuentran el tour */}
         {filteredProducts.length === 0 && (
           <div className="text-center py-12 text-slate-400 text-sm bg-white rounded-2xl border border-dashed border-slate-200">
             {dict?.home?.noResults || "No se encontraron experiencias con ese nombre."}
+          </div>
+        )}
+
+        {/* SECCIÓN PREGUNTAS FRECUENTES (FAQ Accordion) */}
+        {dict?.faq && (
+          <div className="mt-16 border-t border-slate-200/60 pt-12">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl font-black text-[#1c2a4b] tracking-tight mb-2">
+                {dict.faq.title || "Preguntas Frecuentes"}
+              </h2>
+              <div className="w-16 h-1 bg-[#8ebf25] mx-auto rounded-full"></div>
+            </div>
+
+            <div className="space-y-4 w-full">
+              {dict.faq.items.map((item: any, idx: number) => {
+                const isOpen = openFaqIndex === idx;
+                return (
+                  <div 
+                    key={idx} 
+                    className={`bg-white rounded-2xl border transition-all duration-300 overflow-hidden shadow-sm ${
+                      isOpen ? 'border-[#8ebf25] ring-1 ring-[#8ebf25]/30' : 'border-slate-100 hover:border-slate-200'
+                    }`}
+                  >
+                    {/* Header/Question Trigger */}
+                    <button
+                      onClick={() => setOpenFaqIndex(isOpen ? null : idx)}
+                      className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 font-bold text-slate-800 focus:outline-none hover:text-[#2c6748] transition-colors group"
+                    >
+                      <span className="text-sm md:text-base leading-snug flex-1">{item.q}</span>
+                      <span className={`w-8 h-8 rounded-lg bg-slate-50 flex items-center justify-center text-slate-400 transform transition-transform duration-300 ${
+                        isOpen ? 'rotate-180 bg-[#8ebf25]/10 text-[#8ebf25]' : 'group-hover:bg-slate-100 group-hover:text-slate-600'
+                      }`}>
+                        <i className="bx bx-chevron-down text-xl"></i>
+                      </span>
+                    </button>
+
+                    {/* Answer Area (Accordion body) */}
+                    <div 
+                      className={`transition-all duration-300 ease-in-out ${
+                        isOpen ? 'max-h-[600px] opacity-100 border-t border-slate-50' : 'max-h-0 opacity-0 pointer-events-none'
+                      }`}
+                    >
+                      <div className="px-6 py-5 text-sm text-slate-500 leading-relaxed bg-slate-50/50 flex flex-col gap-3.5">
+                        <div 
+                          className="[&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-1 [&_ul]:mt-2 [&_strong]:text-slate-800 [&_strong]:font-semibold [&_em]:italic"
+                          dangerouslySetInnerHTML={{ __html: item.a }}
+                        />
+                        {item.tags && item.tags.length > 0 && (
+                          <div className="flex flex-wrap gap-3 mt-2 pt-4 border-t border-slate-100">
+                            {item.tags.map((tag: any, tIdx: number) => (
+                              <span 
+                                key={tIdx} 
+                                className="inline-flex items-center gap-2.5 px-3 py-2 rounded-xl bg-white border border-slate-100 shadow-sm hover:border-[#8ebf25]/30 hover:shadow-md transition-all duration-300 group"
+                              >
+                                <span className="w-8 h-8 rounded-lg bg-[#8ebf25]/10 flex items-center justify-center text-[#8ebf25] group-hover:bg-[#8ebf25] group-hover:text-white transition-all duration-300">
+                                  <i className={`bx ${tag.icon} text-lg`}></i>
+                                </span>
+                                <span className="text-xs text-slate-700 font-bold tracking-tight">
+                                  {tag.label}
+                                </span>
+                              </span>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         )}
       </main>

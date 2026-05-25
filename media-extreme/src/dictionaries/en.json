@@ -46,6 +46,9 @@
     "btn_pdf": "Download Fact Sheet",
     "btn_photos": "Photo Gallery",
     "btn_videos": "Official Video",
+    "showLimitLabel": "Show:",
+    "limitUnit": "products",
+    "limitAll": "All",
     "items": [
       {
         "id": "extreme_atv_adventure",
@@ -72,12 +75,12 @@
         "video": "../videos/cenote-adventuring.mp4"
       },
       {
-        "id": "city_taco_tour",
-        "title": "City & Taco Tour",
-        "img": "/media-extreme/city-and-taco-tour.webp",
-        "pdf": "../factsheet/city-and-taco-tour-ing.pdf",
-        "photos": "/media-extreme/city-and-taco-tour.webp",
-        "video": "../videos/tactotour-puerto-morelos-horizontal.mp4"
+        "id": "beach_taco_tour",
+        "title": "Beach Taco Tour",
+        "img": "/media-extreme/beach-taco-tour.webp",
+        "pdf": "../factsheet/beach-taco-tour-ing.pdf",
+        "photos": "/media-extreme/beach-taco-tour.webp",
+        "video": "../videos/beach-taco-tour.mp4"
       },
       {
         "id": "snorkeling_adventure",
@@ -102,6 +105,22 @@
         "pdf": "../factsheet/SuperComboFactSheet-ing.pdf",
         "photos": "https://www.dropbox.com/sh/xueflqyywn3uagf/AADZLTLh5nMedkMUXd0Mfihya?dl=0",
         "video": "../videos/super-combo.mp4"
+      },
+      {
+        "id": "extreme_atv_wild_pass",
+        "title": "Extreme ATV Wild Pass",
+        "img": "/media-extreme/extreme-atv.webp",
+        "pdf": "../factsheet/ExtremeATVWildPassFactSheet-ing.pdf",
+        "photos": "/media-extreme/extreme-atv-wild-pass.webp",
+        "video": "../videos/extreme-atv-wild-pass.mp4"
+      },
+      {
+        "id": "extreme_wild_pass_horseback_ride",
+        "title": "Extreme Wild Pass + Horseback Ride",
+        "img": "/media-extreme/extreme-horse.webp",
+        "pdf": "../factsheet/ExtremeWildPassHorsebackRideFactSheet-ing.pdf",
+        "photos": "/media-extreme/extreme-wild-pass-horseback-ride.webp",
+        "video": "../videos/extreme-wild-pass-horseback-ride.mp4"
       }
     ]
   },
@@ -110,67 +129,146 @@
     "items": [
       {
         "q": "What type of footwear do I need for ATVs?",
-        "a": "The activities in the park are very intense, so it is best to bring comfortable clothes and shoes, as well as a swimsuit."
+        "a": "The park activities are very intense, so it is best to bring <strong>comfortable clothes and shoes</strong>, as well as a <strong>swimsuit</strong>. If you have water shoes, it will be ideal since you will be in constant contact with water and mud. If you do not have them, you can find the appropriate accessories in our preparation zone.",
+        "icon": "bx-walk",
+        "tags": [
+          { "icon": "bx-closet", "label": "Comfortable clothes" },
+          { "icon": "bx-walk", "label": "Closed shoes" },
+          { "icon": "bx-swim", "label": "Swimsuit" }
+        ]
       },
       {
         "q": "Should I bring a towel?",
-        "a": "Yes, each passenger must bring their towel and swimsuit, as well as their personal hygiene items."
+        "a": "Yes, each passenger <strong>must bring their own towel and swimsuit</strong>, as well as personal hygiene and care items. If you do not have a towel, you can purchase one in our preparation zone, as well as sunglasses, insect repellent, and other personal care accessories.",
+        "icon": "bx-swim",
+        "tags": [
+          { "icon": "bx-select-multiple", "label": "Bring towel" },
+          { "icon": "bx-swim", "label": "Swimsuit" },
+          { "icon": "bx-sun", "label": "Personal care" }
+        ]
       },
       {
-        "q": "What is the minimum age to carry out the activities in the park?",
-        "a": "All the activities in the park can be carried out by children from 4 years old."
+        "q": "What is the minimum age to participate in the activities at the park?",
+        "a": "All park activities can be done by children <strong>from 4 years old and up.</strong> The minor must remain under the supervision, companionship, and responsibility of their parents or guardians. If the child is <strong>under 4 years old, a family member must stay with them</strong> and not participate in the activities.",
+        "icon": "bx-child",
+        "tags": [
+          { "icon": "bx-child", "label": "Children from 4 years" },
+          { "icon": "bx-user-voice", "label": "Adult supervision" }
+        ]
       },
       {
-        "q": "What is the minimum age to drive the ATV?",
-        "a": "The minimum age is 16 years accompanied by an adult. To drive alone, it is necessary to be 18 years of age."
+        "q": "What is the minimum age to drive an ATV?",
+        "a": "The minimum age is <strong>16 years old accompanied by an adult</strong> on the same ATV. To drive an ATV alone, you must be at least <strong>18 years of age.</strong>",
+        "icon": "bx-id-card",
+        "tags": [
+          { "icon": "bx-user", "label": "Accompanied from 16 years" },
+          { "icon": "bx-id-card", "label": "Solo from 18 years" }
+        ]
       },
       {
-        "q": "What is the maximum weight for horseback riding?",
-        "a": "It is necessary that the weight of the passenger does not reach 110 kilos or 242.5 pounds."
+        "q": "What is the maximum weight for the horseback ride?",
+        "a": "In order to ride our horses, the passenger's weight must not exceed <strong>110 kilograms or 242.5 pounds.</strong> If this limit is exceeded, the visitor will not be able to participate in this activity.",
+        "icon": "bx-tachometer",
+        "tags": [
+          { "icon": "bx-tachometer", "label": "Max 110 kg / 242 lbs" }
+        ]
       },
       {
-        "q": "What is the maximum weight to use the zip lines?",
-        "a": "It is necessary that the passenger does not weigh 130 kilos or 286 pounds."
+        "q": "What is the maximum weight to use the ziplines?",
+        "a": "In order to climb and slide on our ziplines, the passenger's weight must not exceed <strong>130 kilograms or 286 pounds.</strong> If this limit is exceeded, the visitor will not be able to participate in this activity.",
+        "icon": "bx-dumbbell",
+        "tags": [
+          { "icon": "bx-dumbbell", "label": "Max 130 kg / 286 lbs" }
+        ]
       },
       {
-        "q": "Who can not carry out the activities of the park?",
-        "a": "Pregnant women, people with recent surgeries, muscle injuries, or physical disabilities that prevent carrying out the activities."
+        "q": "Who cannot participate in the park activities?",
+        "a": "All park activities involve physical effort and impact on the human body, so <strong>the following individuals CANNOT participate in these activities</strong>: <ul><li>Pregnant women.</li><li>People with recent operations or surgeries <em>(6 months)</em>.</li><li>People with muscle injuries in any part of the body.</li><li>People with any physical disability that prevents them from performing the activities.</li></ul>",
+        "icon": "bx-block",
+        "tags": [
+          { "icon": "bx-block", "label": "Pregnant women" },
+          { "icon": "bx-plus-medical", "label": "Recent surgeries" },
+          { "icon": "bx-error", "label": "Injuries/Disabilities" }
+        ]
       },
       {
         "q": "Preventive safety measures?",
-        "a": "The use of cameras and cell phones are not permitted during our adventure activities."
+        "a": "Due to international safety standards, to guarantee the safety of our visitors during the park activities, the use of cameras or cell phones is not allowed.",
+        "icon": "bx-camera-off",
+        "tags": [
+          { "icon": "bx-camera-off", "label": "No cameras" },
+          { "icon": "bx-mobile-off", "label": "No cell phones" }
+        ]
       },
       {
-        "q": "Wich days does the park close?",
-        "a": "The park only stops its operations and remains closed on January 1 and December 25."
+        "q": "What days does the park close?",
+        "a": "The park only suspends its operations and remains closed on <strong>January 1st and December 25th.</strong>",
+        "icon": "bx-calendar-x",
+        "tags": [
+          { "icon": "bx-calendar-x", "label": "Closed Jan 1 & Dec 25" }
+        ]
       },
       {
         "q": "Does the park close when it rains?",
-        "a": "Our park remains open in regular weather conditions like torrential rain. It may stop in thunderstorms and hurricanes."
+        "a": "Our park remains open in regular weather conditions of the Mexican Caribbean, such as torrential rain and spontaneous wind. However, the park may suspend its operations and close in the event of natural disasters such as <strong>thunderstorms and hurricanes.</strong>",
+        "icon": "bx-cloud-rain",
+        "tags": [
+          { "icon": "bx-cloud-rain", "label": "Open in rain" },
+          { "icon": "bx-wind", "label": "Closed in hurricane" }
+        ]
       },
       {
         "q": "Is transportation included?",
-        "a": "Yes, all our activities and tours include roundtrip transportation."
+        "a": "<strong>Yes</strong>, all of our activities and tours include round-trip transportation from your hotel or meeting point.",
+        "icon": "bx-bus",
+        "tags": [
+          { "icon": "bx-bus", "label": "Round-trip transport" }
+        ]
       },
       {
         "q": "Where will the transportation pick me up?",
-        "a": "Our units regularly pick up and return passengers to the hotel they are staying at. There may be exceptions."
+        "a": "Regularly, our vehicles pick up and return passengers <strong>at the hotel</strong> where they are staying. There can be exceptions for vacation rentals or hotels that do not allow access. In these cases, a <strong>nearby meeting point</strong> is assigned. To confirm this, please contact customer service to determine the corresponding meeting point.",
+        "icon": "bx-map-pin",
+        "tags": [
+          { "icon": "bx-hotel", "label": "Hotel pick-up" },
+          { "icon": "bx-map-pin", "label": "Meeting points" }
+        ]
       },
       {
         "q": "What type of transportation will pick me up?",
-        "a": "Our units are unmistakable thanks to their labeling and jaguar skin colors."
+        "a": "Our units are unmistakable thanks to their wrapping and <strong>jaguar skin colors, in addition to images and our own registered trademark logo</strong>. We have different models of <strong>vans or minivans</strong> properly labeled for easy identification.",
+        "icon": "bx-car",
+        "tags": [
+          { "icon": "bx-car", "label": "Labeled vans & minivans" },
+          { "icon": "bx-badge", "label": "Official brand logo" }
+        ]
       },
       {
         "q": "How can I identify the transportation driver?",
-        "a": "You can contact customer service and request the name of the operator."
+        "a": "If for any reason you have doubts about who is the person officially authorized by the company to pick up a passenger, you can contact the customer service area and <strong>request the operator's name, as well as the estimated time of arrival</strong> at your hotel or meeting point.",
+        "icon": "bx-user-check",
+        "tags": [
+          { "icon": "bx-support", "label": "Customer support" },
+          { "icon": "bx-user-check", "label": "Driver identification" }
+        ]
       },
       {
-        "q": "What happens if I miss transportation?",
-        "a": "You will have to get to the park by your own means."
+        "q": "What happens if I miss the transportation?",
+        "a": "If for any reason the passenger is delayed, cannot find the lobby, the meeting point, or cannot reach the pickup location on time, they will miss the transportation. In this case, <strong>they will have to reach the park by their own means</strong>, either by hiring another private transportation or by requesting a taxi service to reach the park.",
+        "icon": "bx-time-five",
+        "tags": [
+          { "icon": "bx-time-five", "label": "Punctuality mandatory" },
+          { "icon": "bx-taxi", "label": "Arrive on your own" }
+        ]
       },
       {
-        "q": "What drinks are included inside the park?",
-        "a": "We have natural water dispensers, however, it does not include flavored or bottled drinks."
+        "q": "What drinks are included in the park?",
+        "a": "In our park <strong>we have natural water dispensers</strong>, however, it does not include flavored or bottled drinks; these can be purchased at an extra cost.",
+        "icon": "bx-drink",
+        "tags": [
+          { "icon": "bx-water", "label": "Natural water included" },
+          { "icon": "bx-dollar-circle", "label": "Drinks extra cost" }
+        ]
       }
     ]
   },
@@ -183,7 +281,6 @@
     "bestDay": {
       "title": "Affiliate Portal: Best Day",
       "badge": "Preferred Partner",
-      "greeting": "Hello Best Day team! Here are your customized sales resources for the 2026 season.",
       "commissionLabel": "Preferred Commission",
       "commissionValue": "15% Net Rate",
       "codeLabel": "Promo Code",
@@ -207,7 +304,6 @@
     "hotelBeds": {
       "title": "Affiliate Portal: Hotel Beds",
       "badge": "API Integration Partner",
-      "greeting": "Hello Hotel Beds team! Access XML integration guides, dynamic rate mapping, and technical support material.",
       "commissionLabel": "Rate Scheme",
       "commissionValue": "Dynamic Net Rates",
       "codeLabel": "Integration ID",
@@ -231,7 +327,6 @@
     "jopaNauticos": {
       "title": "Affiliate Portal: Jopa Nauticos",
       "badge": "Water Activities Partner",
-      "greeting": "Hello Jopa Nauticos team! Access private charter fact sheets, special snorkeling rates, and ocean promotional materials.",
       "commissionLabel": "Agreed Commission",
       "commissionValue": "18% Commission",
       "codeLabel": "Agency Code",
@@ -255,7 +350,6 @@
     "tropicalIncentives": {
       "title": "DMC Portal: Tropical Incentives",
       "badge": "Groups & Conventions Partner",
-      "greeting": "Hello Tropical Incentives team! Access technical sheets for groups, team building catalogs, and incentive resources.",
       "commissionLabel": "Corporate Rates",
       "commissionValue": "Net MICE Rates",
       "codeLabel": "Group ID",
@@ -279,7 +373,6 @@
     "wildPass": {
       "title": "Affiliate Portal: Wild Pass",
       "badge": "Adventure & Promo Partner",
-      "greeting": "Hello Wild Pass team! Access co-branded adventure flyers, promoter rates, and interactive marketing materials.",
       "commissionLabel": "Promoter Scheme",
       "commissionValue": "20% Commission",
       "codeLabel": "Promoter Code",

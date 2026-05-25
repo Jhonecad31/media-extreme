@@ -31,7 +31,7 @@
         "icon": "bx-time-five",
         "title": "Horários",
         "desc": "Todos os nossos passeios no parque têm 2 horários. De manhã e à tarde.",
-        "badge": "Exceto Super Combo e Experiência em Puerto Morelos"
+        "badge": "Exceto Super Combo e Experiencia em Puerto Morelos"
       },
       {
         "icon": "bx-group",
@@ -46,6 +46,9 @@
     "btn_pdf": "Baixar Ficha Técnica",
     "btn_photos": "Galeria de Fotos",
     "btn_videos": "Vídeo Oficial",
+    "showLimitLabel": "Mostrar:",
+    "limitUnit": "produtos",
+    "limitAll": "Todos",
     "items": [
       {
         "id": "extreme_atv_adventure",
@@ -72,8 +75,8 @@
         "video": "../videos/cenote-adventuring.mp4"
       },
       {
-        "id": "city_taco_tour",
-        "title": "City & Taco Tour",
+        "id": "beach_taco_tour",
+        "title": "Beach Taco Tour",
         "img": "/media-extreme/city-and-taco-tour.webp",
         "pdf": "../factsheet/city-and-taco-tour-ing.pdf",
         "photos": "/media-extreme/city-and-taco-tour.webp",
@@ -102,6 +105,22 @@
         "pdf": "../factsheet/SuperComboFactSheet-ing.pdf",
         "photos": "https://www.dropbox.com/sh/xueflqyywn3uagf/AADZLTLh5nMedkMUXd0Mfihya?dl=0",
         "video": "../videos/super-combo.mp4"
+      },
+      {
+        "id": "extreme_atv_wild_pass",
+        "title": "Extreme ATV Wild Pass",
+        "img": "/media-extreme/extreme-atv-wild-pass.webp",
+        "pdf": "../factsheet/ExtremeATVWildPassFactSheet-ing.pdf",
+        "photos": "/media-extreme/extreme-atv-wild-pass.webp",
+        "video": "../videos/extreme-atv-wild-pass.mp4"
+      },
+      {
+        "id": "extreme_wild_pass_horseback_ride",
+        "title": "Extreme Wild Pass + Horseback Ride",
+        "img": "/media-extreme/extreme-wild-pass-horseback-ride.webp",
+        "pdf": "../factsheet/ExtremeWildPassHorsebackRideFactSheet-ing.pdf",
+        "photos": "/media-extreme/extreme-wild-pass-horseback-ride.webp",
+        "video": "../videos/extreme-wild-pass-horseback-ride.mp4"
       }
     ]
   },
@@ -110,67 +129,146 @@
     "items": [
       {
         "q": "Que tipo de calçado eu preciso para os ATVs?",
-        "a": "As atividades no parque são muito intensas, por isso é melhor trazer roupas e sapatos confortáveis, assim como traje de banho."
+        "a": "As atividades do parque são muito intensas, por isso o melhor é trazer <strong>roupas e calçados confortáveis</strong>, bem como <strong>traje de banho</strong>. Se você tiver sapatos de água, será ideal, pois estará em constante contato com água e lama. Se não tiver, poderá encontrar os acessórios adequados na nossa preparation zone.",
+        "icon": "bx-walk",
+        "tags": [
+          { "icon": "bx-closet", "label": "Roupas confortáveis" },
+          { "icon": "bx-walk", "label": "Sapatos fechados" },
+          { "icon": "bx-swim", "label": "Traje de banho" }
+        ]
       },
       {
-        "q": "Devo levar uma toalha?",
-        "a": "Sim, cada passageiro deve trazer sua toalha e traje de banho, bem como seus itens de higiene pessoal."
+        "q": "Devo levar toalha?",
+        "a": "Sim, cada passageiro <strong>deve levar sua toalha e traje de banho</strong>, bem como seus itens pessoais de higiene e cuidados pessoais. Se você não tiver toalha, poderá adquiri-la na nossa preparation zone, assim como óculos, repelente de insetos e outros acessórios de cuidados pessoais.",
+        "icon": "bx-swim",
+        "tags": [
+          { "icon": "bx-select-multiple", "label": "Trazer toalha" },
+          { "icon": "bx-swim", "label": "Traje de banho" },
+          { "icon": "bx-sun", "label": "Cuidados pessoais" }
+        ]
       },
       {
         "q": "Qual é a idade mínima para realizar as atividades no parque?",
-        "a": "Todas as atividades no parque podem ser realizadas por crianças a partir de 4 anos."
+        "a": "Todas as atividades do parque podem ser realizadas por crianças <strong>a partir de 4 anos.</strong> O menor deve permanecer sob supervisão, acompanhamento e responsabilidade de seus pais ou responsáveis. Caso o menor tenha <strong>menos de 4 anos, um familiar deverá permanecer com ele</strong>, sem realizar atividades.",
+        "icon": "bx-child",
+        "tags": [
+          { "icon": "bx-child", "label": "Crianças a partir de 4 anos" },
+          { "icon": "bx-user-voice", "label": "Supervisão de adultos" }
+        ]
       },
       {
-        "q": "Qual é a idade mínima para dirigir o ATV?",
-        "a": "A idade mínima é de 16 anos acompanhado por um adulto. Para dirigir sozinho, é necessário ter 18 anos de idade."
+        "q": "Qual é a idade mínima para poder dirigir o ATV?",
+        "a": "A idade mínima é de <strong>16 anos acompanhado de um adulto</strong> no mesmo ATV. Para poder dirigir um ATV sozinho, é necessário ter <strong>18 anos de idade completos.</strong>",
+        "icon": "bx-id-card",
+        "tags": [
+          { "icon": "bx-user", "label": "Acompanhado a partir de 16 anos" },
+          { "icon": "bx-id-card", "label": "Sozinho a partir de 18 anos" }
+        ]
       },
       {
-        "q": "Qual é o peso máximo para andar a cavalo?",
-        "a": "É necessário que o peso do passageiro não atinja 110 quilos ou 242,5 libras."
+        "q": "Qual é o peso máximo para fazer o passeio a cavalo?",
+        "a": "Para poder montar nossos cavalos, é necessário que o peso do passageiro não ultrapasse os <strong>110 quilos ou 242.5 libras.</strong> Caso exceda este limite, o visitante não poderá realizar esta atividade.",
+        "icon": "bx-tachometer",
+        "tags": [
+          { "icon": "bx-tachometer", "label": "Máximo 110 kg / 242 lbs" }
+        ]
       },
       {
         "q": "Qual é o peso máximo para usar las tirolesas?",
-        "a": "É necessário que o passageiro não pese 130 quilos ou 286 libras."
+        "a": "Para poder subir e deslizar nas nossas tirolesas, é necessário que o passageiro não ultrapasse os <strong>130 quilos ou 286 libras.</strong> Caso exceda este limite, o visitante não poderá realizar esta atividade.",
+        "icon": "bx-dumbbell",
+        "tags": [
+          { "icon": "bx-dumbbell", "label": "Máximo 130 kg / 286 lbs" }
+        ]
       },
       {
         "q": "Quem não pode realizar as atividades do parque?",
-        "a": "Mulheres grávidas, pessoas com cirurgias recentes, lesões musculares ou deficiências físicas que impeçam a realização das atividades."
+        "a": "Todas as atividades do parque envolvem esforço e impacto físico para o corpo humano, pelo que <strong>NÃO poderão realizar estas atividades</strong>: <ul><li>Mulheres grávidas.</li><li>Pessoas com operações ou cirurgias recentes <em>(6 meses)</em>.</li><li>Pessoas com lesões musculares em qualquer parte do corpo.</li><li>Pessoas com alguma deficiência física que as impeça de realizar as atividades.</li></ul>",
+        "icon": "bx-block",
+        "tags": [
+          { "icon": "bx-block", "label": "Mulheres grávidas" },
+          { "icon": "bx-plus-medical", "label": "Cirurgias recentes" },
+          { "icon": "bx-error", "label": "Lesões/Deficiência" }
+        ]
       },
       {
         "q": "Medidas preventivas de segurança?",
-        "a": "O uso de câmeras e telefones celulares não é permitido durante nossas atividades de aventura."
+        "a": "Por padrões internacionais de segurança, para garantir a segurança dos nossos visitantes durante as atividades del parque, não é permitido o uso de câmeras ou celulares.",
+        "icon": "bx-camera-off",
+        "tags": [
+          { "icon": "bx-camera-off", "label": "Sem câmeras" },
+          { "icon": "bx-mobile-off", "label": "Sem celulares" }
+        ]
       },
       {
-        "q": "Quais dias o parque fecha?",
-        "a": "O parque só interrompe suas operações e permanece fechado nos dias 1º de janeiro e 25 de dezembro."
+        "q": "Quais days o parque fecha?",
+        "a": "O parque apenas interrompe suas operações e permanece fechado nos dias <strong>1 de Janeiro e 25 de Dezembro.</strong>",
+        "icon": "bx-calendar-x",
+        "tags": [
+          { "icon": "bx-calendar-x", "label": "Fechado 1 Jan e 25 Dez" }
+        ]
       },
       {
         "q": "O parque fecha quando chove?",
-        "a": "Nosso parque permanece aberto em condições climáticas regulares, como chuvas torrenciais. Pode parar em tempestades e furacões."
+        "a": "Nosso parque permanece aberto sob condições climáticas normais do Caribe mexicano, como chuva torrencial e vento espontâneo. No entanto, o parque pode interromper suas operações e fechar em caso de desastres naturais, como <strong>tempestades elétricas e furacões.</strong>",
+        "icon": "bx-cloud-rain",
+        "tags": [
+          { "icon": "bx-cloud-rain", "label": "Aberto com chuva" },
+          { "icon": "bx-wind", "label": "Fechado em furacão" }
+        ]
       },
       {
         "q": "O transporte está incluído?",
-        "a": "Sim, todas as nossas atividades e passeios incluem transporte de ida e volta."
+        "a": "<strong>Sim</strong>, todas as nossas atividades e passeios incluem transporte de ida e volta a partir do seu hotel ou ponto de encontro.",
+        "icon": "bx-bus",
+        "tags": [
+          { "icon": "bx-bus", "label": "Transporte de ida e volta" }
+        ]
       },
       {
-        "q": "Onde o transporte me buscará?",
-        "a": "Nossas unidades regularmente buscam e retornam os passageiros ao hotel em que estão hospedados. Pode haver exceções."
+        "q": "Onde o transporte passará para me buscar?",
+        "a": "Regularmente, nossas unidades buscam e devolvem os passageiros <strong>no hotel</strong> onde estão hospedados. Podem existir exceções muito variáveis de hospedagem, como aluguéis de temporada ou hotéis que não permitem o acesso. Nesses casos, é atribuído um <strong>ponto de encontro próximo.</strong> Para confirmar esta situação, é necessário entrar em contato com o atendimento ao cliente para determinar o ponto de encontro correspondente.",
+        "icon": "bx-map-pin",
+        "tags": [
+          { "icon": "bx-hotel", "label": "Pick-up no hotel" },
+          { "icon": "bx-map-pin", "label": "Pontos de encontro" }
+        ]
       },
       {
         "q": "Que tipo de transporte me buscará?",
-        "a": "Nossas unidades são inconfundíveis graças aos seus rótulos e cores de pele de onça."
+        "a": "Nossas unidades são inconfundíveis graças ao seu envelopamento e <strong>cores de pele de jaguar, além de imagens e logotipo próprios de nossa marca</strong> registrada. Temos diferentes modelos de <strong>vans ou minivans</strong> devidamente identificados para fácil identificação.",
+        "icon": "bx-car",
+        "tags": [
+          { "icon": "bx-car", "label": "Vans e minivans envelopadas" },
+          { "icon": "bx-badge", "label": "Logotipo oficial da marca" }
+        ]
       },
       {
         "q": "Como posso identificar o motorista do transporte?",
-        "a": "Você pode entrar em contato com o atendimento ao cliente e solicitar o nome do operador."
+        "a": "Se por algum motivo tiver dúvidas sobre quem é a pessoa oficialmente autorizada pela empresa para buscar um passageiro, você pode entrar em contato com o atendimento ao cliente e <strong>solicitar o nome do operador, bem como o tempo estimado de chegada</strong> ao seu hotel ou ponto de encontro.",
+        "icon": "bx-user-check",
+        "tags": [
+          { "icon": "bx-support", "label": "Suporte ao cliente" },
+          { "icon": "bx-user-check", "label": "Identificar motorista" }
+        ]
       },
       {
         "q": "O que acontece se eu perder o transporte?",
-        "a": "Você terá que chegar ao parque por conta própria."
+        "a": "Se por algum motivo o passageiro se atrasar, não encontrar a recepção, o ponto de encontro ou não puder chegar ao local e horário de embarque, ele perderá o transporte. Neste caso, <strong>deverá chegar ao parque por conta própria</strong>, seja contratando outro transporte privado ou solicitando serviço de táxi para chegar ao parque.",
+        "icon": "bx-time-five",
+        "tags": [
+          { "icon": "bx-time-five", "label": "Pontualidade obrigatória" },
+          { "icon": "bx-taxi", "label": "Chegar por conta própria" }
+        ]
       },
       {
-        "q": "Quais bebidas estão incluídas dentro del parque?",
-        "a": "Temos dispensadores de água natural, no entanto, não inclui bebidas aromatizadas ou engarrafadas."
+        "q": "Quais bebidas estão incluídas no parque?",
+        "a": "Em nosso parque <strong>temos dispensadores de água natural</strong>, no entanto, não estão incluídas bebidas com sabor ou engarrafadas, que podem ser adquiridas por um custo adicional.",
+        "icon": "bx-drink",
+        "tags": [
+          { "icon": "bx-water", "label": "Água natural incluída" },
+          { "icon": "bx-dollar-circle", "label": "Bebidas custo extra" }
+        ]
       }
     ]
   },
@@ -183,13 +281,12 @@
     "bestDay": {
       "title": "Portal de Afiliado: Best Day",
       "badge": "Parceiro Preferencial",
-      "greeting": "Olá equipe Best Day! Aqui estão seus recursos de vendas personalizados para a temporada 2026.",
       "commissionLabel": "Comissão Preferencial",
       "commissionValue": "15% Net Rate",
       "codeLabel": "Código de Vendas",
       "managerLabel": "Gerente de Conta",
       "managerValue": "Mariana Rojas",
-      "resourcesTitle": "Recursos Exclusivos Best Day",
+      "resourcesTitle": "Recursos Oficiais Best Day",
       "resourcesSubtitle": "Material promocional e técnico personalizado com as diretrizes da Best Day.",
       "contactTitle": "Suporte Direto para Best Day",
       "contactSubtitle": "Precisa de materiais personalizados, tarifas de grupo ou assistência imediata?",
@@ -202,12 +299,11 @@
       "policyInfo": "As reservas da Best Day devem ser feitas com pelo menos 12 horas de antecedência. Cancelamento gratuito até 24 horas antes do passeio. Aplicam-se tarifas net confidenciais de acordo com o contrato vigente.",
       "resource1": "Folheto Co-Branded Best Day",
       "resource2": "Banners Digitais para BestDay.com",
-      "resource3": "Vídeo Promocional de ATV (Edição Redes)"
+      "resource3": "Vídeo Promocional de ATV (Edición Redes)"
     },
     "hotelBeds": {
       "title": "Portal de Afiliado: Hotel Beds",
       "badge": "Parceiro de Integração API",
-      "greeting": "Olá equipe Hotel Beds! Acesse os guias de integração XML, mapeamento de tarifas dinâmicas e suporte técnico.",
       "commissionLabel": "Esquema de Tarifas",
       "commissionValue": "Dynamic Net Rates",
       "codeLabel": "ID de Integração",
@@ -231,7 +327,6 @@
     "jopaNauticos": {
       "title": "Portal de Afiliado: Jopa Nauticos",
       "badge": "Parceiro de Atividades Aquáticas",
-      "greeting": "Olá equipe Jopa Nauticos! Acesse as fichas técnicas de charters privados, tarifas especiais de snorkel e materiais promocionais marítimos.",
       "commissionLabel": "Comissão Acordada",
       "commissionValue": "18% Comissão",
       "codeLabel": "Código de Agência",

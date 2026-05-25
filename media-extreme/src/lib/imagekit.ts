@@ -8,7 +8,6 @@ export function imageKitLoader({ src, width, quality }: ImageKitLoaderProps): st
   const urlEndpoint = process.env.NEXT_PUBLIC_IMAGEKIT_URL_ENDPOINT || '';
   
   if (!urlEndpoint || urlEndpoint.includes('your_imagekit_id')) {
-    console.warn(`[ImageKit] Usando fallback local para "${src}" porque NEXT_PUBLIC_IMAGEKIT_URL_ENDPOINT no está configurada o usa la plantilla.`);
     return src;
   }
 
@@ -40,7 +39,6 @@ export function imageKitLoader({ src, width, quality }: ImageKitLoaderProps): st
   const transformationString = `tr:${params.join(',')}`;
 
   const finalUrl = `${normalizedEndpoint}/${transformationString}${relativeSrc}`;
-  console.log(`[ImageKit] URL generada con éxito para "${src}":`, finalUrl);
   return finalUrl;
 }
 

@@ -53,7 +53,7 @@
         "id": "extreme_atv_adventure",
         "title": "Extreme ATV Adventure",
         "img": "/media-extreme/extreme-atv.webp",
-        "pdf": "../factsheet/ExtremeATVAdventureFactSheet-ing.pdf",
+        "pdf": "/factsheet/ExtremeATVAdventureFactSheet-ing.pdf",
         "photos": "/media-extreme/extreme-atv.webp",
         "video": "../videos/extreme-atv-adventure.mp4"
       },

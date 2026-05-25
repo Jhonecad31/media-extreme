@@ -53,7 +53,7 @@
         "id": "extreme_atv_adventure",
         "title": "Extreme ATV Adventure",
         "img": "/media-extreme/extreme-atv.webp",
-        "pdf": "../factsheet/ExtremeATVAdventureFactSheet-ing.pdf",
+        "pdf": "/factsheet/ExtremeATVAdventureFactSheet-por.pdf",
         "photos": "/media-extreme/extreme-atv.webp",
         "video": "../videos/extreme-atv-adventure.mp4"
       },
@@ -61,7 +61,7 @@
         "id": "extreme_horses_adventure",
         "title": "Extreme Horses Adventure",
         "img": "/media-extreme/extreme-horse.webp",
-        "pdf": "../factsheet/ExtremeHorseAdventureFactSheet-ing.pdf",
+        "pdf": "/factsheet/ExtremeHorseAdventureFactSheet-por.pdf",
         "photos": "/media-extreme/extreme-horse.webp",
         "video": "../videos/extreme-horse-adventuring.mp4"
       },

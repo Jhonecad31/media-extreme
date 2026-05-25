@@ -42,35 +42,9 @@ export default function Header({ lang, dict }: HeaderProps) {
         {/* ACCIONES (Derecha) */}
         <div className="flex items-center space-x-4">
           <LanguageSelector currentLang={lang} />
-          
-          {/* BOTÓN MENÚ MÓVIL */}
-          <button 
-            className="flex h-10 w-10 items-center justify-center text-white md:hidden focus:outline-none rounded-xl hover:bg-white/10 transition-colors"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle Menu"
-          >
-            <i className={`bx ${isOpen ? 'bx-x' : 'bx-menu'} text-3xl`}></i>
-          </button>
         </div>
       </div>
-
-      {/* MENÚ DESPLEGABLE MÓVIL */}
-      <div 
-        className={`md:hidden border-t border-white/5 bg-[#002b11]/95 backdrop-blur-lg transition-all duration-300 ease-in-out ${
-          isOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0 pointer-events-none overflow-hidden'
-        }`}
-      >
-        <nav className="flex flex-col space-y-4 px-6 py-6">
-        
-          <Link 
-            href={`/${lang}/press-kit`} 
-            className="text-base font-semibold text-neutral-300 hover:text-white transition-colors flex items-center justify-between" 
-            onClick={() => setIsOpen(false)}
-          >
-            <i className="bx bx-chevron-right text-lg text-neutral-500"></i>
-          </Link>
-        </nav>
-      </div>
+     
     </header>
   );
 }

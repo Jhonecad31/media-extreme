@@ -36,8 +36,7 @@
       {
         "icon": "bx-group",
         "title": "Familiar",
-        "desc": "Todas as atividades podem ser realizadas por crianças com mais de 4 anos.",
-        "badge": "Exceto Booze Cruise"
+        "desc": "Todas as atividades podem ser realizadas por crianças com mais de 4 anos."
       }
     ]
   },
@@ -109,18 +108,18 @@
       {
         "id": "extreme_atv_wild_pass",
         "title": "Extreme ATV Wild Pass",
-        "img": "/media-extreme/extreme-atv-wild-pass.webp",
+        "img": "/media-extreme/extreme-atv.webp",
         "pdf": "../factsheet/ExtremeATVWildPassFactSheet-ing.pdf",
-        "photos": "/media-extreme/extreme-atv-wild-pass.webp",
-        "video": "../videos/extreme-atv-wild-pass.mp4"
+        "photos": "/media-extreme/extreme-atv.webp",
+        "video": "../videos/extreme-atv-adventure.mp4"
       },
       {
         "id": "extreme_wild_pass_horseback_ride",
         "title": "Extreme Wild Pass + Horseback Ride",
-        "img": "/media-extreme/extreme-wild-pass-horseback-ride.webp",
+        "img": "/media-extreme/extreme-horse.webp",
         "pdf": "../factsheet/ExtremeWildPassHorsebackRideFactSheet-ing.pdf",
-        "photos": "/media-extreme/extreme-wild-pass-horseback-ride.webp",
-        "video": "../videos/extreme-wild-pass-horseback-ride.mp4"
+        "photos": "/media-extreme/extreme-horse.webp",
+        "video": "../videos/extreme-horse-adventuring.mp4"
       }
     ]
   },

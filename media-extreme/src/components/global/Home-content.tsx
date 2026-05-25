@@ -22,26 +22,6 @@ export default function HomeContent({ lang, dict }: HomeContentProps) {
 
       {/* PANEL CENTRAL DE CONTROL (Buscador y Contexto) */}
       <main className="max-w-5xl mx-auto px-4 mt-6">
-        <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 mb-6">
-          <h1 className="text-2xl font-black text-[#1c2a4b] tracking-tight mb-1">
-            {dict?.home?.title || "Media Center Corporativo"}
-          </h1>
-          <p className="text-sm text-slate-500 mb-4">
-            {dict?.home?.subtitle || "Material autorizado para agencias y asesores de venta."}
-          </p>
-          
-          {/* Input de búsqueda rápida */}
-          <div className="relative">
-            <input
-              type="text"
-              placeholder={dict?.home?.searchPlaceholder || "Buscar experiencia o producto..."}
-              className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#8ebf25] focus:bg-white transition-all"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-            />
-          </div>
-        </div>
-
         {/* SECCIÓN NUESTRAS EXPERIENCIAS (Al principio de la vista) */}
         {dict?.experiences && (
           <div className="mb-12 border-b border-slate-200/60 pb-12">

@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import ProductGrid from '../global/Product-grid';
 import FaqAccordion from '../global/Faq-accordion';
 
@@ -11,7 +10,6 @@ interface AgencyContentProps {
 
 export default function TropicalIncentivesContent({ lang, dict }: AgencyContentProps) {
   const details = dict?.agencyDetails || {};
-  const commonBack = details.back || 'Volver a Agencias';
   const agency = details.tropicalIncentives || {
     title: 'Portal DMC: Tropical Incentives',
     badge: 'Socio de Grupos y Convenciones',
@@ -21,14 +19,7 @@ export default function TropicalIncentivesContent({ lang, dict }: AgencyContentP
     <div className="bg-[#f8fafc] min-h-screen pt-8 pb-16 text-[#1c2a4b] font-sans selection:bg-[#d7aa38]/30">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         
-        {/* Botón Volver */}
-        <Link 
-          href={`/${lang}/agencies`}
-          className="inline-flex items-center text-slate-500 hover:text-[#002d5d] font-bold text-sm mb-6 transition-colors group"
-        >
-          <i className="bx bx-left-arrow-alt text-xl mr-1 group-hover:-translate-x-1 transition-transform"></i>
-          {commonBack}
-        </Link>
+
 
         {/* Banner Hero con Colores Oficiales Tropical Incentives (Azul Marino #002d5d y Oro #d7aa38) */}
         <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-[#002d5d] via-[#102a45] to-[#0f172a] text-white p-10 md:p-14 shadow-xl mb-10 flex flex-col md:flex-row items-center justify-between gap-8">
@@ -105,8 +96,11 @@ export default function TropicalIncentivesContent({ lang, dict }: AgencyContentP
           <h3 className="text-3xl font-black text-[#002d5d] mb-8">
             {dict?.products?.title || "Productos"}
           </h3>
-          <ProductGrid products={dict?.products?.items || []} dict={dict} />
+          <ProductGrid products={(dict?.products?.items || []).filter((p: any) => !['city_taco_tour', 'beach_taco_tour', 'extreme_atv_wild_pass', 'extreme_wild_pass_horseback_ride'].includes(p.id))} dict={dict} />
         </div>
+
+        {/* Sección Preguntas Frecuentes (FAQ) */}
+        <FaqAccordion faq={dict?.faq} accentColor="#d7aa38" brandColor="#002d5d" />
 
       </div>
     </div>

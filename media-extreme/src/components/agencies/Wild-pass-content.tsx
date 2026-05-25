@@ -1,7 +1,7 @@
 'use client';
 
-import Link from 'next/link';
 import ProductGrid from '../global/Product-grid';
+import FaqAccordion from '../global/Faq-accordion';
 
 interface AgencyContentProps {
   lang: string;
@@ -10,7 +10,6 @@ interface AgencyContentProps {
 
 export default function WildPassContent({ lang, dict }: AgencyContentProps) {
   const details = dict?.agencyDetails || {};
-  const commonBack = details.back || 'Volver a Agencias';
   const agency = details.wildPass || {
     title: 'Portal de Afiliado: Wild Pass',
     badge: 'Socio de Aventura y Promoción'
@@ -108,6 +107,9 @@ export default function WildPassContent({ lang, dict }: AgencyContentProps) {
           </h3>
           <ProductGrid products={filteredProducts} dict={dict} />
         </div>
+
+        {/* Sección Preguntas Frecuentes (FAQ) */}
+        <FaqAccordion faq={dict?.faq} accentColor="#f97316" brandColor="#78350f" />
 
       </div>
     </div>

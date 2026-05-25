@@ -13,7 +13,7 @@ export default function Footer({ dict }: FooterProps) {
     <footer className="bg-[#001a0a] text-slate-300 border-t border-slate-800 w-full shrink-0">
       <div className="max-w-5xl mx-auto px-6 pt-12 pb-8">
         {/* RETÍCULA PRINCIPAL */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pb-10 border-b border-white/5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pb-10 border-b border-white/5">
           {/* COLUMNA 1: IDENTIDAD */}
           <div className="flex flex-col gap-3">
             <Image
@@ -27,32 +27,7 @@ export default function Footer({ dict }: FooterProps) {
               {dict?.footer?.description || "Plataforma oficial de distribución de recursos visuales y fichas técnicas autorizadas para agencias afiliadas."}
             </p>
           </div>
-
-          {/* COLUMNA 2: ACCESOS DE SOPORTE */}
-          <div className="flex flex-col gap-2">
-            <h4 className="text-xs font-bold tracking-widest uppercase text-[#8ebf25]">
-              {dict?.footer?.support || "Soporte Comercial"}
-            </h4>
-            <ul className="text-xs text-slate-400 font-light flex flex-col gap-2">
-              <li>
-                <a
-                  href="mailto:info@extremeadventure.com"
-                  className="hover:text-white transition-colors flex items-center gap-1.5"
-                >
-                  <i className="bx bx-envelope text-sm text-[#8ebf25]"></i>{" "}
-                  info@extremeadventure.com
-                </a>
-              </li>
-              <li>
-                <span className="flex items-center gap-1.5">
-                  <i className="bx bx-phone text-sm text-[#8ebf25]"></i> +52
-                  (998) 123-4567
-                </span>
-              </li>
-            </ul>
-          </div>
-
-          {/* COLUMNA 3: CANALES INSTITUCIONALES */}
+          {/* COLUMNA 2: CANALES INSTITUCIONALES */}
           <div className="flex flex-col gap-3 md:items-end">
             <h4 className="text-xs font-bold tracking-widest uppercase text-[#8ebf25] md:text-right w-full">
               {dict?.footer?.officialChannels || "Canales Oficiales"}
@@ -107,17 +82,11 @@ export default function Footer({ dict }: FooterProps) {
           </div>
         </div>
 
-        {/* BARRA DE CRÉDITOS INFRA */}
-        <div className="pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] text-slate-500 font-medium tracking-wider uppercase">
-          <div className="flex gap-4 text-slate-400 normal-case font-light">
-            <a href="#" className="hover:underline">
-              {dict?.footer?.terms || "Términos de Uso"}
-            </a>
-            <span className="text-slate-700">•</span>
-            <a href="#" className="hover:underline">
-              {dict?.footer?.brandPolicies || "Políticas de Marca"}
-            </a>
-          </div>
+        {/* COPYRIGHT */}
+        <div className="pt-6 text-center">
+          <p className="text-[11px] text-slate-500 font-light">
+            © {new Date().getFullYear()} Extreme Adventuring. {dict?.footer?.rights || "Todos los derechos reservados."}
+          </p>
         </div>
       </div>
     </footer>

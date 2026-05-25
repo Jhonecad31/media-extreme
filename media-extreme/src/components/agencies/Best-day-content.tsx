@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import ProductGrid from '../global/Product-grid';
 import FaqAccordion from '../global/Faq-accordion';
 
@@ -11,7 +10,6 @@ interface AgencyContentProps {
 
 export default function BestDayContent({ lang, dict }: AgencyContentProps) {
   const details = dict?.agencyDetails || {};
-  const commonBack = details.back || 'Volver a Agencias';
   const agency = details.bestDay || {
     title: 'Portal de Afiliado: Best Day',
     badge: 'Socio Preferencial'
@@ -94,7 +92,7 @@ export default function BestDayContent({ lang, dict }: AgencyContentProps) {
           <h3 className="text-3xl font-black text-[#0054a6] mb-8">
             {dict?.products?.title || "Productos"}
           </h3>
-          <ProductGrid products={dict?.products?.items || []} dict={dict} />
+          <ProductGrid products={(dict?.products?.items || []).filter((p: any) => !['extreme_atv_wild_pass', 'extreme_wild_pass_horseback_ride'].includes(p.id))} dict={dict} />
         </div>
 
         {/* Sección Preguntas Frecuentes (FAQ) */}

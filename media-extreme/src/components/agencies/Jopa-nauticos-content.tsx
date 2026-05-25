@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import ProductGrid from '../global/Product-grid';
 import FaqAccordion from '../global/Faq-accordion';
 
@@ -11,7 +10,6 @@ interface AgencyContentProps {
 
 const JopaNauticosContent = ({ lang, dict }: AgencyContentProps) => {
   const details = dict?.agencyDetails || {};
-  const commonBack = details.back || 'Volver a Agencias';
   const agency = details.jopaNauticos || {
     title: 'Portal de Afiliado: Jopa Nauticos',
     badge: 'Socio de Actividades Acuáticas'
@@ -96,7 +94,12 @@ const JopaNauticosContent = ({ lang, dict }: AgencyContentProps) => {
           <h3 className="text-3xl font-black text-[#163155] mb-8">
             {dict?.products?.title || "Productos"}
           </h3>
-          <ProductGrid products={(dict?.products?.items || []).filter((prod: any) => prod.id !== 'super_combo')} dict={dict} />
+          <ProductGrid 
+            products={(dict?.products?.items || []).filter(
+              (prod: any) => !['super_combo', 'extreme_atv_wild_pass', 'extreme_wild_pass_horseback_ride'].includes(prod.id)
+            )} 
+            dict={dict} 
+          />
         </div>
 
         {/* Sección Preguntas Frecuentes (FAQ) */}

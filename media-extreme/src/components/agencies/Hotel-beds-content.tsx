@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 import ProductGrid from '../global/Product-grid';
 import { imageKitLoader } from '@/src/lib/imagekit';
@@ -14,7 +13,6 @@ interface AgencyContentProps {
 
 export default function HotelBedsContent({ lang, dict }: AgencyContentProps) {
   const details = dict?.agencyDetails || {};
-  const commonBack = details.back || 'Volver a Agencias';
   const agency = details.hotelBeds || {
     title: 'Portal de Afiliado: Hotel Beds',
     badge: 'Socio de Integración API'
@@ -37,14 +35,7 @@ export default function HotelBedsContent({ lang, dict }: AgencyContentProps) {
     <div className="bg-[#f8fafc] min-h-screen pt-8 pb-16 text-[#1c2a4b] font-sans selection:bg-[#e2001a]/30">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         
-        {/* Botón Volver */}
-        <Link 
-          href={`/${lang}/agencies`}
-          className="inline-flex items-center text-slate-500 hover:text-[#0c192c] font-bold text-sm mb-6 transition-colors group"
-        >
-          <i className="bx bx-left-arrow-alt text-xl mr-1 group-hover:-translate-x-1 transition-transform"></i>
-          {commonBack}
-        </Link>
+
 
         {/* Banner Hero con Colores Oficiales Hotelbeds (Midnight Blue #0c192c y Rojo Carmesí #e2001a) */}
         <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-[#0c192c] via-[#0d233a] to-[#0f172a] text-white p-10 md:p-14 shadow-xl mb-10 flex flex-col md:flex-row items-center justify-between gap-8">

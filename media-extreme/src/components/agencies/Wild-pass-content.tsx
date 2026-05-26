@@ -15,7 +15,6 @@ export default function WildPassContent({ lang, dict }: AgencyContentProps) {
     badge: 'Socio de Aventura y Promoción'
   };
 
-  // Filtrar productos para mostrar únicamente las 6 tarjetas de Wild Pass
   const wildPassProductIds = [
     'extreme_atv_wild_pass',
     'extreme_wild_pass_horseback_ride',
@@ -33,7 +32,6 @@ export default function WildPassContent({ lang, dict }: AgencyContentProps) {
     <div className="bg-[#f8fafc] min-h-screen pt-8 pb-16 text-[#1c2a4b] font-sans selection:bg-[#f97316]/30">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
 
-        {/* Banner Hero con Colores de Wild Pass (Tierra/Piedra #1c1917 y Naranja Aventura #f97316) */}
         <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-[#1c1917] via-[#78350f] to-[#b45309] text-white p-10 md:p-14 shadow-xl mb-10 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="absolute top-0 right-0 w-80 h-80 bg-[#f97316]/10 blur-3xl rounded-full translate-x-20 -translate-y-20"></div>
           <div className="absolute -bottom-16 -left-16 w-56 h-56 bg-white/5 blur-2xl rounded-full"></div>
@@ -58,36 +56,24 @@ export default function WildPassContent({ lang, dict }: AgencyContentProps) {
           </div>
         </div>
 
-        {/* Sección: Nuestras Experiencias */}
         <section className="mb-10">
           {dict?.experiences && (
             <div className="mb-6">
-              <h2 className="text-3xl font-black text-[#78350f] mb-8 text-center md:text-left">
-                {dict.experiences.title || 'Nuestras Experiencias'}
-              </h2>
-
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 {dict.experiences.items.map((exp: any, idx: number) => (
                   <div key={idx} className="group bg-white rounded-2xl border border-slate-100 shadow-sm p-8 flex flex-col items-center text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 relative overflow-hidden">
-                    {/* Decorative background glow on hover */}
                     <div className="absolute -top-12 -right-12 w-24 h-24 bg-[#78350f]/5 rounded-full blur-xl group-hover:bg-[#f97316]/10 transition-all duration-500"></div>
-
-                    {/* Icon Container */}
                     <div className="w-16 h-16 rounded-2xl bg-[#78350f]/10 flex items-center justify-center mb-6 text-[#78350f] group-hover:scale-110 group-hover:bg-[#f97316] group-hover:text-white transition-all duration-300 shadow-sm">
                       <i className={`bx ${exp.icon} text-3xl`}></i>
                     </div>
-
-                    {/* Title */}
                     <h3 className="font-bold text-lg md:text-xl text-[#1c2a4b] mb-3 leading-snug group-hover:text-[#78350f] transition-colors">
                       {exp.title}
                     </h3>
 
-                    {/* Description */}
                     <p className="text-sm text-slate-500 leading-relaxed mb-4 flex-1">
                       {exp.desc}
                     </p>
 
-                    {/* Badge */}
                     {exp.badge && (
                       <span className="text-xs font-bold text-[#f97316] bg-[#f97316]/8 border border-[#f97316]/10 px-3.5 py-1.5 rounded-full mt-auto inline-block shadow-sm">
                         {exp.badge}

@@ -5,10 +5,7 @@ let locales = ['en', 'es', 'pt'];
 let defaultLocale = 'en';
 
 export function middleware(request: NextRequest) {
-  // Check if there is any supported locale in the pathname
   const { pathname } = request.nextUrl;
-  
-  // Skip public files and api routes
   if (
     pathname.startsWith('/_next') ||
     pathname.startsWith('/api') ||
@@ -17,21 +14,40 @@ export function middleware(request: NextRequest) {
     return;
   }
 
-  const pathnameHasLocale = locales.some(
-    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
-  );
+  const segments = pathname.split('/');
+  const firstSegment = segments[1];
 
-  if (pathnameHasLocale) return;
+  if (locales.includes(firstSegment)) {
+    const remainingPath = '/' + segments.slice(2).join('/');
+    const url = request.nextUrl.clone();
+    url.pathname = remainingPath === '' ? '/' : remainingPath;
+    const response = NextResponse.redirect(url);
+    response.cookies.set('NEXT_LOCALE', firstSegment, { path: '/' });
+    return response;
+  }
 
-  // Redirect if there is no locale
-  // By default we just redirect to the default locale (en)
-  request.nextUrl.pathname = `/${defaultLocale}${pathname}`;
-  return NextResponse.redirect(request.nextUrl);
+  const queryLang = request.nextUrl.searchParams.get('lang');
+  if (queryLang && locales.includes(queryLang)) {
+    const url = request.nextUrl.clone();
+    url.searchParams.delete('lang');
+    const response = NextResponse.redirect(url);
+    response.cookies.set('NEXT_LOCALE', queryLang, { path: '/' });
+    return response;
+  }
+
+  const cookie = request.cookies.get('NEXT_LOCALE');
+  let lang = cookie?.value || defaultLocale;
+  if (!locales.includes(lang)) {
+    lang = defaultLocale;
+  }
+
+  const url = request.nextUrl.clone();
+  url.pathname = `/${lang}${pathname}`;
+  return NextResponse.rewrite(url);
 }
 
 export const config = {
   matcher: [
-    // Skip all internal paths (_next)
     '/((?!_next).*)',
   ],
 };

@@ -24,12 +24,20 @@ export default function HomeContent({ lang, dict }: HomeContentProps) {
 
       {/* PANEL CENTRAL DE CONTROL (Buscador y Contexto) */}
       <main className="max-w-5xl mx-auto px-4 mt-6">
+        
+        {/* Título Principal */}
+        <div className="text-center mt-8 mb-12">
+          <h1 className="text-3xl md:text-5xl font-black tracking-tight text-[#002b11] mb-3">
+            {dict?.home?.mainTitle || "Extreme Adventure Media Center"}
+          </h1>
+          <p className="text-sm md:text-base text-slate-500 max-w-2xl mx-auto font-light">
+            {dict?.home?.subtitle || "Accede y descarga todas nuestras fichas técnicas, galerías de fotos y videos oficiales."}
+          </p>
+        </div>
+
         {/* SECCIÓN NUESTRAS EXPERIENCIAS (Al principio de la vista) */}
         {dict?.experiences && (
-          <div className="mb-12 border-b border-slate-200/60 pb-12">
-            <div className="text-center mb-10">
-            </div>
-
+          <div className="">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {dict.experiences.items.map((exp: any, idx: number) => (
                 <div key={idx} className="group bg-white rounded-2xl border border-slate-100 shadow-sm p-6 flex flex-col items-center text-center hover:shadow-md hover:-translate-y-1 transition-all duration-300 relative overflow-hidden">
@@ -42,18 +50,18 @@ export default function HomeContent({ lang, dict }: HomeContentProps) {
                   </div>
 
                   {/* Title */}
-                  <h3 className="font-bold text-base text-[#1c2a4b] mb-2 leading-snug group-hover:text-[#2c6748] transition-colors">
+                  <h3 className="font-bold text-lg text-[#1c2a4b] mb-2 leading-snug group-hover:text-[#2c6748] transition-colors">
                     {exp.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-xs text-slate-500 leading-relaxed mb-4 flex-1">
+                  <p className="text-sm text-slate-500 leading-relaxed mb-4 flex-1">
                     {exp.desc}
                   </p>
 
                   {/* Badge */}
                   {exp.badge && (
-                    <span className="text-[10px] font-bold text-[#ea3323] bg-[#ea3323]/8 border border-[#ea3323]/10 px-2.5 py-1 rounded-full mt-auto inline-block shadow-sm">
+                    <span className="text-xs font-bold text-[#ea3323] bg-[#ea3323]/8 border border-[#ea3323]/10 px-3 py-1.5 rounded-full mt-auto inline-block shadow-sm">
                       {exp.badge}
                     </span>
                   )}
@@ -64,7 +72,12 @@ export default function HomeContent({ lang, dict }: HomeContentProps) {
         )}
 
         {/* REJILLA DE TARJETAS DE DESCARGA DIRECTA */}
-        <ProductGrid products={filteredProducts} dict={dict} />
+        <div className="mt-8 border-t border-slate-200/60 pt-12">
+          <h3 className="text-3xl font-black text-[#002b11] mb-8 text-center md:text-left">
+            {dict?.products?.title || "Nuestras Experiencias"}
+          </h3>
+          <ProductGrid products={filteredProducts} dict={dict} />
+        </div>
 
         {/* Estado vacío por si no encuentran el tour */}
         {filteredProducts.length === 0 && (

@@ -4,6 +4,7 @@
     "subtitle": "Descarga todos nuestros recursos"
   },
   "home": {
+    "mainTitle": "Centro de Medios Extreme Adventure",
     "title": "Media Center Corporativo",
     "subtitle": "Material autorizado para agencias y asesores de venta.",
     "searchPlaceholder": "Buscar experiencia o producto...",
@@ -41,7 +42,7 @@
     ]
   },
   "products": {
-    "title": "Productos",
+    "title": "Nuestras Experiencias",
     "btn_pdf": "Descargar Ficha Técnica",
     "btn_photos": "Galería de Fotos",
     "btn_videos": "Video Oficial",
@@ -211,7 +212,7 @@
     "copy": "Copiar Código",
     "copiedText": "¡Copiado!",
     "bestDay": {
-      "title": "Portal de Afiliado: Best Day",
+      "title": "Media Center: Best Day",
       "badge": "Socio Preferencial",
       "commissionLabel": "Comisión Preferencial",
       "commissionValue": "15% Net Rate",
@@ -234,7 +235,7 @@
       "resource3": "Video Promocional de ATV (Edición Redes)"
     },
     "hotelBeds": {
-      "title": "Portal de Afiliado: Hotel Beds",
+      "title": "Media Center: Hotel Beds",
       "badge": "Socio de Integración API",
       "commissionLabel": "Esquema de Tarifas",
       "commissionValue": "Dynamic Net Rates",
@@ -257,7 +258,7 @@
       "resource3": "Banners Promocionales Co-Brandeados"
     },
     "jopaNauticos": {
-      "title": "Portal de Afiliado: Jopa Nauticos",
+      "title": "Media Center: Jopa Nauticos",
       "badge": "Socio de Actividades Acuáticas",
       "commissionLabel": "Comisión Acordada",
       "commissionValue": "18% Comisión",
@@ -280,7 +281,7 @@
       "resource3": "Video Snorkeling en Puerto Morelos"
     },
     "tropicalIncentives": {
-      "title": "Portal DMC: Tropical Incentives",
+      "title": "Media Center: Tropical Incentives",
       "badge": "Socio de Grupos y Convenciones",
       "commissionLabel": "Tarifa Corporativa",
       "commissionValue": "Net MICE Rates",
@@ -303,7 +304,7 @@
       "resource3": "Video Cenotes (Corporativo / Relax)"
     },
     "wildPass": {
-      "title": "Portal de Afiliado: Wild Pass",
+      "title": "Media Center: Wild Pass",
       "badge": "Socio de Aventura y Promoción",
       "commissionLabel": "Esquema Promotor",
       "commissionValue": "20% Comisión",

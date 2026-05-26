@@ -11,6 +11,10 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Extreme Adventure Media Center',
   description: 'Download all our resources - Extreme Adventure Cancun',
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 interface LayoutProps {

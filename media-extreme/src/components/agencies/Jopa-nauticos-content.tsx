@@ -52,10 +52,6 @@ const JopaNauticosContent = ({ lang, dict }: AgencyContentProps) => {
         <section className="mb-10">
           {dict?.experiences && (
             <div className="mb-6">
-              <h2 className="text-3xl font-black text-[#163155] mb-8 text-center md:text-left">
-                {dict.experiences.title || 'Nuestras Experiencias'}
-              </h2>
-
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 {dict.experiences.items.map((exp: any, idx: number) => (
                   <div key={idx} className="group bg-white rounded-2xl border border-slate-100 shadow-sm p-8 flex flex-col items-center text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 relative overflow-hidden">

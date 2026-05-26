@@ -15,13 +15,13 @@ export default function Footer({ dict }: FooterProps) {
         {/* RETÍCULA PRINCIPAL */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pb-10 border-b border-white/5">
           {/* COLUMNA 1: IDENTIDAD */}
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col items-center gap-3 text-center">
             <Image
               src="/icon/logos/logo-ext-adventuring.svg"
               alt="Extreme Adventuring"
-              width={150}
-              height={38}
-              className="w-auto h-7 opacity-90"
+              width={220}
+              height={55}
+              className="w-auto h-11 opacity-90"
             />
             <p className="text-xs text-slate-400 font-light max-w-xs leading-relaxed">
               {dict?.footer?.description || "Plataforma oficial de distribución de recursos visuales y fichas técnicas autorizadas para agencias afiliadas."}

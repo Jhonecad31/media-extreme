@@ -4,6 +4,7 @@
     "subtitle": "Baixe todos os nossos recursos"
   },
   "home": {
+    "mainTitle": "Centro de Mídia Extreme Adventure",
     "title": "Media Center Corporativo",
     "subtitle": "Material autorizado para agências e consultores de vendas.",
     "searchPlaceholder": "Pesquisar experiência ou produto...",
@@ -41,7 +42,7 @@
     ]
   },
   "products": {
-    "title": "Produtos",
+    "title": "Nossas Experiências",
     "btn_pdf": "Baixar Ficha Técnica",
     "btn_photos": "Galeria de Fotos",
     "btn_videos": "Vídeo Oficial",
@@ -211,7 +212,7 @@
     "copy": "Copiar Código",
     "copiedText": "Copiado!",
     "bestDay": {
-      "title": "Portal de Afiliado: Best Day",
+      "title": "Media Center: Best Day",
       "badge": "Parceiro Preferencial",
       "commissionLabel": "Comissão Preferencial",
       "commissionValue": "15% Net Rate",
@@ -234,7 +235,7 @@
       "resource3": "Vídeo Promocional de ATV (Edición Redes)"
     },
     "hotelBeds": {
-      "title": "Portal de Afiliado: Hotel Beds",
+      "title": "Media Center: Hotel Beds",
       "badge": "Parceiro de Integração API",
       "commissionLabel": "Esquema de Tarifas",
       "commissionValue": "Dynamic Net Rates",
@@ -257,7 +258,7 @@
       "resource3": "Banners Promocionais Co-Branded"
     },
     "jopaNauticos": {
-      "title": "Portal de Afiliado: Jopa Nauticos",
+      "title": "Media Center: Jopa Nauticos",
       "badge": "Parceiro de Atividades Aquáticas",
       "commissionLabel": "Comissão Acordada",
       "commissionValue": "18% Comissão",
@@ -280,7 +281,7 @@
       "resource3": "Vídeo de Snorkeling em Puerto Morelos"
     },
     "tropicalIncentives": {
-      "title": "Portal DMC: Tropical Incentives",
+      "title": "Media Center: Tropical Incentives",
       "badge": "Parceiro de Grupos e Convenções",
       "greeting": "Olá equipe Tropical Incentives! Acesse fichas técnicas para grupos, catálogos de team building e recursos de incentivos.",
       "commissionLabel": "Tarifa Corporativa",
@@ -304,7 +305,7 @@
       "resource3": "Vídeo Cenotes (Corporativo / Relax)"
     },
     "wildPass": {
-      "title": "Portal de Afiliado: Wild Pass",
+      "title": "Media Center: Wild Pass",
       "badge": "Parceiro de Aventura e Promoção",
       "greeting": "Olá equipe Wild Pass! Acesse os folhetos co-branded de aventura, tarifas de promotores e recursos de marketing interativo.",
       "commissionLabel": "Esquema Promotor",

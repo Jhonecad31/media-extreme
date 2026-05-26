@@ -4,6 +4,7 @@
     "subtitle": "Download all our resources"
   },
   "home": {
+    "mainTitle": "Extreme Adventure Media Center",
     "title": "Corporate Media Center",
     "subtitle": "Authorized material for agencies and sales advisors.",
     "searchPlaceholder": "Search experience or product...",
@@ -41,7 +42,7 @@
     ]
   },
   "products": {
-    "title": "Products",
+    "title": "Our Experiences",
     "btn_pdf": "Download Fact Sheet",
     "btn_photos": "Photo Gallery",
     "btn_videos": "Official Video",
@@ -211,7 +212,7 @@
     "copy": "Copy Code",
     "copiedText": "Copied!",
     "bestDay": {
-      "title": "Affiliate Portal: Best Day",
+      "title": "Media Center: Best Day",
       "badge": "Preferred Partner",
       "commissionLabel": "Preferred Commission",
       "commissionValue": "15% Net Rate",
@@ -234,7 +235,7 @@
       "resource3": "ATV Promo Video (Social Media Edit)"
     },
     "hotelBeds": {
-      "title": "Affiliate Portal: Hotel Beds",
+      "title": "Media Center: Hotel Beds",
       "badge": "API Integration Partner",
       "commissionLabel": "Rate Scheme",
       "commissionValue": "Dynamic Net Rates",
@@ -257,7 +258,7 @@
       "resource3": "Co-Branded Promotional Banners"
     },
     "jopaNauticos": {
-      "title": "Affiliate Portal: Jopa Nauticos",
+      "title": "Media Center: Jopa Nauticos",
       "badge": "Water Activities Partner",
       "commissionLabel": "Agreed Commission",
       "commissionValue": "18% Commission",
@@ -280,7 +281,7 @@
       "resource3": "Snorkeling Video in Puerto Morelos"
     },
     "tropicalIncentives": {
-      "title": "DMC Portal: Tropical Incentives",
+      "title": "Media Center: Tropical Incentives",
       "badge": "Groups & Conventions Partner",
       "commissionLabel": "Corporate Rates",
       "commissionValue": "Net MICE Rates",
@@ -303,7 +304,7 @@
       "resource3": "Cenotes Video (Corporate / Relax)"
     },
     "wildPass": {
-      "title": "Affiliate Portal: Wild Pass",
+      "title": "Media Center: Wild Pass",
       "badge": "Adventure & Promo Partner",
       "commissionLabel": "Promoter Scheme",
       "commissionValue": "20% Commission",

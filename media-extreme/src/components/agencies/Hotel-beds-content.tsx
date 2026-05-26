@@ -21,12 +21,14 @@ export default function HotelBedsContent({ lang, dict }: AgencyContentProps) {
   const filteredProducts = (dict?.products?.items || []).filter(
     (prod: any) => prod.id === 'beach_taco_tour' || prod.id === 'beach_taco_tour'
   );
-
   const tacoGallery = [
-    { src: '/media-extreme/city-and-taco-tour.webp', alt: 'Beach Taco Tour Experience' },
-    { src: '/media-extreme/extreme-snorkeling.webp', alt: 'Puerto Morelos Reef' },
-    { src: '/media-extreme/extreme-cenote.webp', alt: 'Cenote Mayan Experience' },
-    { src: '/media-extreme/extreme-atv.webp', alt: 'ATV Jungle Tour' }
+    { src: '/Gallery-media-extreme/Beach Taco tour 02.webp', alt: 'Beach Taco Tour 02' },
+    { src: '/Gallery-media-extreme/Beach Taco tour 01.webp', alt: 'Beach Taco Tour 01' },
+    { src: '/Gallery-media-extreme/Beach Taco tour 11.webp', alt: 'Beach Taco Tour 11' },
+    { src: '/Gallery-media-extreme/Beach Taco tour 15.webp', alt: 'Beach Taco Tour 15' },
+    { src: '/Gallery-media-extreme/Beach Taco tour 12.webp', alt: 'Beach Taco Tour 12' },
+    { src: '/Gallery-media-extreme/Beach Taco tour 09.webp', alt: 'Beach Taco Tour 09' },
+    { src: '/Gallery-media-extreme/Beach Taco tour 13.webp', alt: 'Beach Taco Tour 13' }
   ];
 
   const [activeImage, setActiveImage] = useState<string>(tacoGallery[0].src);
@@ -35,6 +37,7 @@ export default function HotelBedsContent({ lang, dict }: AgencyContentProps) {
     <div className="bg-[#f8fafc] min-h-screen pt-8 pb-16 text-[#1c2a4b] font-sans selection:bg-[#e2001a]/30">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         
+
 
 
         {/* Banner Hero con Colores Oficiales Hotelbeds (Midnight Blue #0c192c y Rojo Carmesí #e2001a) */}
@@ -69,10 +72,6 @@ export default function HotelBedsContent({ lang, dict }: AgencyContentProps) {
         <section className="mb-10">
           {dict?.experiences && (
             <div className="mb-6">
-              <h2 className="text-3xl font-black text-[#0c192c] mb-8 text-center md:text-left">
-                {dict.experiences.title || 'Nuestras Experiencias'}
-              </h2>
-
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 {dict.experiences.items.map((exp: any, idx: number) => (
                   <div key={idx} className="group bg-white rounded-2xl border border-slate-100 shadow-sm p-8 flex flex-col items-center text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 relative overflow-hidden">
@@ -95,7 +94,7 @@ export default function HotelBedsContent({ lang, dict }: AgencyContentProps) {
                     </p>
 
                     {/* Badge */}
-                    {exp.badge && (
+                    {exp.badge && exp.icon !== 'bx-time-five' && (
                       <span className="text-xs font-bold text-[#e2001a] bg-[#e2001a]/8 border border-[#e2001a]/10 px-3.5 py-1.5 rounded-full mt-auto inline-block shadow-sm">
                         {exp.badge}
                       </span>
@@ -109,7 +108,7 @@ export default function HotelBedsContent({ lang, dict }: AgencyContentProps) {
         <section className="mb-14 border-t border-slate-200/60 pt-12">
           <div className="text-center md:text-left mb-8">
             <h2 className="text-3xl font-black text-[#0c192c] mb-2">
-              Galería: City & Taco Tour
+              Galería: Beach Taco Tour
             </h2>
             <p className="text-sm text-slate-400">
               Explora imágenes de la experiencia gastronómica y cultural en Puerto Morelos.
@@ -131,14 +130,14 @@ export default function HotelBedsContent({ lang, dict }: AgencyContentProps) {
             </div>
 
             {/* Selector de Miniaturas */}
-            <div className="grid grid-cols-2 lg:grid-cols-1 gap-4 h-fit">
+            <div className="grid grid-cols-4 lg:grid-cols-2 gap-3 h-fit max-h-[500px] overflow-y-auto pr-2 custom-scrollbar">
               {tacoGallery.map((img, idx) => {
                 const isActive = img.src === activeImage;
                 return (
                   <button
                     key={idx}
                     onClick={() => setActiveImage(img.src)}
-                    className={`relative h-24 lg:h-28 w-full rounded-2xl overflow-hidden shadow-sm transition-all duration-300 border ${
+                    className={`relative h-20 md:h-24 w-full rounded-2xl overflow-hidden shadow-sm transition-all duration-300 border ${
                       isActive 
                         ? 'border-[#e2001a] ring-2 ring-[#e2001a]/30 scale-[1.02]' 
                         : 'border-slate-100 hover:border-slate-300 hover:scale-[1.01]'
@@ -149,7 +148,7 @@ export default function HotelBedsContent({ lang, dict }: AgencyContentProps) {
                       src={img.src}
                       alt={img.alt}
                       fill
-                      sizes="(max-w-640px) 50vw, 25vw"
+                      sizes="(max-w-640px) 25vw, 15vw"
                       className="object-cover"
                     />
                   </button>

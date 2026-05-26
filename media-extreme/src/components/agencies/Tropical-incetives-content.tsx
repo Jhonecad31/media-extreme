@@ -53,33 +53,36 @@ export default function TropicalIncentivesContent({ lang, dict }: AgencyContentP
         <section className="mb-10">
           {dict?.experiences && (
             <div className="mb-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-6">
                 {dict.experiences.items.map((exp: any, idx: number) => (
-                  <div key={idx} className="group bg-white rounded-2xl border border-slate-100 shadow-sm p-8 flex flex-col items-center text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 relative overflow-hidden">
+                  <div key={idx} className="group bg-white rounded-xl border border-slate-100 shadow-sm p-2 flex flex-row items-center text-left gap-2 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 relative overflow-hidden sm:flex-col sm:items-center sm:text-center sm:p-8 h-full min-h-[92px] sm:min-h-0">
                     {/* Decorative background glow on hover */}
                     <div className="absolute -top-12 -right-12 w-24 h-24 bg-[#002d5d]/5 rounded-full blur-xl group-hover:bg-[#d7aa38]/10 transition-all duration-500"></div>
 
                     {/* Icon Container */}
-                    <div className="w-16 h-16 rounded-2xl bg-[#002d5d]/10 flex items-center justify-center mb-6 text-[#002d5d] group-hover:scale-110 group-hover:bg-[#d7aa38] group-hover:text-white transition-all duration-300 shadow-sm">
-                      <i className={`bx ${exp.icon} text-3xl`}></i>
+                    <div className="w-11 h-11 sm:w-16 sm:h-16 rounded-lg sm:rounded-2xl bg-[#002d5d]/10 flex items-center justify-center text-[#002d5d] group-hover:scale-110 group-hover:bg-[#d7aa38] group-hover:text-white transition-all duration-300 shadow-sm shrink-0 sm:mb-6">
+                      <i className={`bx ${exp.icon} text-lg sm:text-3xl`}></i>
                     </div>
 
-                    {/* Title */}
-                    <h3 className="font-bold text-lg md:text-xl text-[#1c2a4b] mb-3 leading-snug group-hover:text-[#002d5d] transition-colors">
-                      {exp.title}
-                    </h3>
+                    {/* Text Wrapper */}
+                    <div className="flex flex-col flex-1 h-full sm:items-center">
+                      {/* Title */}
+                      <h3 className="font-bold text-sm sm:text-lg md:text-xl text-[#1c2a4b] mb-0.5 sm:mb-3 leading-snug group-hover:text-[#002d5d] transition-colors">
+                        {exp.title}
+                      </h3>
 
-                    {/* Description */}
-                    <p className="text-sm text-slate-500 leading-relaxed mb-4 flex-1">
-                      {exp.desc}
-                    </p>
+                      {/* Description */}
+                      <p className="text-xs sm:text-sm text-slate-500 leading-snug mb-0.5 sm:mb-4">
+                        {exp.desc}
+                      </p>
 
-                    {/* Badge */}
-                    {exp.badge && (
-                      <span className="text-xs font-bold text-[#d7aa38] bg-[#d7aa38]/8 border border-[#d7aa38]/10 px-3.5 py-1.5 rounded-full mt-auto inline-block shadow-sm">
-                        {exp.badge}
-                      </span>
-                    )}
+                      {/* Badge */}
+                      {exp.badge && (
+                        <span className="text-[8px] sm:text-xs font-bold text-[#d7aa38] bg-[#d7aa38]/8 border border-[#d7aa38]/10 px-1.5 py-0.5 sm:px-3.5 sm:py-1.5 rounded-full self-start sm:self-auto mt-auto inline-block shadow-sm">
+                          {exp.badge}
+                        </span>
+                      )}
+                    </div>
                   </div>
                 ))}
               </div>

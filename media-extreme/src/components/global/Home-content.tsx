@@ -38,33 +38,36 @@ export default function HomeContent({ lang, dict }: HomeContentProps) {
         {/* SECCIÓN NUESTRAS EXPERIENCIAS (Al principio de la vista) */}
         {dict?.experiences && (
           <div className="">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-6">
               {dict.experiences.items.map((exp: any, idx: number) => (
-                <div key={idx} className="group bg-white rounded-2xl border border-slate-100 shadow-sm p-6 flex flex-col items-center text-center hover:shadow-md hover:-translate-y-1 transition-all duration-300 relative overflow-hidden">
+                <div key={idx} className="group bg-white rounded-xl border border-slate-100 shadow-sm p-2 flex flex-row items-center text-left gap-2 hover:shadow-md hover:-translate-y-1 transition-all duration-300 relative overflow-hidden sm:flex-col sm:items-center sm:text-center sm:p-6 h-full min-h-[92px] sm:min-h-0">
                   {/* Decorative background glow on hover */}
                   <div className="absolute -top-12 -right-12 w-24 h-24 bg-[#8ebf25]/5 rounded-full blur-xl group-hover:bg-[#8ebf25]/15 transition-all duration-500"></div>
 
                   {/* Icon Container */}
-                  <div className="w-14 h-14 rounded-2xl bg-[#8ebf25]/10 flex items-center justify-center mb-5 text-[#8ebf25] group-hover:scale-110 group-hover:bg-[#8ebf25] group-hover:text-white transition-all duration-300 shadow-sm">
-                    <i className={`bx ${exp.icon} text-2xl`}></i>
+                  <div className="w-11 h-11 sm:w-14 sm:h-14 rounded-lg sm:rounded-2xl bg-[#8ebf25]/10 flex items-center justify-center text-[#8ebf25] group-hover:scale-110 group-hover:bg-[#8ebf25] group-hover:text-white transition-all duration-300 shadow-sm shrink-0 sm:mb-5">
+                    <i className={`bx ${exp.icon} text-lg sm:text-2xl`}></i>
                   </div>
 
-                  {/* Title */}
-                  <h3 className="font-bold text-lg text-[#1c2a4b] mb-2 leading-snug group-hover:text-[#2c6748] transition-colors">
-                    {exp.title}
-                  </h3>
+                  {/* Text Wrapper */}
+                  <div className="flex flex-col flex-1 h-full sm:items-center">
+                    {/* Title */}
+                    <h3 className="font-bold text-base sm:text-lg text-[#1c2a4b] mb-0.5 sm:mb-2 leading-snug group-hover:text-[#2c6748] transition-colors">
+                      {exp.title}
+                    </h3>
 
-                  {/* Description */}
-                  <p className="text-sm text-slate-500 leading-relaxed mb-4 flex-1">
-                    {exp.desc}
-                  </p>
+                    {/* Description */}
+                    <p className="text-xs sm:text-sm text-slate-500 leading-snug mb-0.5 sm:mb-4">
+                      {exp.desc}
+                    </p>
 
-                  {/* Badge */}
-                  {exp.badge && (
-                    <span className="text-xs font-bold text-[#ea3323] bg-[#ea3323]/8 border border-[#ea3323]/10 px-3 py-1.5 rounded-full mt-auto inline-block shadow-sm">
-                      {exp.badge}
-                    </span>
-                  )}
+                    {/* Badge */}
+                    {exp.badge && (
+                      <span className="text-[8px] sm:text-xs font-bold text-[#ea3323] bg-[#ea3323]/8 border border-[#ea3323]/10 px-1.5 py-0.5 sm:px-3 sm:py-1.5 rounded-full self-start sm:self-auto mt-auto inline-block shadow-sm">
+                        {exp.badge}
+                      </span>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>

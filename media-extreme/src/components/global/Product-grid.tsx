@@ -36,18 +36,30 @@ export default function ProductGrid({ products, dict }: ProductGridProps) {
           </div>
 
           {/* Botonera de descarga limpia */}
-          <div className="bg-slate-50 p-4 border-t border-slate-100 grid grid-cols-3 gap-2 text-center text-xs font-bold">
+          <div className={`bg-slate-50 p-3 sm:p-4 border-t border-slate-100 grid gap-1 sm:gap-2 text-center text-[10px] sm:text-xs font-bold ${
+            prod.mica ? 'grid-cols-4' : 'grid-cols-3'
+          }`}>
             
             {/* PDF */}
-            <a href={prod.pdf} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1.5 p-2 rounded-xl hover:bg-white hover:shadow-sm border border-transparent hover:border-slate-100 transition-all text-[#ea3323]">
+            <a href={prod.pdf} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1.5 p-1.5 sm:p-2 rounded-xl hover:bg-white hover:shadow-sm border border-transparent hover:border-slate-100 transition-all text-[#ea3323]">
               <div className="w-8 h-8 rounded-lg bg-[#ea3323]/10 flex items-center justify-center text-lg">
                 <i className='bx bxs-file-pdf'></i>
               </div>
               <span>{dict?.home?.btnFactSheet || "Ficha"}</span>
             </a>
 
+            {/* Mica */}
+            {prod.mica && (
+              <a href={prod.mica} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1.5 p-1.5 sm:p-2 rounded-xl hover:bg-white hover:shadow-sm border border-transparent hover:border-slate-100 transition-all text-[#ea580c]">
+                <div className="w-8 h-8 rounded-lg bg-[#ea580c]/10 flex items-center justify-center text-lg">
+                  <i className='bx bxs-file-pdf'></i>
+                </div>
+                <span>{dict?.home?.btnMica || "Mica"}</span>
+              </a>
+            )}
+
             {/* Fotos */}
-            <a href={prod.photos} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1.5 p-2 rounded-xl hover:bg-white hover:shadow-sm border border-transparent hover:border-slate-100 transition-all text-[#006daf]">
+            <a href={prod.photos} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1.5 p-1.5 sm:p-2 rounded-xl hover:bg-white hover:shadow-sm border border-transparent hover:border-slate-100 transition-all text-[#006daf]">
               <div className="w-8 h-8 rounded-lg bg-[#006daf]/10 flex items-center justify-center text-lg">
                 <i className='bx bxl-dropbox'></i>
               </div>
@@ -55,7 +67,7 @@ export default function ProductGrid({ products, dict }: ProductGridProps) {
             </a>
 
             {/* Video */}
-            <a href={prod.video} download className="flex flex-col items-center gap-1.5 p-2 rounded-xl hover:bg-white hover:shadow-sm border border-transparent hover:border-slate-100 transition-all text-[#2c6748]">
+            <a href={prod.video} download className="flex flex-col items-center gap-1.5 p-1.5 sm:p-2 rounded-xl hover:bg-white hover:shadow-sm border border-transparent hover:border-slate-100 transition-all text-[#2c6748]">
               <div className="w-8 h-8 rounded-lg bg-[#2c6748]/10 flex items-center justify-center text-lg">
                 <i className='bx bx-video'></i>
               </div>

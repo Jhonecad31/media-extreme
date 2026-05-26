@@ -34,17 +34,12 @@ export default function Header({ lang, dict }: HeaderProps) {
             priority 
           />
         </Link>
-
-        {/* NAVEGACIÓN ESCRITORIO (Centrada) */}
         <nav className="hidden md:flex items-center space-x-8">
         </nav>
-
-        {/* ACCIONES (Derecha) */}
         <div className="flex items-center space-x-4">
           <LanguageSelector currentLang={lang} />
         </div>
       </div>
-     
     </header>
   );
 }

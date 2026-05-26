@@ -21,7 +21,7 @@ export default function ProductGrid({ products, dict }: ProductGridProps) {
               fill
               sizes="(max-w-768px) 100vw, 33vw"
               className="object-cover group-hover:scale-105 transition-transform duration-500"
-              priority={idx < 3}
+              priority={idx < 12}
             />
           </div>
 

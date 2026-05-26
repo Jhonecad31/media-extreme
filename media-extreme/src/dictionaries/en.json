@@ -54,7 +54,7 @@
         "title": "Extreme ATV Adventure",
         "img": "/media-extreme/extreme-atv.webp",
         "pdf": "/factsheet/ExtremeATVAdventureFactSheet-ing.pdf",
-        "photos": "/media-extreme/extreme-atv.webp",
+        "photos": "https://www.dropbox.com/home/Media%20Center%20Extreme/Extreme%20Atv%20Adventure/Fotograf%C3%ADas%20Extreme%20ATV%20Adventure",
         "video": "../videos/extreme-atv-adventure.mp4"
       },
       {
@@ -62,7 +62,7 @@
         "title": "Extreme Horses Adventure",
         "img": "/media-extreme/extreme-horse.webp",
         "pdf": "../factsheet/ExtremeHorseAdventureFactSheet-ing.pdf",
-        "photos": "/media-extreme/extreme-horse.webp",
+        "photos": "https://www.dropbox.com/home/Media%20Center%20Extreme/Extreme%20Horse%20Adventure/Fotografias%20Extreme%20Horse%20Adventure",
         "video": "../videos/extreme-horse-adventuring.mp4"
       },
       {
@@ -70,7 +70,7 @@
         "title": "Cenote Adventuring",
         "img": "/media-extreme/extreme-cenote.webp",
         "pdf": "../factsheet/CenoteAdventuringFactsheet-ing.pdf",
-        "photos": "/media-extreme/extreme-cenote.webp",
+        "photos": "https://www.dropbox.com/home/Media%20Center%20Extreme/Cenote%20Adventuring/Fotograf%C3%ADas%20Cenote%20Adventuring",
         "video": "../videos/cenote-adventuring.mp4"
       },
       {
@@ -78,7 +78,7 @@
         "title": "Beach Taco Tour",
         "img": "/media-extreme/city-and-taco-tour.webp",
         "pdf": "../factsheet/city-and-taco-tour-ing.pdf",
-        "photos": "/media-extreme/city-and-taco-tour.webp",
+        "photos": "https://www.dropbox.com/home/Media%20Center%20Extreme/City%20%26%20Taco%20tour/Im%C3%A1genes%20City%20%26%20Taco%20Tour",
         "video": "../videos/tactotour-puerto-morelos-horizontal.mp4"
       },
       {
@@ -86,7 +86,7 @@
         "title": "Snorkeling Adventure",
         "img": "/media-extreme/extreme-snorkeling.webp",
         "pdf": "../factsheet/ExtremeSnorkelFactSheet-ing.pdf",
-        "photos": "/media-extreme/extreme-snorkeling.webp",
+        "photos": "https://www.dropbox.com/home/Media%20Center%20Extreme/Snorkeling%20Adventure/Fotograf%C3%ADas%20Extreme%20Snorkel",
         "video": "../videos/extreme-snorkel-adventure.mp4"
       },
       {
@@ -94,7 +94,7 @@
         "title": "Private Snorkeling Experience",
         "img": "/media-extreme/extreme-snorkeling-private.webp",
         "pdf": "../factsheet/private-snorkeling-ing.pdf",
-        "photos": "https://www.dropbox.com/scl/fo/vz3bwy6duu8240w5sen4s/AOu_AesIehX-jD1MGQ1fNe4?rlkey=x2elyiafgec65rmckb6r5pnyx&st=3fv5ow0b&dl=0",
+        "photos": "https://www.dropbox.com/home/Media%20Center%20Extreme/Private%20Snorkeling/Fotografias%20Private%20Snorkeling",
         "video": "../videos/private-snorkeling-experience-video.mp4"
       },
       {
@@ -102,7 +102,7 @@
         "title": "Super Combo (Combo 1)",
         "img": "/media-extreme/extreme-super-combo.webp",
         "pdf": "../factsheet/SuperComboFactSheet-ing.pdf",
-        "photos": "https://www.dropbox.com/sh/xueflqyywn3uagf/AADZLTLh5nMedkMUXd0Mfihya?dl=0",
+        "photos": "https://www.dropbox.com/home/Media%20Center%20Extreme/Super%20Combo/Fotografias%20Super%20Combo",
         "video": "../videos/super-combo.mp4"
       },
       {
@@ -110,7 +110,7 @@
         "title": "Extreme ATV Wild Pass",
         "img": "/media-extreme/extreme-atv.webp",
         "pdf": "../factsheet/ExtremeATVWildPassFactSheet-ing.pdf",
-        "photos": "/media-extreme/extreme-atv.webp",
+        "photos": "https://www.dropbox.com/home/Media%20Center%20Extreme/Extreme%20Atv%20Adventure/Fotograf%C3%ADas%20Extreme%20ATV%20Adventure",
         "video": "../videos/extreme-atv-adventure.mp4"
       },
       {
@@ -118,7 +118,7 @@
         "title": "Extreme Wild Pass + Horseback Ride",
         "img": "/media-extreme/extreme-horse.webp",
         "pdf": "../factsheet/ExtremeWildPassHorsebackRideFactSheet-ing.pdf",
-        "photos": "/media-extreme/extreme-horse.webp",
+        "photos": "https://www.dropbox.com/home/Media%20Center%20Extreme/Extreme%20Horse%20Adventure/Fotografias%20Extreme%20Horse%20Adventure?share_manage_access=false",
         "video": "../videos/extreme-horse-adventuring.mp4"
       }
     ]
@@ -129,145 +129,78 @@
       {
         "q": "What type of footwear do I need for ATVs?",
         "a": "The park activities are very intense, so it is best to bring <strong>comfortable clothes and shoes</strong>, as well as a <strong>swimsuit</strong>. If you have water shoes, it will be ideal since you will be in constant contact with water and mud. If you do not have them, you can find the appropriate accessories in our preparation zone.",
-        "icon": "bx-walk",
-        "tags": [
-          { "icon": "bx-closet", "label": "Comfortable clothes" },
-          { "icon": "bx-walk", "label": "Closed shoes" },
-          { "icon": "bx-swim", "label": "Swimsuit" }
-        ]
+        "img": "/question-media/calzado-shoes.webp"
       },
       {
         "q": "Should I bring a towel?",
         "a": "Yes, each passenger <strong>must bring their own towel and swimsuit</strong>, as well as personal hygiene and care items. If you do not have a towel, you can purchase one in our preparation zone, as well as sunglasses, insect repellent, and other personal care accessories.",
-        "icon": "bx-swim",
-        "tags": [
-          { "icon": "bx-select-multiple", "label": "Bring towel" },
-          { "icon": "bx-swim", "label": "Swimsuit" },
-          { "icon": "bx-sun", "label": "Personal care" }
-        ]
+        "img": "/question-media/toalla-towell-swimsiut.webp"
       },
       {
         "q": "What is the minimum age to participate in the activities at the park?",
         "a": "All park activities can be done by children <strong>from 4 years old and up.</strong> The minor must remain under the supervision, companionship, and responsibility of their parents or guardians. If the child is <strong>under 4 years old, a family member must stay with them</strong> and not participate in the activities.",
-        "icon": "bx-child",
-        "tags": [
-          { "icon": "bx-child", "label": "Children from 4 years" },
-          { "icon": "bx-user-voice", "label": "Adult supervision" }
-        ]
+        "img": "/question-media/plus-4-age.webp"
       },
       {
         "q": "What is the minimum age to drive an ATV?",
         "a": "The minimum age is <strong>16 years old accompanied by an adult</strong> on the same ATV. To drive an ATV alone, you must be at least <strong>18 years of age.</strong>",
-        "icon": "bx-id-card",
-        "tags": [
-          { "icon": "bx-user", "label": "Accompanied from 16 years" },
-          { "icon": "bx-id-card", "label": "Solo from 18 years" }
-        ]
+        "img": "/question-media/plus-16-18-age.webp"
       },
       {
         "q": "What is the maximum weight for the horseback ride?",
         "a": "In order to ride our horses, the passenger's weight must not exceed <strong>110 kilograms or 242.5 pounds.</strong> If this limit is exceeded, the visitor will not be able to participate in this activity.",
-        "icon": "bx-tachometer",
-        "tags": [
-          { "icon": "bx-tachometer", "label": "Max 110 kg / 242 lbs" }
-        ]
+        "img": "/question-media/peso-caballos.webp"
       },
       {
         "q": "What is the maximum weight to use the ziplines?",
         "a": "In order to climb and slide on our ziplines, the passenger's weight must not exceed <strong>130 kilograms or 286 pounds.</strong> If this limit is exceeded, the visitor will not be able to participate in this activity.",
-        "icon": "bx-dumbbell",
-        "tags": [
-          { "icon": "bx-dumbbell", "label": "Max 130 kg / 286 lbs" }
-        ]
+        "img": "/question-media/peso-zipline.webp"
       },
       {
         "q": "Who cannot participate in the park activities?",
         "a": "All park activities involve physical effort and impact on the human body, so <strong>the following individuals CANNOT participate in these activities</strong>: <ul><li>Pregnant women.</li><li>People with recent operations or surgeries <em>(6 months)</em>.</li><li>People with muscle injuries in any part of the body.</li><li>People with any physical disability that prevents them from performing the activities.</li></ul>",
-        "icon": "bx-block",
-        "tags": [
-          { "icon": "bx-block", "label": "Pregnant women" },
-          { "icon": "bx-plus-medical", "label": "Recent surgeries" },
-          { "icon": "bx-error", "label": "Injuries/Disabilities" }
-        ]
+        "img": "/question-media/forbiden-pax.webp"
       },
       {
         "q": "Preventive safety measures?",
         "a": "Due to international safety standards, to guarantee the safety of our visitors during the park activities, the use of cameras or cell phones is not allowed.",
-        "icon": "bx-camera-off",
-        "tags": [
-          { "icon": "bx-camera-off", "label": "No cameras" },
-          { "icon": "bx-mobile-off", "label": "No cell phones" }
-        ]
+        "img": "/question-media/sin-fotos.webp"
       },
       {
         "q": "What days does the park close?",
         "a": "The park only suspends its operations and remains closed on <strong>January 1st and December 25th.</strong>",
-        "icon": "bx-calendar-x",
-        "tags": [
-          { "icon": "bx-calendar-x", "label": "Closed Jan 1 & Dec 25" }
-        ]
+        "img": "/question-media/closed.webp"
       },
       {
         "q": "Does the park close when it rains?",
         "a": "Our park remains open in regular weather conditions of the Mexican Caribbean, such as torrential rain and spontaneous wind. However, the park may suspend its operations and close in the event of natural disasters such as <strong>thunderstorms and hurricanes.</strong>",
-        "icon": "bx-cloud-rain",
-        "tags": [
-          { "icon": "bx-cloud-rain", "label": "Open in rain" },
-          { "icon": "bx-wind", "label": "Closed in hurricane" }
-        ]
+        "img": "/question-media/always-open.webp" 
       },
       {
         "q": "Is transportation included?",
-        "a": "<strong>Yes</strong>, all of our activities and tours include round-trip transportation from your hotel or meeting point.",
-        "icon": "bx-bus",
-        "tags": [
-          { "icon": "bx-bus", "label": "Round-trip transport" }
-        ]
+        "a": "<strong>Yes</strong>, all of our activities and tours include round-trip transportation from your hotel or meeting point."
       },
       {
         "q": "Where will the transportation pick me up?",
         "a": "Regularly, our vehicles pick up and return passengers <strong>at the hotel</strong> where they are staying. There can be exceptions for vacation rentals or hotels that do not allow access. In these cases, a <strong>nearby meeting point</strong> is assigned. To confirm this, please contact customer service to determine the corresponding meeting point.",
-        "icon": "bx-map-pin",
-        "tags": [
-          { "icon": "bx-hotel", "label": "Hotel pick-up" },
-          { "icon": "bx-map-pin", "label": "Meeting points" }
-        ]
+        "img": "/question-media/extreme-adventure-location.webp"
       },
       {
         "q": "What type of transportation will pick me up?",
         "a": "Our units are unmistakable thanks to their wrapping and <strong>jaguar skin colors, in addition to images and our own registered trademark logo</strong>. We have different models of <strong>vans or minivans</strong> properly labeled for easy identification.",
-        "icon": "bx-car",
-        "tags": [
-          { "icon": "bx-car", "label": "Labeled vans & minivans" },
-          { "icon": "bx-badge", "label": "Official brand logo" }
-        ]
+        "img": "/question-media/extreme-adventure-van-transportation.webp"
       },
       {
         "q": "How can I identify the transportation driver?",
-        "a": "If for any reason you have doubts about who is the person officially authorized by the company to pick up a passenger, you can contact the customer service area and <strong>request the operator's name, as well as the estimated time of arrival</strong> at your hotel or meeting point.",
-        "icon": "bx-user-check",
-        "tags": [
-          { "icon": "bx-support", "label": "Customer support" },
-          { "icon": "bx-user-check", "label": "Driver identification" }
-        ]
+        "a": "If for any reason you have doubts about who is the person officially authorized by the company to pick up a passenger, you can contact the customer service area and <strong>request the operator's name, as well as the estimated time of arrival</strong> at your hotel or meeting point."
       },
       {
         "q": "What happens if I miss the transportation?",
-        "a": "If for any reason the passenger is delayed, cannot find the lobby, the meeting point, or cannot reach the pickup location on time, they will miss the transportation. In this case, <strong>they will have to reach the park by their own means</strong>, either by hiring another private transportation or by requesting a taxi service to reach the park.",
-        "icon": "bx-time-five",
-        "tags": [
-          { "icon": "bx-time-five", "label": "Punctuality mandatory" },
-          { "icon": "bx-taxi", "label": "Arrive on your own" }
-        ]
+        "a": "If for any reason the passenger is delayed, cannot find the lobby, the meeting point, or cannot reach the pickup location on time, they will miss the transportation. In this case, <strong>they will have to reach the park by their own means</strong>, either by hiring another private transportation or by requesting a taxi service to reach the park."
       },
       {
         "q": "What drinks are included in the park?",
-        "a": "In our park <strong>we have natural water dispensers</strong>, however, it does not include flavored or bottled drinks; these can be purchased at an extra cost.",
-        "icon": "bx-drink",
-        "tags": [
-          { "icon": "bx-water", "label": "Natural water included" },
-          { "icon": "bx-dollar-circle", "label": "Drinks extra cost" }
-        ]
+        "a": "In our park <strong>we have natural water dispensers</strong>, however, it does not include flavored or bottled drinks; these can be purchased at an extra cost."
       }
     ]
   },

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import ProductGrid from './Product-grid';
+import { getIKUrl } from '@/src/lib/imagekit';
 
 interface HomeContentProps {
   lang: string;
@@ -13,9 +14,10 @@ export default function HomeContent({ lang, dict }: HomeContentProps) {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
 
   // Filtrado rápido para que el vendedor encuentre el producto al instante en la calle
-  const filteredProducts = dict.products.items.filter((prod: any) =>
-    prod.title.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const filteredProducts = dict.products.items.filter((prod: any) => {
+    if (['extreme_atv_wild_pass', 'extreme_wild_pass_horseback_ride'].includes(prod.id)) return false;
+    return prod.title.toLowerCase().includes(searchTerm.toLowerCase());
+  });
 
   return (
     <div className="bg-[#f8fafc] min-h-screen text-[#1c2a4b] font-sans selection:bg-[#8ebf25]/40 pb-12">
@@ -115,6 +117,21 @@ export default function HomeContent({ lang, dict }: HomeContentProps) {
                           className="[&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-1 [&_ul]:mt-2 [&_strong]:text-slate-800 [&_strong]:font-semibold [&_em]:italic"
                           dangerouslySetInnerHTML={{ __html: item.a }}
                         />
+
+                        {(() => {
+                          const imgSrc = item.img ? item.img.trim() : '';
+                          const isImg = imgSrc.startsWith('/') || imgSrc.endsWith('.webp') || imgSrc.endsWith('.png') || imgSrc.endsWith('.jpg');
+                          return isImg ? (
+                            <div className="mt-4 w-full flex justify-center">
+                              <img 
+                                src={getIKUrl(imgSrc, { width: 600 })} 
+                                alt={item.q} 
+                                className="max-w-full h-auto object-contain rounded-lg" 
+                                style={{ maxHeight: '300px' }} 
+                              />
+                            </div>
+                          ) : null;
+                        })()}
                         {item.tags && item.tags.length > 0 && (
                           <div className="flex flex-wrap gap-3 mt-2 pt-4 border-t border-slate-100">
                             {item.tags.map((tag: any, tIdx: number) => (

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { JSX } from 'react';
 import Image from 'next/image';
 import ProductGrid from '../global/Product-grid';
 import { imageKitLoader } from '@/src/lib/imagekit';

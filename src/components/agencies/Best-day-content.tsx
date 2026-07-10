@@ -1,5 +1,6 @@
 'use client';
 
+import { JSX } from 'react';
 import ProductGrid from '../global/Product-grid';
 import FaqAccordion from '../global/Faq-accordion';
 

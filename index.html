@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Información Diaria</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Reporte Diario</h1>
+            <p class="date" id="current-date">Cargando fecha...</p>
+        </header>
+
+        <main class="content">
+            <section class="info-card">
+                <h2>1. Tareas de Hoy</h2>
+                <ul class="task-list">
+                    <li>Revisión de inventario en el almacén principal.</li>
+                    <li>Reunión de equipo a las 10:00 AM.</li>
+                    <li>Entrega de reportes al supervisor antes de las 4:00 PM.</li>
+                </ul>
+            </section>
+
+            <section class="info-card">
+                <h2>2. Avisos Importantes</h2>
+                <div class="alert-box">
+                    <p><strong>ATENCIÓN:</strong> El comedor estará cerrado de 12:00 PM a 1:00 PM por limpieza. Por favor tome sus precauciones.</p>
+                </div>
+            </section>
+
+            <section class="info-card">
+                <h2>3. Metas de la Semana</h2>
+                <div class="progress-section">
+                    <p class="progress-text">Progreso de producción: 85%</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 85%;"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <button class="btn-primary" onclick="window.print()">Imprimir Información</button>
+            <p>Si tiene dudas, llame a la extensión 101.</p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

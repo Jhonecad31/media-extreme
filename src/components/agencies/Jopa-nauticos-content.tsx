@@ -19,12 +19,10 @@ const JopaNauticosContent = ({ lang, dict }: AgencyContentProps) => {
     <div className="bg-[#f8fafc] min-h-screen pt-8 pb-16 text-[#1c2a4b] font-sans selection:bg-[#c42727]/30">
       {/* Ajustado el contenedor de max-w-6xl a max-w-7xl y padding horizontal md:px-8 */}
       <div className="max-w-7xl mx-auto px-4 md:px-8">
-
         {/* Banner Hero más amplio y con tipografía más grande */}
         <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-[#163155] via-[#10243e] to-[#0f172a] text-white p-10 md:p-14 shadow-xl mb-10 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="absolute top-0 right-0 w-80 h-80 bg-[#c42727]/10 blur-3xl rounded-full translate-x-20 -translate-y-20"></div>
           <div className="absolute -bottom-16 -left-16 w-56 h-56 bg-white/5 blur-2xl rounded-full"></div>
-          
           <div className="relative z-10 flex-1 text-center md:text-left">
             <span className="bg-[#c42727] text-white font-bold text-xs md:text-sm uppercase tracking-wider px-4 py-2 rounded-full border border-white/10 mb-5 inline-block shadow-sm">
               {agency.badge}
@@ -36,7 +34,6 @@ const JopaNauticosContent = ({ lang, dict }: AgencyContentProps) => {
               {agency.greeting}
             </p>
           </div>
-
           <div className="relative z-10 shrink-0 transform hover:scale-105 transition-transform duration-300">
             <div className="w-32 h-32 md:w-44 md:h-44 flex items-center justify-center p-2">
               <img 
@@ -47,7 +44,6 @@ const JopaNauticosContent = ({ lang, dict }: AgencyContentProps) => {
             </div>
           </div>
         </div>
-
         {/* Sección: Nuestras Experiencias */}
         <section className="mb-10">
           {dict?.experiences && (
@@ -88,7 +84,6 @@ const JopaNauticosContent = ({ lang, dict }: AgencyContentProps) => {
             </div>
           )}
         </section>
-
         <div className="mt-8 border-t border-slate-200/60 pt-12">
           <h3 className="text-3xl font-black text-[#163155] mb-8">
             {dict?.products?.title || "Productos"}
@@ -100,7 +95,6 @@ const JopaNauticosContent = ({ lang, dict }: AgencyContentProps) => {
             dict={dict} 
           />
         </div>
-
         {/* Sección Preguntas Frecuentes (FAQ) */}
         <FaqAccordion faq={dict?.faq} accentColor="#c42727" brandColor="#163155" />
 

@@ -37,7 +37,6 @@ export default function TropicalIncentivesContent({ lang, dict }: AgencyContentP
               {agency.greeting}
             </p>
           </div>
-
           <div className="relative z-10 shrink-0 transform hover:scale-105 transition-transform duration-300">
             <div className="w-32 h-32 md:w-44 md:h-44 bg-white rounded-2xl flex items-center justify-center p-6 shadow-2xl border border-white/20">
               <img 
@@ -48,7 +47,6 @@ export default function TropicalIncentivesContent({ lang, dict }: AgencyContentP
             </div>
           </div>
         </div>
-
         {/* Sección: Nuestras Experiencias */}
         <section className="mb-10">
           {dict?.experiences && (
@@ -89,7 +87,6 @@ export default function TropicalIncentivesContent({ lang, dict }: AgencyContentP
             </div>
           )}
         </section>
-
         {/* Rejilla de productos (cards del Home) */}
         <div className="mt-8 border-t border-slate-200/60 pt-12">
           <h3 className="text-3xl font-black text-[#002d5d] mb-8">
@@ -97,7 +94,6 @@ export default function TropicalIncentivesContent({ lang, dict }: AgencyContentP
           </h3>
           <ProductGrid products={(dict?.products?.items || []).filter((p: any) => !['city_taco_tour', 'beach_taco_tour', 'extreme_atv_wild_pass', 'extreme_wild_pass_horseback_ride'].includes(p.id))} dict={dict} />
         </div>
-
         {/* Sección Preguntas Frecuentes (FAQ) */}
         <FaqAccordion faq={dict?.faq} accentColor="#d7aa38" brandColor="#002d5d" />
 

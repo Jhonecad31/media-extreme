@@ -27,7 +27,6 @@ export default function WildPassContent({ lang, dict }: AgencyContentProps) {
   const filteredProducts = (dict?.products?.items || []).filter(
     (prod: any) => wildPassProductIds.includes(prod.id)
   );
-
   return (
     <div className="bg-[#f8fafc] min-h-screen pt-8 pb-16 text-[#1c2a4b] font-sans selection:bg-[#f97316]/30">
       <div className="max-w-7xl mx-auto px-4 md:px-8">

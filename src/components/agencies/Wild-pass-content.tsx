@@ -18,10 +18,10 @@ export default function WildPassContent({ lang, dict }: AgencyContentProps) {
   const wildPassProductIds = [
     'extreme_atv_wild_pass',
     'extreme_wild_pass_horseback_ride',
-    'cenote_adventuring',
-    'snorkeling_adventure',
-    'beach_taco_tour',
-    'private_snorkeling'
+    'cenote_adventuring_wildPass',
+    'snorkeling_adventure_wildPass',
+    'beach_taco_tour_wildPass',
+    'private_snorkeling_wildPass'
   ];
 
   const filteredProducts = (dict?.products?.items || []).filter(

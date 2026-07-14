@@ -130,6 +130,42 @@
         "mica": "/assets/img/micas/Mica-Horse-Ride.pdf",
         "photos": "https://www.dropbox.com/home/Media%20Center%20Extreme/Extreme%20Horse%20Adventure/Fotografias%20Extreme%20Horse%20Adventure?share_manage_access=false",
         "video": "../videos/extreme-horse-adventuring.mp4"
+      },
+      {
+        "id": "snorkeling_adventure_wildPass",
+        "title": "Snorkeling Adventure",
+        "img": "/media-extreme/extreme-snorkeling.webp",
+        "pdf": "/factsheet/ExtremeSnorkel-wildPass-Esp.pdf",
+        "mica": "/assets/img/micas/Mica-Snorkel-Adventuring.pdf",
+        "photos": "https://www.dropbox.com/home/Media%20Center%20Extreme/Snorkeling%20Adventure/Fotograf%C3%ADas%20Extreme%20Snorkel",
+        "video": "../videos/extreme-snorkel-adventure.mp4"
+      },
+      {
+        "id": "private_snorkeling_wildPass",
+        "title": "Private Snorkeling Experience",
+        "img": "/media-extreme/extreme-snorkeling-private.webp",
+        "pdf": "/factsheet/PrivateSnorkeling-wildPass-Esp.pdf",
+        "mica": "/assets/img/micas/Mica-Snorkel-Adventuring.pdf",
+        "photos": "https://www.dropbox.com/home/Media%20Center%20Extreme/Private%20Snorkeling/Fotografias%20Private%20Snorkeling",
+        "video": "../videos/private-snorkeling-experience-video.mp4"
+      },
+      {
+        "id": "cenote_adventuring_wildPass",
+        "title": "Cenote Adventuring",
+        "img": "/media-extreme/extreme-cenote.webp",
+        "pdf": "/factsheet/CenoteAdventuring-wildPass-Esp.pdf",
+        "mica": "/assets/img/micas/Mica-Cenote-Adventuring.pdf",
+        "photos": "https://www.dropbox.com/home/Media%20Center%20Extreme/Cenote%20Adventuring/Fotograf%C3%ADas%20Cenote%20Adventuring",
+        "video": "../videos/cenote-adventuring.mp4"
+      },
+      {
+        "id": "beach_taco_tour_wildPass",
+        "title": "Beach Taco Tour",
+        "img": "/media-extreme/city-and-taco-tour.webp",
+        "pdf": "/factsheet/CityAndTacoTour-wildPass-Esp.pdf",
+        "mica": "/assets/img/micas/Mica-Beach-Taco-Tour.pdf",
+        "photos": "https://www.dropbox.com/home/Media%20Center%20Extreme/City%20%26%20Taco%20tour/Im%C3%A1genes%20City%20%26%20Taco%20Tour",
+        "video": "../videos/tactotour-puerto-morelos-horizontal.mp4"
       }
     ]
   },

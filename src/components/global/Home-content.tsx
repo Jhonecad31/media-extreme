@@ -9,22 +9,32 @@ interface HomeContentProps {
   dict: any;
 }
 
+const ProductIds = [
+  'extreme_atv_adventure',
+  'extreme_horses_adventure',
+  'cenote_venturing', 
+  'beach_taco_tour',
+  'snorkeling_adventure',
+  'private_snorkeling',
+  'super_combo'
+];
+
 export default function HomeContent({ lang, dict }: HomeContentProps) {
   const [searchTerm, setSearchTerm] = useState('');
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
 
-  // Filtrado rápido para que el vendedor encuentre el producto al instante en la calle
+  // Filtrado optimizado utilizando tu array de ProductIds
   const filteredProducts = dict.products.items.filter((prod: any) => {
-    if (['extreme_atv_wild_pass', 'extreme_wild_pass_horseback_ride'].includes(prod.id)) return false;
-    return prod.title.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesId = ProductIds.includes(prod.id);
+    const matchesSearch = prod.title.toLowerCase().includes(searchTerm.toLowerCase());
+    
+    return matchesId && matchesSearch;
   });
 
   return (
     <div className="bg-[#f8fafc] min-h-screen text-[#1c2a4b] font-sans selection:bg-[#8ebf25]/40 pb-12">
-
       {/* PANEL CENTRAL DE CONTROL (Buscador y Contexto) */}
       <main className="max-w-5xl mx-auto px-4 mt-6">
-        
         {/* Título Principal */}
         <div className="text-center mt-8 mb-12">
           <h1 className="text-3xl md:text-5xl font-black tracking-tight text-[#002b11] mb-3">

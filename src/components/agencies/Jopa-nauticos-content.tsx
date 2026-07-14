@@ -14,7 +14,6 @@ const JopaNauticosContent = ({ lang, dict }: AgencyContentProps) => {
     title: 'Portal de Afiliado: Jopa Nauticos',
     badge: 'Socio de Actividades Acuáticas'
   };
-
   return (
     <div className="bg-[#f8fafc] min-h-screen pt-8 pb-16 text-[#1c2a4b] font-sans selection:bg-[#c42727]/30">
       {/* Ajustado el contenedor de max-w-6xl a max-w-7xl y padding horizontal md:px-8 */}

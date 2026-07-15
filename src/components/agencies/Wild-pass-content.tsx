@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import ProductGrid from '../global/Product-grid';
-import FaqAccordion from '../global/Faq-accordion';
+import ProductGrid from "../global/Product-grid";
+import FaqAccordion from "../global/Faq-accordion";
 
 interface AgencyContentProps {
   lang: string;
@@ -11,30 +11,29 @@ interface AgencyContentProps {
 export default function WildPassContent({ lang, dict }: AgencyContentProps) {
   const details = dict?.agencyDetails || {};
   const agency = details.wildPass || {
-    title: 'Portal de Afiliado: Wild Pass',
-    badge: 'Socio de Aventura y Promoción'
+    title: "Portal de Afiliado: Wild Pass",
+    badge: "Socio de Aventura y Promoción",
   };
 
   const wildPassProductIds = [
-    'extreme_atv_wild_pass',
-    'extreme_wild_pass_horseback_ride',
-    'cenote_adventuring_wildPass',
-    'snorkeling_adventure_wildPass',
-    'beach_taco_tour_wildPass',
-    'private_snorkeling_wildPass'
+    "extreme_atv_wild_pass",
+    "extreme_wild_pass_horseback_ride",
+    "cenote_adventuring_wildPass",
+    "snorkeling_adventure_wildPass",
+    "beach_taco_tour_wildPass",
+    "private_snorkeling_wildPass",
   ];
 
-  const filteredProducts = (dict?.products?.items || []).filter(
-    (prod: any) => wildPassProductIds.includes(prod.id)
+  const filteredProducts = (dict?.products?.items || []).filter((prod: any) =>
+    wildPassProductIds.includes(prod.id),
   );
   return (
     <div className="bg-[#f8fafc] min-h-screen pt-8 pb-16 text-[#1c2a4b] font-sans selection:bg-[#f97316]/30">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
-
         <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-[#1c1917] via-[#78350f] to-[#b45309] text-white p-10 md:p-14 shadow-xl mb-10 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="absolute top-0 right-0 w-80 h-80 bg-[#f97316]/10 blur-3xl rounded-full translate-x-20 -translate-y-20"></div>
           <div className="absolute -bottom-16 -left-16 w-56 h-56 bg-white/5 blur-2xl rounded-full"></div>
-          
+
           <div className="relative z-10 flex-1 text-center md:text-left">
             <span className="bg-[#f97316] text-white font-bold text-xs md:text-sm uppercase tracking-wider px-4 py-2 rounded-full border border-white/10 mb-5 inline-block shadow-sm">
               {agency.badge}
@@ -46,9 +45,9 @@ export default function WildPassContent({ lang, dict }: AgencyContentProps) {
 
           <div className="relative z-10 shrink-0 transform hover:scale-105 transition-transform duration-300">
             <div className="w-32 h-32 md:w-44 md:h-44 bg-white rounded-2xl flex items-center justify-center p-6 shadow-2xl border border-white/20">
-              <img 
-                src="/icon/logos/logo-wildpass.png" 
-                alt="Wild Pass Logo" 
+              <img
+                src="/icon/logos/logo-wildpass.png"
+                alt="Wild Pass Logo"
                 className="max-w-full max-h-full object-contain"
               />
             </div>
@@ -60,9 +59,12 @@ export default function WildPassContent({ lang, dict }: AgencyContentProps) {
             <div className="mb-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-6">
                 {dict.experiences.items.map((exp: any, idx: number) => (
-                  <div key={idx} className="group bg-white rounded-xl border border-slate-100 shadow-sm p-2 flex flex-row items-center text-left gap-2 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 relative overflow-hidden sm:flex-col sm:items-center sm:text-center sm:p-8 h-full min-h-[92px] sm:min-h-0">
+                  <div
+                    key={idx}
+                    className="group bg-white rounded-xl border border-slate-100 shadow-sm p-2 flex flex-row items-center text-left gap-2 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 relative overflow-hidden sm:flex-col sm:items-center sm:text-center sm:p-8 h-full min-h-[92px] sm:min-h-0"
+                  >
                     <div className="absolute -top-12 -right-12 w-24 h-24 bg-[#78350f]/5 rounded-full blur-xl group-hover:bg-[#f97316]/10 transition-all duration-500"></div>
-                    
+
                     {/* Icon Container */}
                     <div className="w-11 h-11 sm:w-16 sm:h-16 rounded-lg sm:rounded-2xl bg-[#78350f]/10 flex items-center justify-center text-[#78350f] group-hover:scale-110 group-hover:bg-[#f97316] group-hover:text-white transition-all duration-300 shadow-sm shrink-0 sm:mb-6">
                       <i className={`bx ${exp.icon} text-lg sm:text-3xl`}></i>
@@ -99,12 +101,20 @@ export default function WildPassContent({ lang, dict }: AgencyContentProps) {
           <h3 className="text-3xl font-black text-[#78350f] mb-8">
             {dict?.products?.title || "Productos"}
           </h3>
-          <ProductGrid products={filteredProducts} dict={dict} />
+          {/* Agregamos el flag isWildPass para que oculte las micas y acomode la botonera */}
+          <ProductGrid
+            products={filteredProducts}
+            dict={dict}
+            isWildPass={true}
+          />
         </div>
 
         {/* Sección Preguntas Frecuentes (FAQ) */}
-        <FaqAccordion faq={dict?.faq} accentColor="#f97316" brandColor="#78350f" />
-
+        <FaqAccordion
+          faq={dict?.faq}
+          accentColor="#f97316"
+          brandColor="#78350f"
+        />
       </div>
     </div>
   );

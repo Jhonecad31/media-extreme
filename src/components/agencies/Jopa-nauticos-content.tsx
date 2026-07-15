@@ -8,17 +8,34 @@ interface AgencyContentProps {
   dict: any;
 }
 
+// Lista de IDs permitidos para este canal de afiliados
+const ProductIds = [
+  'extreme_atv_adventure',
+  'extreme_horses_adventure',
+  'cenote_venturing', 
+  'beach_taco_tour',
+  'snorkeling_adventure',
+  'private_snorkeling',
+  'super_combo'
+];
+
 const JopaNauticosContent = ({ lang, dict }: AgencyContentProps) => {
   const details = dict?.agencyDetails || {};
   const agency = details.jopaNauticos || {
     title: 'Portal de Afiliado: Jopa Nauticos',
     badge: 'Socio de Actividades Acuáticas'
   };
+
+  // Filtramos los productos para quedarnos únicamente con los especificados en ProductIds
+  const filteredProducts = (dict?.products?.items || []).filter(
+    (prod: any) => ProductIds.includes(prod.id)
+  );
+
   return (
     <div className="bg-[#f8fafc] min-h-screen pt-8 pb-16 text-[#1c2a4b] font-sans selection:bg-[#c42727]/30">
-      {/* Ajustado el contenedor de max-w-6xl a max-w-7xl y padding horizontal md:px-8 */}
+      {/* Contenedor principal */}
       <div className="max-w-7xl mx-auto px-4 md:px-8">
-        {/* Banner Hero más amplio y con tipografía más grande */}
+        {/* Banner Hero */}
         <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-[#163155] via-[#10243e] to-[#0f172a] text-white p-10 md:p-14 shadow-xl mb-10 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="absolute top-0 right-0 w-80 h-80 bg-[#c42727]/10 blur-3xl rounded-full translate-x-20 -translate-y-20"></div>
           <div className="absolute -bottom-16 -left-16 w-56 h-56 bg-white/5 blur-2xl rounded-full"></div>
@@ -43,6 +60,7 @@ const JopaNauticosContent = ({ lang, dict }: AgencyContentProps) => {
             </div>
           </div>
         </div>
+
         {/* Sección: Nuestras Experiencias */}
         <section className="mb-10">
           {dict?.experiences && (
@@ -50,7 +68,6 @@ const JopaNauticosContent = ({ lang, dict }: AgencyContentProps) => {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-6">
                 {dict.experiences.items.map((exp: any, idx: number) => (
                   <div key={idx} className="group bg-white rounded-xl border border-slate-100 shadow-sm p-2 flex flex-row items-center text-left gap-2 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 relative overflow-hidden sm:flex-col sm:items-center sm:text-center sm:p-8 h-full min-h-[92px] sm:min-h-0">
-                    {/* Decorative background glow on hover */}
                     <div className="absolute -top-12 -right-12 w-24 h-24 bg-[#163155]/5 rounded-full blur-xl group-hover:bg-[#c42727]/10 transition-all duration-500"></div>
 
                     {/* Icon Container */}
@@ -60,17 +77,14 @@ const JopaNauticosContent = ({ lang, dict }: AgencyContentProps) => {
 
                     {/* Text Wrapper */}
                     <div className="flex flex-col flex-1 h-full sm:items-center">
-                      {/* Title */}
                       <h3 className="font-bold text-sm sm:text-lg md:text-xl text-[#1c2a4b] mb-0.5 sm:mb-3 leading-snug group-hover:text-[#163155] transition-colors">
                         {exp.title}
                       </h3>
 
-                      {/* Description */}
                       <p className="text-xs sm:text-sm text-slate-500 leading-snug mb-0.5 sm:mb-4">
                         {exp.desc}
                       </p>
 
-                      {/* Badge */}
                       {exp.badge && (
                         <span className="text-[8px] sm:text-xs font-bold text-[#c42727] bg-[#c42727]/8 border border-[#c42727]/10 px-1.5 py-0.5 sm:px-3.5 sm:py-1.5 rounded-full self-start sm:self-auto mt-auto inline-block shadow-sm">
                           {exp.badge}
@@ -83,17 +97,18 @@ const JopaNauticosContent = ({ lang, dict }: AgencyContentProps) => {
             </div>
           )}
         </section>
+
+        {/* Sección de Productos */}
         <div className="mt-8 border-t border-slate-200/60 pt-12">
           <h3 className="text-3xl font-black text-[#163155] mb-8">
             {dict?.products?.title || "Productos"}
           </h3>
           <ProductGrid 
-            products={(dict?.products?.items || []).filter(
-              (prod: any) => !['super_combo', 'extreme_atv_wild_pass', 'extreme_wild_pass_horseback_ride'].includes(prod.id)
-            )} 
+            products={filteredProducts} 
             dict={dict} 
           />
         </div>
+
         {/* Sección Preguntas Frecuentes (FAQ) */}
         <FaqAccordion faq={dict?.faq} accentColor="#c42727" brandColor="#163155" />
 

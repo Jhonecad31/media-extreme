@@ -9,12 +9,28 @@ interface AgencyContentProps {
   dict: any;
 }
 
+// Lista de IDs permitidos para este canal de afiliados
+const ProductIds = [
+  'extreme_atv_adventure',
+  'extreme_horses_adventure',
+  'cenote_venturing', 
+  'beach_taco_tour',
+  'snorkeling_adventure',
+  'private_snorkeling',
+  'super_combo'
+];
+
 export default function BestDayContent({ lang, dict }: AgencyContentProps) {
   const details = dict?.agencyDetails || {};
   const agency = details.bestDay || {
     title: 'Portal de Afiliado: Best Day',
     badge: 'Socio Preferencial'
   };
+
+  // Filtramos los productos para quedarnos únicamente con los especificados en ProductIds
+  const filteredProducts = (dict?.products?.items || []).filter(
+    (prod: any) => ProductIds.includes(prod.id)
+  );
 
   return (
     <div className="bg-[#f8fafc] min-h-screen pt-8 pb-16 text-[#1c2a4b] font-sans selection:bg-[#e53935]/30">
@@ -87,12 +103,15 @@ export default function BestDayContent({ lang, dict }: AgencyContentProps) {
           )}
         </section>
 
-        {/* Rejilla de productos (cards del Home) */}
+        {/* Sección de Productos */}
         <div className="mt-8 border-t border-slate-200/60 pt-12">
           <h3 className="text-3xl font-black text-[#0054a6] mb-8">
             {dict?.products?.title || "Productos"}
           </h3>
-          <ProductGrid products={(dict?.products?.items || []).filter((p: any) => !['extreme_atv_wild_pass', 'extreme_wild_pass_horseback_ride'].includes(p.id))} dict={dict} />
+          <ProductGrid 
+            products={filteredProducts} 
+            dict={dict} 
+          />
         </div>
 
         {/* Sección Preguntas Frecuentes (FAQ) */}

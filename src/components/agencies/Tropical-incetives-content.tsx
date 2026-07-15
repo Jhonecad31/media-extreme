@@ -8,6 +8,17 @@ interface AgencyContentProps {
   dict: any;
 }
 
+// Lista de IDs permitidos para este canal de afiliados/DMC
+const ProductIds = [
+  'extreme_atv_adventure',
+  'extreme_horses_adventure',
+  'cenote_venturing', 
+  'beach_taco_tour',
+  'snorkeling_adventure',
+  'private_snorkeling',
+  'super_combo'
+];
+
 export default function TropicalIncentivesContent({ lang, dict }: AgencyContentProps) {
   const details = dict?.agencyDetails || {};
   const agency = details.tropicalIncentives || {
@@ -15,12 +26,15 @@ export default function TropicalIncentivesContent({ lang, dict }: AgencyContentP
     badge: 'Socio de Grupos y Convenciones',
   };
 
+  // Filtramos los productos para quedarnos únicamente con los especificados en ProductIds
+  const filteredProducts = (dict?.products?.items || []).filter(
+    (prod: any) => ProductIds.includes(prod.id)
+  );
+
   return (
     <div className="bg-[#f8fafc] min-h-screen pt-8 pb-16 text-[#1c2a4b] font-sans selection:bg-[#d7aa38]/30">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         
-
-
         {/* Banner Hero con Colores Oficiales Tropical Incentives (Azul Marino #002d5d y Oro #d7aa38) */}
         <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-[#002d5d] via-[#102a45] to-[#0f172a] text-white p-10 md:p-14 shadow-xl mb-10 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="absolute top-0 right-0 w-80 h-80 bg-[#d7aa38]/10 blur-3xl rounded-full translate-x-20 -translate-y-20"></div>
@@ -47,6 +61,7 @@ export default function TropicalIncentivesContent({ lang, dict }: AgencyContentP
             </div>
           </div>
         </div>
+
         {/* Sección: Nuestras Experiencias */}
         <section className="mb-10">
           {dict?.experiences && (
@@ -87,13 +102,18 @@ export default function TropicalIncentivesContent({ lang, dict }: AgencyContentP
             </div>
           )}
         </section>
-        {/* Rejilla de productos (cards del Home) */}
+
+        {/* Sección de Productos */}
         <div className="mt-8 border-t border-slate-200/60 pt-12">
           <h3 className="text-3xl font-black text-[#002d5d] mb-8">
             {dict?.products?.title || "Productos"}
           </h3>
-          <ProductGrid products={(dict?.products?.items || []).filter((p: any) => !['city_taco_tour', 'beach_taco_tour', 'extreme_atv_wild_pass', 'extreme_wild_pass_horseback_ride'].includes(p.id))} dict={dict} />
+          <ProductGrid 
+            products={filteredProducts} 
+            dict={dict} 
+          />
         </div>
+
         {/* Sección Preguntas Frecuentes (FAQ) */}
         <FaqAccordion faq={dict?.faq} accentColor="#d7aa38" brandColor="#002d5d" />
 

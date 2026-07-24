@@ -38,7 +38,7 @@ export default function HomeContent({ lang, dict }: HomeContentProps) {
         {/* Título Principal */}
         <div className="text-center mt-8 mb-12">
           <h1 className="text-3xl md:text-5xl font-black tracking-tight text-[#002b11] mb-3">
-            {dict?.home?.mainTitle || "Extreme Adventure Media Center"}
+            {dict?.home?.mainTitle || "Extreme Adventuring Media Center"}
           </h1>
           <p className="text-sm md:text-base text-slate-500 max-w-2xl mx-auto font-light">
             {dict?.home?.subtitle || "Accede y descarga todas nuestras fichas técnicas, galerías de fotos y videos oficiales."}

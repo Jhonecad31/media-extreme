@@ -9,8 +9,8 @@ import { getDictionary } from "../getDictionary";
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Extreme Adventure Media Center',
-  description: 'Download all our resources - Extreme Adventure Cancun',
+  title: 'Extreme Adventuring Media Center',
+  description: 'Download all our resources - Extreme Adventuring Cancun',
   robots: {
     index: false,
     follow: false,

@@ -1,15 +1,11 @@
 'use client';
-
 import { JSX } from 'react';
 import ProductGrid from '../global/Product-grid';
 import FaqAccordion from '../global/Faq-accordion';
-
 interface AgencyContentProps {
   lang: string;
   dict: any;
 }
-
-// Lista de IDs permitidos para este canal de afiliados
 const ProductIds = [
   'extreme_atv_adventure',
   'extreme_horses_adventure',
@@ -19,19 +15,15 @@ const ProductIds = [
   'private_snorkeling',
   'super_combo'
 ];
-
 export default function BestDayContent({ lang, dict }: AgencyContentProps) {
   const details = dict?.agencyDetails || {};
   const agency = details.bestDay || {
     title: 'Portal de Afiliado: Best Day',
     badge: 'Socio Preferencial'
   };
-
-  // Filtramos los productos para quedarnos únicamente con los especificados en ProductIds
   const filteredProducts = (dict?.products?.items || []).filter(
     (prod: any) => ProductIds.includes(prod.id)
   );
-
   return (
     <div className="bg-[#f8fafc] min-h-screen pt-8 pb-16 text-[#1c2a4b] font-sans selection:bg-[#e53935]/30">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
@@ -60,7 +52,6 @@ export default function BestDayContent({ lang, dict }: AgencyContentProps) {
             </div>
           </div>
         </div>
-
         {/* Sección: Nuestras Experiencias */}
         <section className="mb-10">
           {dict?.experiences && (
@@ -101,7 +92,6 @@ export default function BestDayContent({ lang, dict }: AgencyContentProps) {
             </div>
           )}
         </section>
-
         {/* Sección de Productos */}
         <div className="mt-8 border-t border-slate-200/60 pt-12">
           <h3 className="text-3xl font-black text-[#0054a6] mb-8">
@@ -112,7 +102,6 @@ export default function BestDayContent({ lang, dict }: AgencyContentProps) {
             dict={dict} 
           />
         </div>
-
         {/* Sección Preguntas Frecuentes (FAQ) */}
         <FaqAccordion faq={dict?.faq} accentColor="#e53935" brandColor="#0054a6" />
 

@@ -50,7 +50,6 @@ export default function BestDayContent({ lang, dict }: AgencyContentProps) {
               {agency.title}
             </h1>
           </div>
-
           <div className="relative z-10 shrink-0 transform hover:scale-105 transition-transform duration-300">
             <div className="w-32 h-32 md:w-44 md:h-44 bg-white rounded-2xl flex items-center justify-center p-6 shadow-2xl border border-white/20">
               <img 

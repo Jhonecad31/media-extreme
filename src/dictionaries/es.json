@@ -119,7 +119,7 @@
         "img": "/media-extreme/extreme-atv.webp",
         "pdf": "/factsheet/ATV-Experience-WildPass-Esp.pdf",
         "mica": "/assets/img/micas/Extreme-Adventuring-Gold-Pass.pdf",
-        "photos": "/home/Media%20Center%20Extreme/Extreme%20Atv%20Adventure/Fotograf%C3%ADas%20Extreme%20ATV%20Adventure",
+        "photos": "https://www.dropbox.com/scl/fo/ta1vhhs1bp6caherupwwr/h?rlkey=oc3d62rmhsulspxkr9lltpgzq&st=f5qxxk20&e=1&dl=0",
         "video": "../videos/extreme-atv-adventure.mp4"
       },
       {
@@ -128,7 +128,7 @@
         "img": "/media-extreme/extreme-horse.webp",
         "pdf": "/factsheet/ATV-ExperienceHorse-WildPass-Esp.pdf",
         "mica": "/assets/img/micas/Mica-Horse-Ride.pdf",
-        "photos": "/home/Media%20Center%20Extreme/Extreme%20Horse%20Adventure/Fotografias%20Extreme%20Horse%20Adventure?share_manage_access=false",
+        "photos": "https://www.dropbox.com/scl/fo/lzw8tmaxyu1ew336ojvn0/h?rlkey=z3lw9hosfjkpqg28jygvy4c80&st=40loj95l&e=1&dl=0",
         "video": "../videos/extreme-horse-adventuring.mp4"
       },
       {
@@ -137,7 +137,7 @@
         "img": "/media-extreme/extreme-snorkeling.webp",
         "pdf": "/factsheet/ExtremeSnorkel-WildPass-Esp.pdf",
         "mica": "/assets/img/micas/Mica-Snorkel-Adventuring.pdf",
-        "photos": "/home/Media%20Center%20Extreme/Snorkeling%20Adventure/Fotograf%C3%ADas%20Extreme%20Snorkel",
+        "photos": "https://www.dropbox.com/scl/fo/5ld5le5f4dotcpyp2yzoc/h?rlkey=6s506g72ttydp7280orzrw8f7&st=59kecjkr&e=1&dl=0",
         "video": "../videos/extreme-snorkel-adventure.mp4"
       },
       {
@@ -146,7 +146,7 @@
         "img": "/media-extreme/extreme-snorkeling-private.webp",
         "pdf": "/factsheet/PrivateSnorkeling-WildPass-Esp.pdf",
         "mica": "/assets/img/micas/Mica-Snorkel-Adventuring.pdf",
-        "photos": "/home/Media%20Center%20Extreme/Private%20Snorkeling/Fotografias%20Private%20Snorkeling",
+        "photos": "https://www.dropbox.com/scl/fo/vz3bwy6duu8240w5sen4s/AOu_AesIehX-jD1MGQ1fNe4?rlkey=x2elyiafgec65rmckb6r5pnyx&st=aytpvclt&e=1&dl=0",
         "video": "../videos/private-snorkeling-experience-video.mp4"
       },
       {
@@ -155,7 +155,7 @@
         "img": "/media-extreme/extreme-cenote.webp",
         "pdf": "/factsheet/CenoteAdventuring-WildPass-Esp.pdf",
         "mica": "/assets/img/micas/Mica-Cenote-Adventuring.pdf",
-        "photos": "/home/Media%20Center%20Extreme/Cenote%20Adventuring/Fotograf%C3%ADas%20Cenote%20Adventuring",
+        "photos": "https://www.dropbox.com/scl/fo/d41ep6xm0n8qa5oxaucob/h?rlkey=vha7rbftwga9rllhynj3lyj8k&st=xf5zbi6v&e=1&dl=0",
         "video": "../videos/cenote-adventuring.mp4"
       },
       {
@@ -164,7 +164,7 @@
         "img": "/media-extreme/city-and-taco-tour.webp",
         "pdf": "/factsheet/CityAndTacoTour-WildPass-Esp.pdf",
         "mica": "/assets/img/micas/Mica-Beach-Taco-Tour.pdf",
-        "photos": "/home/Media%20Center%20Extreme/City%20%26%20Taco%20tour/Im%C3%A1genes%20City%20%26%20Taco%20Tour",
+        "photos": "https://www.dropbox.com/scl/fo/8t40kj7o1lvxcvyduddxh/h?rlkey=blyvqpq8hhma6wkabl9y2yqzw&st=xl8bnius&e=1&dl=0",
         "video": "../videos/tactotour-puerto-morelos-horizontal.mp4"
       }
     ]

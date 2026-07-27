@@ -7,7 +7,6 @@ interface AgencyContentProps {
   lang: string;
   dict: any;
 }
-
 // Lista de IDs permitidos para este canal de afiliados
 const ProductIds = [
   'extreme_atv_adventure',

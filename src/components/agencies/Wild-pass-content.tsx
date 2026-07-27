@@ -2,12 +2,10 @@
 
 import ProductGrid from "../global/Product-grid";
 import FaqAccordion from "../global/Faq-accordion";
-
 interface AgencyContentProps {
   lang: string;
   dict: any;
 }
-
 export default function WildPassContent({ lang, dict }: AgencyContentProps) {
   const details = dict?.agencyDetails || {};
   const agency = details.wildPass || {
@@ -33,7 +31,6 @@ export default function WildPassContent({ lang, dict }: AgencyContentProps) {
         <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-[#1c1917] via-[#78350f] to-[#b45309] text-white p-10 md:p-14 shadow-xl mb-10 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="absolute top-0 right-0 w-80 h-80 bg-[#f97316]/10 blur-3xl rounded-full translate-x-20 -translate-y-20"></div>
           <div className="absolute -bottom-16 -left-16 w-56 h-56 bg-white/5 blur-2xl rounded-full"></div>
-
           <div className="relative z-10 flex-1 text-center md:text-left">
             <span className="bg-[#f97316] text-white font-bold text-xs md:text-sm uppercase tracking-wider px-4 py-2 rounded-full border border-white/10 mb-5 inline-block shadow-sm">
               {agency.badge}
@@ -42,7 +39,6 @@ export default function WildPassContent({ lang, dict }: AgencyContentProps) {
               {agency.title}
             </h1>
           </div>
-
           <div className="relative z-10 shrink-0 transform hover:scale-105 transition-transform duration-300">
             <div className="w-32 h-32 md:w-44 md:h-44 bg-white rounded-2xl flex items-center justify-center p-6 shadow-2xl border border-white/20">
               <img
@@ -53,7 +49,6 @@ export default function WildPassContent({ lang, dict }: AgencyContentProps) {
             </div>
           </div>
         </div>
-
         <section className="mb-10">
           {dict?.experiences && (
             <div className="mb-6">

@@ -12,7 +12,7 @@ interface AgencyContentProps {
 const ProductIds = [
   'extreme_atv_adventure',
   'extreme_horses_adventure',
-  'cenote_venturing', 
+  'cenote_adventuring', 
   'beach_taco_tour',
   'snorkeling_adventure',
   'private_snorkeling',

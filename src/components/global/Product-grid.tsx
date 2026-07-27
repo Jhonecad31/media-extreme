@@ -29,7 +29,6 @@ export default function ProductGrid({ products, dict, isWildPass = false }: Prod
                 priority={idx < 12}
               />
             </div>
-
             {/* Info del Producto */}
             <div className="p-5 flex-1">
               <span className="text-[10px] font-bold uppercase tracking-wider text-[#2c6748] bg-[#2c6748]/10 px-2 py-0.5 rounded-md mb-2 inline-block">

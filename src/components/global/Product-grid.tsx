@@ -24,6 +24,14 @@ export default function ProductGrid({ products, dict, isWildPass = false }: Prod
         const showPhotos = prod.photos && !hideMedia;
         const showVideo = prod.video && !hideMedia;
 
+        // Calculamos cuántos botones se renderizan en este producto
+        const visibleButtonsCount = [true, showMica, showPhotos, showVideo].filter(Boolean).length;
+
+        // Mapeo seguro para Tailwind que conserva tus tamaños exactos
+        const gridColsClass = 
+          visibleButtonsCount === 2 ? 'grid-cols-2' :
+          visibleButtonsCount === 4 ? 'grid-cols-4' : 'grid-cols-3';
+
         return (
           <div key={idx} className="group bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden flex flex-col justify-between hover:shadow-md transition-all duration-300">
             
@@ -50,10 +58,8 @@ export default function ProductGrid({ products, dict, isWildPass = false }: Prod
               </h3>
             </div>
 
-            {/* Botonera de descarga */}
-            <div className={`bg-slate-50 p-3 sm:p-4 border-t border-slate-100 grid gap-1 sm:gap-2 text-center text-[10px] sm:text-xs font-bold ${
-              showMica ? 'grid-cols-4' : 'grid-cols-3'
-            }`}>
+            {/* Botonera de descarga adaptativa */}
+            <div className={`bg-slate-50 p-3 sm:p-4 border-t border-slate-100 grid gap-1 sm:gap-2 text-center text-[10px] sm:text-xs font-bold ${gridColsClass}`}>
               
               {/* PDF */}
               <a href={prod.pdf} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1.5 p-1.5 sm:p-2 rounded-xl hover:bg-white hover:shadow-sm border border-transparent hover:border-slate-100 transition-all text-[#ea3323]">

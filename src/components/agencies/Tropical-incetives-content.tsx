@@ -16,7 +16,9 @@ const ProductIds = [
   'beach_taco_tour',
   'snorkeling_adventure',
   'private_snorkeling',
-  'super_combo'
+  'super_combo',
+  '5_elements',
+  'mystic_waters'
 ];
 
 export default function TropicalIncentivesContent({ lang, dict }: AgencyContentProps) {

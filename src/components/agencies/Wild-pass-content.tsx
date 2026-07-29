@@ -12,7 +12,6 @@ export default function WildPassContent({ lang, dict }: AgencyContentProps) {
     title: "Portal de Afiliado: Wild Pass",
     badge: "Socio de Aventura y Promoción",
   };
-
   const wildPassProductIds = [
     "extreme_atv_wild_pass",
     "extreme_wild_pass_horseback_ride",

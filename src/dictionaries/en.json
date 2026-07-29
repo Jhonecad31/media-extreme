@@ -40,8 +40,6 @@
         "title": "Family Friendly",
         "desc": "Activities for the whole family; check for restrictions."
       }
-
-      
     ]
   },
   "products": {
@@ -166,6 +164,24 @@
         "img": "/media-extreme/city-and-taco-tour.webp",
         "pdf": "/factsheet/CityAndTacoTour-WildPass-Ing.pdf",
         "mica": "/assets/img/micas/Mica-Beach-Taco-Tour.pdf",
+        "photos": "https://www.dropbox.com/scl/fo/8t40kj7o1lvxcvyduddxh/h?rlkey=blyvqpq8hhma6wkabl9y2yqzw&st=xl8bnius&e=1&dl=0",
+        "video": "../videos/tactotour-puerto-morelos-horizontal.mp4"
+      },
+      {
+        "id": "5_elements",
+        "title": "5 elements",
+        "img": "/media-extreme/5elements.webp",
+        "pdf": "/factsheet/5ELEMENTS-FactSheet-ing.pdf",
+        "mica": "/assets/img/micas/Mica-5Elements.pdf",
+        "photos": "https://www.dropbox.com/scl/fo/8t40kj7o1lvxcvyduddxh/h?rlkey=blyvqpq8hhma6wkabl9y2yqzw&st=xl8bnius&e=1&dl=0",
+        "video": "../videos/tactotour-puerto-morelos-horizontal.mp4"
+      },
+      {
+        "id": "mystic_waters",
+        "title": "Mystic Waters",
+        "img": "/media-extreme/MysticWaters.webp",
+        "pdf": "/factsheet/MysticWaters-FactSeet-ing.pdf",
+        "mica": "/assets/img/micas/Mica-Mystic-Waters.pdf",
         "photos": "https://www.dropbox.com/scl/fo/8t40kj7o1lvxcvyduddxh/h?rlkey=blyvqpq8hhma6wkabl9y2yqzw&st=xl8bnius&e=1&dl=0",
         "video": "../videos/tactotour-puerto-morelos-horizontal.mp4"
       }

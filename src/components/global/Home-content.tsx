@@ -3,12 +3,10 @@
 import { useState } from 'react';
 import ProductGrid from './Product-grid';
 import { getIKUrl } from '@/src/lib/imagekit';
-
 interface HomeContentProps {
   lang: string;
   dict: any;
 }
-
 const ProductIds = [
   'extreme_atv_adventure',
   'extreme_horses_adventure',
@@ -16,18 +14,18 @@ const ProductIds = [
   'beach_taco_tour',
   'snorkeling_adventure',
   'private_snorkeling',
-  'super_combo'
+  'super_combo',
+  '5_elements',
+  'mystic_waters'
 ];
 
 export default function HomeContent({ lang, dict }: HomeContentProps) {
   const [searchTerm, setSearchTerm] = useState('');
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
-
   // Filtrado optimizado utilizando tu array de ProductIds
   const filteredProducts = dict.products.items.filter((prod: any) => {
     const matchesId = ProductIds.includes(prod.id);
     const matchesSearch = prod.title.toLowerCase().includes(searchTerm.toLowerCase());
-    
     return matchesId && matchesSearch;
   });
 

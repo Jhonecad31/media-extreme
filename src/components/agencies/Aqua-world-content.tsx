@@ -68,7 +68,6 @@ export default function AquaWorldContent({ lang, dict }: AgencyContentProps) {
                       <h3 className="font-bold text-base sm:text-lg md:text-xl text-[#00115b] mb-0.5 sm:mb-3 leading-snug group-hover:text-[#00115b] transition-colors">
                         {exp.title}
                       </h3>
-
                       <p className="text-xs sm:text-sm text-slate-500 leading-snug mb-0.5 sm:mb-4">
                         {exp.desc}
                       </p>

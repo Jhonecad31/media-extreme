@@ -184,6 +184,13 @@
         "mica": "/assets/img/micas/Mica-Mystic-Waters.pdf",
         "photos": "https://www.dropbox.com/scl/fo/8t40kj7o1lvxcvyduddxh/h?rlkey=blyvqpq8hhma6wkabl9y2yqzw&st=xl8bnius&e=1&dl=0",
         "video": "../videos/tactotour-puerto-morelos-horizontal.mp4"
+      },
+      {
+        "id": "cenote_aqua",
+        "title": "Cenote Adventuring",
+        "img": "/media-extreme/cenote-aqua.webp",
+        "pdf": "/factsheet/CenoteAdventuring-Ing.pdf",
+        "mica": "/assets/img/micas/Mica-cenote-aqua.pdf"
       }
     ] 
   },

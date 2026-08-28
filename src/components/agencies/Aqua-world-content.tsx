@@ -51,7 +51,7 @@ export default function AquaWorldContent({ lang, dict }: AgencyContentProps) {
             </div>
           </div>
         </div>
-        {/* Sección: Nuestras Experiencias */}
+
         <section className="mb-10">
           {dict?.experiences && (
             <div className="mb-6">

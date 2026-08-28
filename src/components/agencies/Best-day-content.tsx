@@ -110,4 +110,4 @@ export default function BestDayContent({ lang, dict }: AgencyContentProps) {
       </div>
     </div>
   );
-}
+}'

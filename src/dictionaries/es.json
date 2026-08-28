@@ -395,7 +395,12 @@
       "resource1": "Flyer Aventura Extrema (Co-Branded)",
       "resource2": "Poster Promocional para Hostales",
       "resource3": "Video ATV Adventuring (Edición Vertical/TikTok)"
-    }
+    },
+    "agencyDetails": {
+  "aquaWorld": {
+    "title": "Portal de Afiliado: Aqua World",
+    "badge": "Socio Preferencial"
+  }
   },
   "footer": {
     "title": "Visita nuestros canales oficiales",

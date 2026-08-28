@@ -73,12 +73,6 @@ export default function AquaWorldContent({ lang, dict }: AgencyContentProps) {
                       <p className="text-xs sm:text-sm text-slate-500 leading-snug mb-0.5 sm:mb-4">
                         {exp.desc}
                       </p>
-
-                      {exp.badge && (
-                        <span className="text-[8px] sm:text-xs font-bold text-[#ba007c] bg-[#e53935]/8 border border-[#e53935]/10 px-1.5 py-0.5 sm:px-3.5 sm:py-1.5 rounded-full self-start sm:self-auto mt-auto inline-block shadow-sm">
-                          {exp.badge}
-                        </span>
-                      )}
                     </div>
                   </div>
                 ))}

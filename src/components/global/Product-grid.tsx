@@ -8,16 +8,23 @@ interface ProductGridProps {
 }
 
 export default function ProductGrid({ products, dict, isWildPass = false }: ProductGridProps) {
-  // Solo mantenemos mystic_waters y 5_elements ocultos
-  const HIDDEN_MEDIA_IDS = ['mystic_waters', '5_elements', 'snorkel_aqua', 'jungle_aqua', 'cenote-aqua'];
+  // IDs que ocultan fotos y videos por completo
+  const HIDDEN_MEDIA_IDS = ['mystic_waters', '5_elements'];
+  
+  // IDs específicos que no deben mostrar la mica
+  const HIDDEN_MICA_IDS = ['snorkel_aqua', 'jungle_aqua', 'cenote-aqua'];
+
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
       {products.map((prod: any, idx: number) => {
         // Evaluamos si debemos ocultar fotos y videos para este ID
         const hideMedia = HIDDEN_MEDIA_IDS.includes(prod.id);
 
+        // Evaluamos si debemos ocultar la mica para este ID específico o si es WildPass
+        const hideMicaById = HIDDEN_MICA_IDS.includes(prod.id);
+
         // Evaluamos si debemos mostrar la mica
-        const showMica = prod.mica && !isWildPass;
+        const showMica = prod.mica && !isWildPass && !hideMicaById;
 
         // Evaluamos si el producto mostrará fotos y video
         const showPhotos = prod.photos && !hideMedia;
@@ -68,7 +75,7 @@ export default function ProductGrid({ products, dict, isWildPass = false }: Prod
                 <span>{dict?.home?.btnFactSheet || "Ficha"}</span>
               </a>
 
-              {/* Mica (Oculta si isWildPass es true) */}
+              {/* Mica (Oculta si isWildPass es true o si el ID está en HIDDEN_MICA_IDS) */}
               {showMica && (
                 <a href={prod.mica} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1.5 p-1.5 sm:p-2 rounded-xl hover:bg-white hover:shadow-sm border border-transparent hover:border-slate-100 transition-all text-[#ea580c]">
                   <div className="w-8 h-8 rounded-lg bg-[#ea580c]/10 flex items-center justify-center text-lg">

@@ -25,14 +25,6 @@ export default function Header({ lang, dict }: HeaderProps) {
           className="flex items-center transition-transform hover:scale-[1.02] active:scale-[0.98]"
           onClick={() => setIsOpen(false)}
         >
-          <Image 
-            src="/icon/logos/logo-ext-adventuring.svg" 
-            alt="Extreme Adventuring" 
-            width={220} 
-            height={60}  
-            className="h-14 w-auto object-contain" 
-            priority 
-          />
         </Link>
         <nav className="hidden md:flex items-center space-x-8">
         </nav>

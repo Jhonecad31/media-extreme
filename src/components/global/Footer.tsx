@@ -19,7 +19,7 @@ export default function Footer({ dict }: FooterProps) {
         {/* COPYRIGHT */}
         <div className="pt-6 text-center">
           <p className="text-[11px] text-slate-500 font-light">
-            © {new Date().getFullYear()} Extreme Adventuring. {dict?.footer?.rights || "Todos los derechos reservados."}
+            © {new Date().getFullYear()} {dict?.footer?.rights || "Todos los derechos reservados."}
           </p>
         </div>
       </div>

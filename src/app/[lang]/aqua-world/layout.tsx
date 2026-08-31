@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import '../globals.css';
 import { getDictionary } from "../getDictionary";
 import Header from "@/src/components/global/Header-aqua";
 import Footer from "@/src/components/global/Footer-aqua";

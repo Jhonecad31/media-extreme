@@ -13,14 +13,7 @@ export default function Footer({ dict }: FooterProps) {
     <footer className="bg-[#001a0a] text-slate-300 border-t border-slate-800 w-full shrink-0">
       <div className="max-w-5xl mx-auto px-6 pt-12 pb-8">
         {/* RETÍCULA PRINCIPAL */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pb-10 border-b border-white/5">
-          {/* COLUMNA 1: IDENTIDAD */}
-          <div className="flex flex-col items-center gap-3 text-center">
-            <p className="text-xs text-slate-400 font-light max-w-xs leading-relaxed">
-              {dict?.footer?.description || "Plataforma oficial de distribución de recursos visuales y fichas técnicas autorizadas para agencias afiliadas."}
-            </p>
-          </div>
-         
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pb-10 border-b border-white/5"> 
         </div>
 
         {/* COPYRIGHT */}

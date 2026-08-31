@@ -14,7 +14,7 @@ const ProductIds = [
   'snorkel_aqua'
 ];
 
-export default function AquaWorldContent({ lang, dict }: AgencyContentProps) {
+export default function AquaWorldContent({ lang, dict  }: AgencyContentProps) {
   const details = dict?.agencyDetails || {};
   const agency = details.aquaWorld || {
     title: 'Portal de Afiliado: Aqua World',
@@ -28,7 +28,7 @@ export default function AquaWorldContent({ lang, dict }: AgencyContentProps) {
   return (
     <div className="bg-[#f8fafc] min-h-screen pt-8 pb-16 text-[#1c2a4b] font-sans selection:bg-[#e53935]/30">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
-        
+        <AquaWorldContent lang={params.lang} dict={dict}
         {/* Banner Hero */}
         <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-[#00115b] via-[#00115b] to-[#00115b] text-white p-10 md:p-14 shadow-xl mb-10 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="absolute top-0 right-0 w-80 h-80 bg-[#e53935]/10 blur-3xl rounded-full translate-x-20 -translate-y-20"></div>

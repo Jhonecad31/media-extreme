@@ -187,21 +187,21 @@
       },
       {
         "id": "cenote_aqua",
-        "title": "Cenote Adventuring",
+        "title": "Cenotes",
         "img": "/media-extreme/cenote-aqua.webp",
         "pdf": "/factsheet/CenoteAqua-Ing.pdf",
         "mica": "/assets/img/micas/Mica-cenote-aqua.pdf"
       },
       {
         "id": "jungle_aqua",
-        "title": "Jungle Aqua",
+        "title": "Jungle Adventure",
         "img": "/media-extreme/jungle-aqua.webp",
         "pdf": "/factsheet/JungleAqua-Ing.pdf",
         "mica": "/assets/img/micas/Mica-jungle-aqua.pdf"
       },
       {
         "id": "snorkel_aqua",
-        "title": "Snorkel Aqua",
+        "title": "Puerto Morelos: National reef Park",
         "img": "/media-extreme/snorkel-aqua.webp",
         "pdf": "/factsheet/SnorkelAqua-Ing.pdf",
         "mica": "/assets/img/micas/Mica-snorkel-aqua.pdf"

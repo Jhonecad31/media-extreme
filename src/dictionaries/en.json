@@ -196,14 +196,14 @@
         "id": "jungle_aqua",
         "title": "Jungle Adventure",
         "img": "/media-extreme/jungle-aqua.webp",
-        "pdf": "/factsheet/JungleAqua-Ing.pdf",
+        "pdf": "/factsheet/Jungle-aqua-Ing.pdf",
         "mica": "/assets/img/micas/Mica-jungle-aqua.pdf"
       },
       {
         "id": "snorkel_aqua",
         "title": "Puerto Morelos: National reef Park",
         "img": "/media-extreme/snorkel-aqua.webp",
-        "pdf": "/factsheet/SnorkelAqua-Ing.pdf",
+        "pdf": "/factsheet/Snorkel-Ing.pdf",
         "mica": "/assets/img/micas/Mica-snorkel-aqua.pdf"
       }
     ] 

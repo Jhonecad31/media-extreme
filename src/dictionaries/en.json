@@ -138,7 +138,7 @@
         "pdf": "/factsheet/ExtremeSnorkel-WildPass-Ing.pdf",
         "mica": "/assets/img/micas/Mica-Snorkel-Adventuring.pdf",
         "photos": "https://www.dropbox.com/scl/fo/5ld5le5f4dotcpyp2yzoc/h?rlkey=6s506g72ttydp7280orzrw8f7&st=59kecjkr&e=1&dl=0",
-        "video": "../videos/extreme-snorkel-adventure.mp4"
+        "video": "../videos/extreme-snorkel-adv.mp4"
       },
       {
         "id": "private_snorkeling_wildPass",
@@ -191,6 +191,20 @@
         "img": "/media-extreme/cenote-aqua.webp",
         "pdf": "/factsheet/CenoteAqua-Ing.pdf",
         "mica": "/assets/img/micas/Mica-cenote-aqua.pdf"
+      },
+      {
+        "id": "jungle_aqua",
+        "title": "Jungle Aqua",
+        "img": "/media-extreme/jungle-aqua.webp",
+        "pdf": "/factsheet/JungleAqua-Ing.pdf",
+        "mica": "/assets/img/micas/Mica-jungle-aqua.pdf"
+      },
+      {
+        "id": "snorkel_aqua",
+        "title": "Snorkel Aqua",
+        "img": "/media-extreme/snorkel-aqua.webp",
+        "pdf": "/factsheet/SnorkelAqua-Ing.pdf",
+        "mica": "/assets/img/micas/Mica-snorkel-aqua.pdf"
       }
     ] 
   },

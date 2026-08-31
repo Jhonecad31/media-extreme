@@ -10,6 +10,8 @@ interface AgencyContentProps {
 
 const ProductIds = [
   'cenote_aqua',
+  'jungle_aqua',
+  'snorkel_aqua'
 ];
 
 export default function AquaWorldContent({ lang, dict }: AgencyContentProps) {

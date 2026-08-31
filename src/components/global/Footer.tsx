@@ -20,59 +20,7 @@ export default function Footer({ dict }: FooterProps) {
               {dict?.footer?.description || "Plataforma oficial de distribución de recursos visuales y fichas técnicas autorizadas para agencias afiliadas."}
             </p>
           </div>
-          {/* COLUMNA 2: CANALES INSTITUCIONALES */}
-          <div className="flex flex-col gap-3 md:items-end">
-            <h4 className="text-xs font-bold tracking-widest uppercase text-[#8ebf25] md:text-right w-full">
-              {dict?.footer?.officialChannels || "Canales Oficiales"}
-            </h4>
-            <div className="flex flex-wrap gap-2">
-              <a
-                href="https://www.facebook.com/extremeadventuringcancun/"
-                target="_blank"
-                rel="noopener noreferrer"
-                title={dict?.footer?.accessibility?.facebook || "Go to Facebook"}
-                className="w-8 h-8 rounded-lg bg-white/5 hover:bg-[#8ebf25] hover:text-[#001a0a] text-white flex items-center justify-center text-base transition-all duration-300"
-              >
-                <i className="bx bxl-facebook"></i>
-              </a>
-              <a
-                href="https://www.instagram.com/extremeadventuringcancun/"
-                target="_blank"
-                rel="noopener noreferrer"
-                title={dict?.footer?.accessibility?.instagram || "Go to Instagram"}
-                className="w-8 h-8 rounded-lg bg-white/5 hover:bg-[#8ebf25] hover:text-[#001a0a] text-white flex items-center justify-center text-base transition-all duration-300"
-              >
-                <i className="bx bxl-instagram"></i>
-              </a>
-              <a
-                href="https://www.tiktok.com/@extremeadventuringcun"
-                target="_blank"
-                rel="noopener noreferrer"
-                title={dict?.footer?.accessibility?.tiktok || "Go to TikTok"}
-                className="w-8 h-8 rounded-lg bg-white/5 hover:bg-[#8ebf25] hover:text-[#001a0a] text-white flex items-center justify-center text-base transition-all duration-300"
-              >
-                <i className="bx bxl-tiktok"></i>
-              </a>
-              <a
-                href="https://www.tripadvisor.com.mx/Attraction_Review-g240327-d3506512-Reviews-Extreme_Adventuring_Cancun-Puerto_Morelos_Yucatan_Peninsula.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                title={dict?.footer?.accessibility?.tripadvisor || "Go to TripAdvisor"}
-                className="w-8 h-8 rounded-lg bg-white/5 hover:bg-[#8ebf25] hover:text-[#001a0a] text-white flex items-center justify-center text-base transition-all duration-300"
-              >
-                <i className="bx bxl-trip-advisor"></i>
-              </a>
-              <a
-                href="https://www.youtube.com/@extremeadventuringcancun/videos"
-                target="_blank"
-                rel="noopener noreferrer"
-                title={dict?.footer?.accessibility?.youtube || "Go to YouTube"}
-                className="w-8 h-8 rounded-lg bg-white/5 hover:bg-[#8ebf25] hover:text-[#001a0a] text-white flex items-center justify-center text-base transition-all duration-300"
-              >
-                <i className="bx bxl-youtube"></i>
-              </a>
-            </div>
-          </div>
+         
         </div>
 
         {/* COPYRIGHT */}

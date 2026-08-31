@@ -9,7 +9,7 @@ interface ProductGridProps {
 
 export default function ProductGrid({ products, dict, isWildPass = false }: ProductGridProps) {
   // Solo mantenemos mystic_waters y 5_elements ocultos
-  const HIDDEN_MEDIA_IDS = ['mystic_waters', '5_elements'];
+  const HIDDEN_MEDIA_IDS = ['mystic_waters', '5_elements', 'snorkel_aqua', 'jungle_aqua', 'cenote-aqua'];
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
       {products.map((prod: any, idx: number) => {
